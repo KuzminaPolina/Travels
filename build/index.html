@@ -4,62 +4,944 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Путешествия по Кавказу">
+    <meta name="description" content="Путешествия по России">
     <meta
       name="keywords"
-      content="путешествия, Кавказ, горы, Эльбрус, природа, туризм, восхождения, пеший поход"
+      content="путешествия, Кавказ, горы, Эльбрус, Камчатка, Алтай, природа, туризм, восхождения, пеший поход"
     >
     <title>Путешествия по Кавказу</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <div class="container"></div>
+      <header class="header">
+        <div class="header__container">
+          <div class="header__nav-container">
+            <nav class="header__navbar header__navbar--closed">
+              <div class="header__nav-buttons">
+                <svg class="header__menu-button" width="26" height="26" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#menu"></use>
+                </svg>
+                <svg class="header__menu-button header__menu-button--hidden" width="22" height="22" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#icon_close"></use>
+                </svg>
+              </div>
+              <div class="header__logo">
+                <a class="header__logo-link" href="#">
+                  <svg class="header__logo-desktop" width="205" height="62" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#logotype"></use>
+                  </svg>
+                  <svg class="header__logo-tablet" width="144" height="44" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#logotype"></use>
+                  </svg>
+                  <svg class="header__logo-mobile" width="112" height="34" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#logotype"></use>
+                  </svg>
+                </a>
+              </div>
+              <ul class="header__list header__list--hidden"><!--header__list--hidden-->
+                <li class="header__item"><a class="header__link" href="#">Туры</a></li>
+                <li class="header__item"><a class="header__link" href="#">Обучение</a></li>
+                <li class="header__item"><a class="header__link" href="#">О нас</a></li>
+                <li class="header__item"><a class="header__link" href="#">Отзывы</a></li>
+                <li class="header__item"><a class="header__link" href="#">Фотографии</a></li>
+                <li class="header__item"><a class="header__link" href="#">Контакты</a></li>
+              </ul>
+              <a class="header__phone" href="tel:+78007253232">8 800 725 32 32</a>
+            </nav>
+          </div>
+        </div>
       </header>
+
       <main>
-        <section class="intro">
-          <div class="container">
-            <h1>Тестовая страница.</h1>
-            <p>На данной странице показан пример модальных окон.</p>
-            <p>Перед началом разработки не забудьте удалить всё содержимое &#8249;main&#8250;&#8249;&#8260;main&#8250;.</p>
-            <p><a class="btn" href="#" data-open-modal="feedback">modal--feedback link</a></p>
-            <p><a class="btn" href="#" data-open-modal="success">modal--success link</a></p>
+        <section class="slider">
+          <h1 class="visually-hidden">Незабываемые путешествия по России</h1>
+          <div class="slider__container swiper">
+            <!-- Additional required wrapper -->
+            <ul class="slider__list swiper-wrapper">
+              <!-- Slides -->
+              <li class="slider__item swiper-slide">
+                <div class="slider__image-container">
+                  <picture>
+                    <source
+                      media="(max-width: 767px)"
+                      srcset="
+                      ./img/header_slider/slide_1_mobile.jpg 1x,
+                      ./img/header_slider/slide_1_mobile@x2.jpg 2x
+                      "
+                    >
+                    <source
+                      media="(max-width: 1199px)"
+                      srcset="
+                      ./img/header_slider/slide_1_tablet.jpg 1x,
+                      ./img/header_slider/slide_1_tablet@x2.jpg 2x
+                      "
+                    >
+                    <img class="slider__img" src="img/header_slider/slide_1.jpg" srcset="img/header_slider/slide_1@x2.jpg 2x" width="1440" height="800" alt="photo 1">
+                  </picture>
+                </div>
+                <div class="slider__overlay">
+                  <div class="slider__content-wrapper">
+                    <div class="slider__text-column">
+                      <h2 class="slider__header">Захватывающие вершины Кавказа</h2>
+                      <p class="slider__text">В&nbsp;сопровождении опытных гидов вы&nbsp;пройдете через потрясающие пейзажи и&nbsp;совершите восход солнца на&nbsp;вершине горы Чегет.</p>
+                      <button class="slider__more-button">Смотреть тур</button>
+                    </div>
+                    <div class="slider__video video">
+                      <div class="video__preview">
+                          <iframe class="video__iframe video__iframe--hidden" src="https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <picture>
+                            <img
+                              src="./img/header_slider/video_thumbnail.jpg"
+                              srcset="./img/header_slider/video_thumbnail@x2.jpg 2x"
+                              width="482"
+                              height="317"
+                              alt="Видео экскурсия по тренажёному залу"
+                            >
+                          </picture>
+                          <div class="video__overlay video__overlay--open">
+                            <div class="video__button-group">
+                              <button class="video__button" type="button">
+                                <svg class="video__play-icon" width="12" height="22" aria-hidden="true" focusable="false">
+                                  <use xlink:href="./img/sprite.svg#play"></use>
+                                </svg>
+                                <span class="visually-hidden">Кнопка воспроизведения</span>
+                              </button>
+                            </div>
+                          </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="slider__features">
+                    <li class="slider__feature">
+                      <svg class="slider__feature-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use xlink:href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      6 дней/5 ночей
+                    </li>
+                    <li class="slider__feature">
+                      <svg class="slider__feature-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use xlink:href="./img/sprite.svg#level"></use>
+                      </svg>
+                      Высокая сложность
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider__item swiper-slide">
+                <div class="slider__image-container">
+                  <picture>
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="
+                    ./img/header_slider/slide_2_mobile.jpg 1x,
+                    ./img/header_slider/slide_2_mobile@x2.jpg 2x
+                    "
+                  >
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./img/header_slider/slide_2_tablet.jpg 1x,
+                      ./img/header_slider/slide_2_tablet@x2.jpg 2x
+                    "
+                  >
+                    <img class="slider__img" src="img/header_slider/slide_2.jpg" srcset="img/header_slider/slide_2@x2.jpg 2x" width="1440" height="800" alt="photo 1">
+                  </picture>
+                </div>
+                <div class="slider__overlay">
+                  <div class="slider__content-wrapper slider__content-wrapper--second">
+                    <div class="slider__text-column">
+                      <h2 class="slider__header">Невероятная природа Камчатки</h2>
+                      <p class="slider__text slider__text--second">Незабываемое приключение, во&nbsp;время которого вы&nbsp;отправитесь в&nbsp;путешествие по&nbsp;одному из&nbsp;самых нетронутых уголков дикой природы в&nbsp;мире.</p>
+                      <button class="slider__more-button">Смотреть тур</button>
+                    </div>
+                    <div class="slider__media">
+                      <div class="slider__media-wrapper">
+                        <picture>
+                          <source
+                            media="(max-width: 1199px)"
+                            srcset="
+                              ./img/header_slider/slider2-img-tablet.png 1x,
+                              ./img/header_slider/slider2-img-tablet@x2.png 2x
+                            "
+                          >
+                          <img
+                          class="slider__media-img"
+                            src="./img/header_slider/slider2-img.png"
+                            srcset="./img/header_slider/slider2-img@x2.png 2x"
+                            width="410"
+                            height="549"
+                            alt="Туристические фото"
+                          >
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="slider__features">
+                    <li class="slider__feature">
+                      <svg class="slider__feature-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use xlink:href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      9 дней/10 ночей
+                    </li>
+                    <li class="slider__feature">
+                      <svg class="slider__feature-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use xlink:href="./img/sprite.svg#level"></use>
+                      </svg>
+                      Средняя сложность
+                    </li>
+                  </ul>
+                </div>
+              </li>
+              <li class="slider__item swiper-slide">
+                <div class="slider__image-container">
+                  <picture>
+                    <source
+                    media="(max-width: 767px)"
+                    srcset="
+                    ./img/header_slider/slide_3_mobile.jpg 1x,
+                    ./img/header_slider/slide_3_mobile@x2.jpg 2x
+                    "
+                  >
+                  <source
+                    media="(max-width: 1199px)"
+                    srcset="
+                      ./img/header_slider/slide_3_tablet.jpg 1x,
+                      ./img/header_slider/slide_3_tablet@x2.jpg 2x
+                    "
+                  >
+                    <img class="slider__img" src="img/header_slider/slide_3.jpg" srcset="img/header_slider/slide_3@x2.jpg 2x" width="1440" height="800" alt="photo 1">
+                  </picture>
+                </div>
+                <div class="slider__overlay">
+                  <div class="slider__content-wrapper slider__content-wrapper--third">
+                    <div class="slider__text-column">
+                      <h2 class="slider__header slider__header--third">Магические пейзажи Алтайского Края</h2>
+                      <p class="slider__text slider__text--third">Алтайский трекинг-тур&nbsp;&mdash; это захватывающее приключение с&nbsp;посещением магических и&nbsp;захватывающих дух ландшафтов Алтайских гор.</p>
+                      <button class="slider__more-button">Смотреть тур</button>
+                    </div>
+                    <div class="slider__media">
+                      <div class="slider__media-wrapper">
+                        <div class="slider__podcast podcast">
+                          <div class="podcast__content">
+                            <h3 class="podcast__header">Алтай</h3>
+                            <div class="podcast__tag">
+                              <a href="#">Lifetour</a>
+                              <button class="podcast__button">
+                                <svg class="podcast__icon" width="17" height="17" aria-hidden="true" focusable="false">
+                                  <use xlink:href="./img/sprite.svg#player-heart"></use>
+                                </svg>
+                              </button>
+                              <button class="podcast__button">
+                                <svg class="podcast__icon" width="17" height="17" aria-hidden="true" focusable="false">
+                                  <use xlink:href="./img/sprite.svg#player-share"></use>
+                                </svg>
+                              </button>
+                            </div>
+                            <div class="podcast__progress-bar">
+                              <div class="podcast__bar-1"></div>
+                              <div class="podcast__bar-2"></div>
+                              <div class="podcast__bar-text">
+                                <span title="podcast__current">2:30</span><span title="podcast__end">4:16</span>
+                              </div>
+                              <div class="podcast__bar-circle" title="2:30"></div>
+                            </div>
+                            <div class="podcast__controls">
+                              <button class="podcast__button">
+                                <svg class="podcast__icon" width="25" height="25" aria-hidden="true" focusable="false">
+                                  <use xlink:href="./img/sprite.svg#player-shuffle"></use>
+                                </svg>
+                              </button>
+                              <div class="podcast__controls-center">
+                                <button class="podcast__button">
+                                  <svg class="podcast__icon" width="22" height="22" aria-hidden="true" focusable="false">
+                                    <use xlink:href="./img/sprite.svg#player-previous"></use>
+                                  </svg>
+                                </button>
+                                <button class="podcast__button">
+                                  <svg class="podcast__icon" width="47" height="47" aria-hidden="true" focusable="false">
+                                    <use xlink:href="./img/sprite.svg#player-play"></use>
+                                  </svg>
+                                </button>
+                                <button class="podcast__button">
+                                  <svg class="podcast__icon" width="22" height="22" aria-hidden="true" focusable="false">
+                                    <use xlink:href="./img/sprite.svg#player-next"></use>
+                                  </svg>
+                                </button>
+                              </div>
+                              <button class="podcast__button">
+                                <svg class="podcast__icon" width="25" height="25" aria-hidden="true" focusable="false">
+                                  <use xlink:href="./img/sprite.svg#player-repeat"></use>
+                                </svg>
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <ul class="slider__features">
+                    <li class="slider__feature">
+                      <svg class="slider__feature-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use xlink:href="./img/sprite.svg#moon"></use>
+                      </svg>
+                      8 дней/7 ночей
+                    </li>
+                    <li class="slider__feature">
+                      <svg class="slider__feature-icon" width="12" height="12" aria-hidden="true" focusable="false">
+                        <use xlink:href="./img/sprite.svg#level"></use>
+                      </svg>
+                      Легкая сложность
+                    </li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+            <!-- pagination -->
+            <ol class="slider__pagination swiper-pagination">
+              <li class="slider__pagination-item slider__pagination-item-current">
+                <button class="slider__pagination-button slider__pagination-button--current" type="button">
+                  <span class="visually-hidden">1 фото</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button" type="button">
+                  <span class="visually-hidden">2 фото</span>
+                </button>
+              </li>
+              <li class="slider__pagination-item">
+                <button class="slider__pagination-button" type="button">
+                  <span class="visually-hidden">3 фото</span>
+                </button>
+              </li>
+            </ol>
+          </div>
+        </section>
+        <section class="catalog">
+          <div class="catalog__wrapper">
+            <div class="catalog__container">
+              <h2 class="catalog__header">Ближайшие туры</h2>
+              <div class="catalog__content swiper">
+                <ul class="catalog__list swiper-wrapper">
+                  <li class="catalog__item swiper-slide" tabindex="0">
+                    <div class="catalog__image">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/tours/photo_1_mobile.jpg 1x,
+                          ./img/tours/photo_1_mobile@x2.jpg 2x
+                          "
+                        >
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/tours/photo_1_tablet.jpg 1x,
+                          ./img/tours/photo_1_tablet@x2.jpg 2x
+                          "
+                        >
+                        <img
+                          src="./img/tours/photo_1.jpg"
+                          srcset="./img/tours/photo_1@x2.jpg 2x"
+                          width="380"
+                          height="412"
+                          alt="Фото природы"
+                        >
+                      </picture>
+                    </div>
+                    <div class="catalog__overlay">
+                      <div class="catalog__top-features">
+                        <div class="catalog__location catalog__location--kavkaz">
+                          <svg class="catalog__icon" width="9" height="12" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#catalog-pin"></use>
+                          </svg>
+                          Кавказ
+                        </div>
+                        <div class="catalog__days">
+                          <svg class="catalog__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#sun"></use>
+                          </svg>
+                          4 дня
+                        </div>
+                        <div class="catalog__nights">
+                          <svg class="catalog__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#moon"></use>
+                          </svg>
+                          3 ночи
+                        </div>
+                      </div>
+                      <h3 class="catalog__card-header">Путешествие<br>вокруг Эльбруса</h3>
+                      <div class="catalog__bottom-features">
+                        <div class="catalog__bottom-feature">Сложность:
+                          <div class="catalog__stars">
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#empty_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#empty_star"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog__bottom-feature">Даты набора:<br><span>12.06-19.06</span></div>
+                        <div class="catalog__bottom-feature">Группа:<br><span>до 15 чел.</span></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__item swiper-slide" tabindex="0">
+                    <div class="catalog__image">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/tours/photo_2_mobile.jpg 1x,
+                          ./img/tours/photo_2_mobile@x2.jpg 2x
+                          "
+                        >
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/tours/photo_2_tablet.jpg 1x,
+                          ./img/tours/photo_2_tablet@x2.jpg 2x
+                          "
+                        >
+                        <img
+                          src="./img/tours/photo_2.jpg"
+                          srcset="./img/tours/photo_2@x2.jpg 2x"
+                          width="380"
+                          height="412"
+                          alt="Фото природы"
+                        >
+                      </picture>
+                    </div>
+                    <div class="catalog__overlay">
+                      <div class="catalog__top-features">
+                        <div class="catalog__location catalog__location--altai">
+                          <svg class="catalog__icon" width="9" height="12" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#catalog-pin"></use>
+                          </svg>
+                          Алтай
+                        </div>
+                        <div class="catalog__days">
+                          <svg class="catalog__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#sun"></use>
+                          </svg>
+                          14 дней
+                        </div>
+                        <div class="catalog__nights">
+                          <svg class="catalog__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#moon"></use>
+                          </svg>
+                          13 ночей
+                        </div>
+                      </div>
+                      <h3 class="catalog__card-header">Путь к подножию<br>Белухи</h3>
+                      <div class="catalog__bottom-features">
+                        <div class="catalog__bottom-feature">Сложность:
+                          <div class="catalog__stars">
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#empty_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#empty_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#empty_star"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog__bottom-feature">Даты набора:<br><span>14.06-23.06</span></div>
+                        <div class="catalog__bottom-feature">Группа:<br><span>до 25 чел.</span></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__item swiper-slide" tabindex="0">
+                    <div class="catalog__image">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/tours/photo_2_mobile.jpg 1x,
+                          ./img/tours/photo_2_mobile@x2.jpg 2x
+                          "
+                        >
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/tours/photo_2_tablet.jpg 1x,
+                          ./img/tours/photo_2_tablet@x2.jpg 2x
+                          "
+                        >
+                        <img
+                          src="./img/tours/photo_3.jpg"
+                          srcset="./img/tours/photo_3@x2.jpg 2x"
+                          width="380"
+                          height="412"
+                          alt="Фото природы"
+                        >
+                      </picture>
+                    </div>
+                    <div class="catalog__overlay">
+                      <div class="catalog__top-features">
+                        <div class="catalog__location catalog__location--adygeya">
+                          <svg class="catalog__icon" width="9" height="12" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#catalog-pin"></use>
+                          </svg>
+                          Адыгея
+                        </div>
+                        <div class="catalog__days">
+                          <svg class="catalog__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#sun"></use>
+                          </svg>
+                          7 дней
+                        </div>
+                        <div class="catalog__nights">
+                          <svg class="catalog__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#moon"></use>
+                          </svg>
+                          6 ночей
+                        </div>
+                      </div>
+                      <h3 class="catalog__card-header">Через Фишт<br>к Чёрному морю</h3>
+                      <div class="catalog__bottom-features">
+                        <div class="catalog__bottom-feature">Сложность:
+                          <div class="catalog__stars">
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#empty_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#empty_star"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog__bottom-feature">Даты набора:<br><span>15.07-19.07</span></div>
+                        <div class="catalog__bottom-feature">Группа:<br><span>до 22 чел.</span></div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="catalog__item swiper-slide" tabindex="0">
+                    <div class="catalog__image">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/tours/photo_2_mobile.jpg 1x,
+                          ./img/tours/photo_2_mobile@x2.jpg 2x
+                          "
+                        >
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/tours/photo_2_tablet.jpg 1x,
+                          ./img/tours/photo_2_tablet@x2.jpg 2x
+                          "
+                        >
+                        <img
+                          src="./img/tours/photo_1.jpg"
+                          srcset="./img/tours/photo_1@x2.jpg 2x"
+                          width="380"
+                          height="412"
+                          alt="Фото природы"
+                        >
+                      </picture>
+                    </div>
+                    <div class="catalog__overlay">
+                      <div class="catalog__top-features">
+                        <div class="catalog__location catalog__location--kavkaz">
+                          <svg class="catalog__icon" width="9" height="12" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#catalog-pin"></use>
+                          </svg>
+                          Кавказ
+                        </div>
+                        <div class="catalog__days">
+                          <svg class="catalog__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#sun"></use>
+                          </svg>
+                          4 дня
+                        </div>
+                        <div class="catalog__nights">
+                          <svg class="catalog__icon" width="20" height="20" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#moon"></use>
+                          </svg>
+                          3 ночи
+                        </div>
+                      </div>
+                      <h3 class="catalog__card-header">Путешествие<br>вокруг Эльбруса</h3>
+                      <div class="catalog__bottom-features">
+                        <div class="catalog__bottom-feature">Сложность:
+                          <div class="catalog__stars">
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#filled_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#empty_star"></use>
+                            </svg>
+                            <svg class="catalog__star-icon" width="14" height="13" aria-hidden="true" focusable="false">
+                              <use xlink:href="./img/sprite.svg#empty_star"></use>
+                            </svg>
+                          </div>
+                        </div>
+                        <div class="catalog__bottom-feature">Даты набора:<br><span>12.06-19.06</span></div>
+                        <div class="catalog__bottom-feature">Группа:<br><span>до 15 чел.</span></div>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="catalog__slider-buttons">
+                <button class="catalog__button catalog__button--prev swiper-button-prev">
+                  <span class="visually-hidden">Предыдущий слайд</span>
+                </button>
+                <button class="catalog__button catalog__button--next swiper-button-next">
+                  <span class="visually-hidden">Следующий слайд</span>
+                </button>
+              </div>
+              <div class="catalog__link-container">
+                <a class="catalog__link" href="#">Показать все туры
+                  <svg class="catalog__link-icon" width="9" height="14" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#small_arrow"></use>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="catalog__background-big">
+            <picture>
+              <img class="catalog__background-big-img" src="img/tours/clouds_background.png" srcset="img/tours/clouds_background@x2.png 2x" width="602" height="1364" alt="photo 1">
+            </picture>
+          </div>
+          <div class="catalog__background-small">
+            <picture>
+              <img class="catalog__background-small-img" src="img/tours/small-clouds.png" srcset="img/tours/small-clouds@x2.png 2x" width="418" height="279" alt="photo 1">
+            </picture>
+          </div>
+        </section>
+        <section class="education">
+          <div class="education__wrapper">
+            <div class="education__container">
+              <h2 class="education__header">Обучение</h2>
+              <p class="education__text">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
+              <h2 class="education__subheader">Наши инструкторы</h2>
+              <div class="education__content swiper">
+                <ul class="education__list swiper-wrapper">
+                  <li class="education__item swiper-slide" tabindex="0">
+                    <div class="education__image">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/instructors/photo_1_mobile.jpg 1x,
+                          ./img/instructors/photo_1_mobile@x2.jpg 2x
+                          "
+                        >
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/instructors/photo_1_tablet.jpg 1x,
+                          ./img/tours/instructors/photo_1_tablet@x2.jpg 2x
+                          "
+                        >
+                        <img
+                          src="./img/instructors/photo_1.jpg"
+                          srcset="./img/instructors/photo_1@x2.jpg 2x"
+                          width="238"
+                          height="212"
+                          alt="Фото природы"
+                        >
+                      </picture>
+                    </div>
+                    <div class="education__instructor">
+                      <div class="education__instructor-wrapper">
+                        <h3 class="education__instructor-name">Александр Прокофьев</h3>
+                        <a href="#" class="education__instructor-link">
+                          <svg class="education-icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#social_vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <p class="education__instructor-text">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                    </div>
+                  </li>
+                  <li class="education__item swiper-slide" tabindex="0">
+                    <div class="education__image">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/instructors/photo_2_mobile.jpg 1x,
+                          ./img/tours/instructors/photo_2_mobile@x2.jpg 2x
+                          "
+                        >
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/instructors/photo_2_tablet.jpg 1x,
+                          ./img/tours/instructors/photo_2_tablet@x2.jpg 2x
+                          "
+                        >
+                        <img
+                          src="./img/instructors/photo_2.jpg"
+                          srcset="./img/instructors/photo_2@x2.jpg 2x"
+                          width="238"
+                          height="212"
+                          alt="Фото природы"
+                        >
+                      </picture>
+                    </div>
+                    <div class="education__instructor">
+                      <div class="education__instructor-wrapper">
+                        <h3 class="education__instructor-name">Светлана Афиногенова</h3>
+                        <a href="#" class="education__instructor-link">
+                          <svg class="education-icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#social_vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <p class="education__instructor-text">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
+                    </div>
+                  </li>
+                  <li class="education__item swiper-slide" tabindex="0">
+                    <div class="education__image">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/instructors/photo_3_mobile.jpg 1x,
+                          ./img/tours/instructors/photo_3_mobile@x2.jpg 2x
+                          "
+                        >
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/instructors/photo_3_tablet.jpg 1x,
+                          ./img/tours/instructors/photo_3_tablet@x2.jpg 2x
+                          "
+                        >
+                        <img
+                          src="./img/instructors/photo_3.jpg"
+                          srcset="./img/instructors/photo_3@x2.jpg 2x"
+                          width="238"
+                          height="212"
+                          alt="Фото природы"
+                        >
+                      </picture>
+                    </div>
+                    <div class="education__instructor">
+                      <div class="education__instructor-wrapper">
+                        <h3 class="education__instructor-name">Надежда Колесниченко</h3>
+                        <a href="#" class="education__instructor-link">
+                          <svg class="education-icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#social_vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <p class="education__instructor-text">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                    </div>
+                  </li>
+                  <li class="education__item swiper-slide" tabindex="0">
+                    <div class="education__image">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/instructors/photo_4_mobile.jpg 1x,
+                          ./img/tours/instructors/photo_4_mobile@x2.jpg 2x
+                          "
+                        >
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/instructors/photo_4_tablet.jpg 1x,
+                          ./img/tours/instructors/photo_4_tablet@x2.jpg 2x
+                          "
+                        >
+                        <img
+                          src="./img/instructors/photo_4.jpg"
+                          srcset="./img/instructors/photo_4@x2.jpg 2x"
+                          width="238"
+                          height="212"
+                          alt="Фото природы"
+                        >
+                      </picture>
+                    </div>
+                    <div class="education__instructor">
+                      <div class="education__instructor-wrapper">
+                        <h3 class="education__instructor-name">Федор Кайгородов</h3>
+                        <a href="#" class="education__instructor-link">
+                          <svg class="education-icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#social_vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <p class="education__instructor-text">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+                    </div>
+                  </li>
+                  <li class="education__item swiper-slide" tabindex="0">
+                    <div class="education__image">
+                      <picture>
+                        <source
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/instructors/photo_1_mobile.jpg 1x,
+                          ./img/tours/instructors/photo_1_mobile@x2.jpg 2x
+                          "
+                        >
+                        <source
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/instructors/photo_1_tablet.jpg 1x,
+                          ./img/tours/instructors/photo_1_tablet@x2.jpg 2x
+                          "
+                        >
+                        <img
+                          src="./img/instructors/photo_1.jpg"
+                          srcset="./img/instructors/photo_1@x2.jpg 2x"
+                          width="238"
+                          height="212"
+                          alt="Фото природы"
+                        >
+                      </picture>
+                    </div>
+                    <div class="education__instructor">
+                      <div class="education__instructor-wrapper">
+                        <h3 class="education__instructor-name">Александр Прокофьев</h3>
+                        <a href="#" class="education__instructor-link">
+                          <svg class="education-icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
+                            <use xlink:href="./img/sprite.svg#social_vk"></use>
+                          </svg>
+                        </a>
+                      </div>
+                      <p class="education__instructor-text">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="education__slider-buttons">
+                <button class="education__button education__button--prev swiper-button-prev">
+                  <span class="visually-hidden">Предыдущий слайд</span>
+                </button>
+                <button class="education__button education__button--next swiper-button-next">
+                  <span class="visually-hidden">Следующий слайд</span>
+                </button>
+              </div>
+            </div>
+            <div class="process">
+              <h2 class="process__subheader">Процесс обучения</h2>
+              <ul class="process__list">
+                <li class="process__item process__item--first">
+                  <svg class="process__icon" width="25" height="25" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#process_map"></use>
+                  </svg>
+                  <p class="process__text">Изучение спортивного туристского движения</p>
+                </li>
+                <li class="process__item process__item--second">
+                  <svg class="process__icon" width="24" height="24" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#process_boots"></use>
+                  </svg>
+                  <p class="process__text">Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
+                </li>
+                <li class="process__item process__item--third"></li>
+                <li class="process__item process__item--fourth">
+                  <svg class="process__icon" width="23" height="23" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#process_tree"></use>
+                  </svg>
+                  <p class="process__text">Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
+                </li>
+                <li class="process__item process__item--fifth">
+                  <svg class="process__icon" width="25" height="25" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#process_mountain"></use>
+                  </svg>
+                  <p class="process__text">Разъяснение сложности горных препятствий</p>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
       </main>
-      <footer>
-        <div class="container"></div>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <nav class="footer__navbar">
+            <div class="footer__logo">
+              <a class="footer__logo-link" href="#">
+                <svg class="footer__logo-desktop" width="205" height="62" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#logotype"></use>
+                </svg>
+                <svg class="footer__logo-tablet" width="118" height="34" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#logotype"></use>
+                </svg>
+                <svg class="footer__logo-mobile" width="112" height="34" aria-hidden="true" focusable="false">
+                  <use xlink:href="./img/sprite.svg#logotype"></use>
+                </svg>
+              </a>
+            </div>
+            <ul class="footer__list"><!--header__list--hidden-->
+              <li class="footer__item"><a class="footer__link" href="#">Туры</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Обучение</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">О нас</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Отзывы</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Фотографии</a></li>
+              <li class="footer__item"><a class="footer__link" href="#">Контакты</a></li>
+            </ul>
+            <a class="footer__phone" href="tel:+78007253232">8 800 725 32 32</a>
+          </nav>
+          <div class="footer__social">
+            <ul class="footer__social-list">
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" tabindex="0" aria-label="Ссылка на вконтакте">
+                  <svg width="18" height="auto" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#social_vk"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" tabindex="0" aria-label="Ссылка на одноклассники">
+                  <svg width="17" height="auto" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#social_ok"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer__social-item">
+                <a class="footer__social-link" href="#" tabindex="0" aria-label="Ссылка на реддит">
+                  <svg width="19" height="auto" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#social_reddit"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <a class="footer__policy" href="#">Политика конфиденциальности</a>
+        </div>
       </footer>
-    </div>
-
-    <!-- Модалки -->
-    <div class="modal modal--preload" data-modal="feedback">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Обычная модалка</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
-    </div>
-
-    <div class="modal modal--preload modal--fit-content modal--no-scale" data-modal="success">
-      <div class="modal__wrapper">
-        <div class="modal__overlay" data-close-modal></div>
-        <div class="modal__content">
-          <p class="modal__description">Размер этой модалки зависит от ширины контента,<br> отключена анимация-скейл</p>
-          <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-            <svg width="15" height="15">
-              <use xlink:href="img/sprite.svg#icon-close"></use>
-            </svg>
-          </button>
-        </div>
-      </div>
     </div>
 
     <script src="js/vendor.min.js"></script>

@@ -1,0 +1,150 @@
+.video {
+  width: 482px;
+  flex-shrink: 0;
+
+  @include vp-1200 {
+    width: 442px;
+    height: 300px;
+    position: static;
+  }
+
+  @include vp-768 {
+    display: none;
+  }
+}
+
+.video__preview picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.video__preview {
+  position: relative;
+  width: 482px;
+  margin-top: 120px;
+
+  @include vp-1200 {
+    width: 442px;
+    height: 100%;
+    margin: 0;
+  }
+}
+
+.video__iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.video__iframe--hidden {
+  display: none;
+}
+
+.video__iframe--open {
+  display: block;
+}
+
+.video__overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.video__overlay--open {
+  display: flex;
+}
+
+.video__overlay--hidden {
+  display: none;
+}
+
+.video__button-group {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.2);
+}
+
+.video__button {
+  width: 56px;
+  height: 56px;
+  background: rgba(255, 255, 255, 0.2);
+  border: solid 1px $color-default-white;
+  border-radius: 50%;
+  color: $color-default-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding: 2px;
+
+  @include vp-1200 {
+    width: 52px;
+    height: 52px;
+  }
+}
+
+.video__button:before {
+  content: "";
+  position: absolute;
+  width: 17px;
+  height: 17px;
+  left: 15px;
+  background-color: $color-default-white;
+  transform: rotate(45deg);
+  mask:
+    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%),
+    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%);
+  -webkit-mask:
+    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%),
+    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%);
+}
+
+.video__button:hover,
+.video__button:focus-visible {
+  border: solid 1px $color-resolution-blue;
+  background-color: $color-transparent;
+  outline: none;
+}
+
+.video__button:active {
+  background-color: $color-resolution-blue;
+  color: $color-default-white;
+}
+
+.video__button:hover > .video__play-icon,
+.video__button:focus-visible > .video__play-icon {
+  color: $color-default-white;
+  border: solid 1px $color-resolution-blue;
+  outline: none;
+}
+
+.video__button:active > .video__play-icon {
+  color: $color-default-white;
+}
+
+.video__button:hover::before,
+.video__button:active::before,
+.video__button:focus-visible::before {
+  background: $color-resolution-blue;
+  outline: none;
+}
+
+.video__button:disabled {
+  background: $color-default-white;
+  opacity: 0.5;
+}
+
+.video__button:disabled::before {
+  background: $color-resolution-blue;
+  opacity: 0.5;
+}

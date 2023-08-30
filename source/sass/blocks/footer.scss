@@ -1,0 +1,175 @@
+.footer {
+  background-color: $color-default-white;
+  color: $color-default-dark;
+}
+
+.footer__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 30px 120px;
+
+  @include vp-1440 {
+    padding: 44px 50px 40px 45px;
+  }
+
+  @include vp-1200 {
+    padding: 44px 50px 40px 45px;
+  }
+
+  @include vp-768 {
+    padding: 30px 20px;
+  }
+}
+
+.footer__navbar {
+  display: grid;
+  grid-template-columns: 205px 1fr 142px;
+  margin-bottom: 16px;
+
+  @include vp-1200 {
+    display: grid;
+    grid-template-columns: 118px 1fr;
+    margin-bottom: 37px;
+  }
+
+  @include vp-768 {
+    display: block;
+  }
+}
+
+.footer__logo {
+  @include vp-768 {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__logo-desktop {
+  @include vp-1200 {
+    display: none;
+  }
+
+  @include vp-768 {
+    display: none;
+  }
+}
+
+.footer__logo-tablet {
+  display: none;
+
+  @include vp-1200 {
+    display: block;
+  }
+
+  @include vp-768 {
+    display: none;
+  }
+}
+
+.footer__logo-mobile {
+  display: none;
+
+  @include vp-768 {
+    display: block;
+  }
+}
+
+.footer__list {
+  list-style: none;
+  display: flex;
+  gap: 32px;
+  margin: auto;
+  padding: 0;
+  color: inherit;
+  font-size: 16px;
+  line-height: 100%;
+
+  @include vp-1200 {
+    margin-right: 0;
+    font-size: 14px;
+  }
+
+  @include vp-768 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 15px;
+    column-gap: 80px;
+  }
+}
+
+.footer__item:nth-child(2) {
+  @include vp-768 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+}
+
+.footer__item:nth-child(3) {
+  @include vp-768 {
+    grid-column: 1 / 2;
+    grid-row: 3 / 4;
+  }
+}
+
+.footer__item:nth-child(4) {
+  @include vp-768 {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+  }
+}
+
+.footer__item:nth-child(5) {
+  @include vp-768 {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+  }
+}
+
+.footer__item:nth-child(6) {
+  @include vp-768 {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+  }
+}
+
+.footer__phone {
+  font-weight: 600;
+  color: inherit;
+  margin: auto;
+  margin-right: 0;
+  font-size: 18px;
+
+  @include vp-1200 {
+    display: none;
+  }
+}
+
+.footer__social-list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.footer__social-item {
+  width: 30px;
+  height: 30px;
+  border: solid 1px $color-black-border;
+  padding: 5px;
+}
+
+.footer__social-item:not(:last-child) {
+  margin-right: 15px;
+}
+
+.footer__social-link {
+  line-height: normal;
+  margin: auto;
+}
+
+.footer__policy {
+  display: block;
+  text-align: center;
+}

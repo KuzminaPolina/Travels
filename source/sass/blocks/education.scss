@@ -1,0 +1,270 @@
+.education {
+  position: relative;
+}
+
+.education__wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+
+  @include vp-1200 {
+    width: 100%;
+  }
+}
+
+.education__container {
+  padding: 30px 120px 0;
+  position: relative;
+
+  @include vp-1440 {
+    padding: 24px 45px 0;
+  }
+
+  @include vp-1200 {
+    padding: 24px 45px 0;
+  }
+
+  @include vp-768 {
+    padding: 25px 15px 0;
+  }
+}
+
+.education__header {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  margin-bottom: 30px;
+
+  @include vp-1200 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  @include vp-768 {
+    width: 60%;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 15px;
+  }
+}
+
+.education__header::after {
+  content: 'Обучение';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  color: $color-default-dark;
+  opacity: 0.03;
+
+  @include vp-1200 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-768 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.education__subheader {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 41px;
+
+  @include vp-1200 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 32px;
+  }
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 16px;
+  }
+}
+
+.education__slider-buttons {
+  position: absolute;
+  top: 215px;
+  right: 122px;
+  display: flex;
+  gap: 4px;
+
+  @include vp-1440 {
+    top: 221px;
+    right: 45px;
+  }
+
+  @include vp-1200 {
+    top: 221px;
+    right: 45px;
+  }
+
+  @include vp-768 {
+    right: 15px;
+    top: 243px;
+  }
+}
+
+.education__button {
+  width: 37px;
+  height: 35px;
+  background-color: $color-navy-blue;
+  position: static;
+  border: none;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: "←";
+  font-family: $ff-primary;
+  color: $color-default-white;
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: "→";
+  font-family: $ff-primary;
+  color: $color-default-white;
+  font-size: 18px;
+  padding-bottom: 3px
+}
+
+.education__text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  margin: 0;
+  margin-bottom: 58px;
+  width: 70%;
+
+  @include vp-1200 {
+    width: 80%;
+    margin-bottom: 67px;
+  }
+
+  @include vp-768 {
+    font-size: 14px;
+    line-height: 20px;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+}
+
+.education__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.education__content {
+  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+  margin-bottom: 51px;
+
+  @include vp-1200 {
+    margin-bottom: 43px;
+  }
+
+  @include vp-768 {
+    margin-bottom: 39px;
+  }
+}
+
+.education__item {
+  height: 100%;
+  padding: 19px;
+  border: 1px solid $color-default-white;
+  background: $color-default-white;
+  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+
+  @include vp-1200 {
+    height: 100%;
+    padding: 14px;
+  }
+
+  @include vp-768 {
+    height: 100%;
+    padding: 20px 20px;
+  }
+}
+
+.education__image {
+  margin-bottom: 16px;
+
+  @include vp-768 {
+    margin-bottom: 18px;
+  }
+}
+
+.education__image picture img{
+  width: 100%;
+  height: auto;
+}
+
+.education__instructor-name {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  margin: 0;
+}
+
+.education__instructor-link {
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: solid 1px rgba(2, 102, 193, 0.1);
+  margin-left: auto;
+  margin-top: auto;
+  margin-bottom: auto;
+
+  @include vp-768 {
+    margin-right: 10px;
+  }
+}
+
+.education-icon-vk {
+  margin-left: 3px;
+  margin-bottom: 1px;
+}
+
+.education__instructor-wrapper {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+}
+
+.education__instructor-text {
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 16px;
+  min-height: 64px;
+  margin-bottom: 0;
+
+  @include vp-1440 {
+    min-height: 108px;
+  }
+
+  @include vp-1200 {
+    line-height: 18px;
+    min-height: 108px;
+  }
+
+  @include vp-768 {
+    min-height: 72px;
+  }
+}
+
+.education__slider-container {
+  position: relative;
+}
