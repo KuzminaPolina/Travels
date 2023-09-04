@@ -1,0 +1,170 @@
+.about {
+  position: relative;
+}
+
+.about__container {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.about__image-container {
+  position: absolute;
+  top: -33px;
+  left: 0;
+  z-index: 0;
+
+  @include vp-1200 {
+    top: 60px;
+  }
+
+  @include vp-768 {
+    position: static;
+    margin-top: 18px;
+  }
+}
+
+.about__image-container picture img {
+  @include vp-1200 {
+    width: 475px;
+    height: 402px;
+  }
+
+  @include vp-768 {
+    width: 320px;
+    height: 402px;
+  }
+}
+
+.about__container {
+  z-index: 10;
+  position: relative;
+  width: 100%;
+
+  @include vp-768 {
+    position: static;
+  }
+}
+
+.about__info {
+  width: 50%;
+  margin-top: 130px;
+  margin-left: auto;
+  margin-right: 0;
+  padding-right: 120px;
+  padding-left: 15px;
+  padding-bottom: 66px;
+
+  @include vp-1440 {
+    padding-right: 45px;
+    padding-left: 45px;
+  }
+
+  @include vp-1200 {
+    margin: 0;
+    padding: 0;
+    margin-left: auto;
+    margin-right: 0;
+    padding-right: 45px;
+    padding-top: 50px;
+    padding-left: 15px;
+  }
+
+  @include vp-768 {
+    width: 100%;
+    padding-top: 45px;
+    padding-right: 15px;
+  }
+}
+
+.about__header {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  margin-bottom: 58px;
+
+  @include vp-1200 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 36px;
+  }
+
+  @include vp-768 {
+    width: 60%;
+    font-size: 22px;
+    line-height: 22px;
+    margin-bottom: 33px;
+  }
+}
+
+.about__header::after {
+  content: 'О  нас';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  color: $color-default-dark;
+  opacity: 0.03;
+
+  @include vp-1200 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-768 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.about__subheader {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 21px;
+  margin-bottom: 15px;
+
+  @include vp-1200 {
+    font-size: 18px;
+    line-height: 18px;
+    margin-bottom: 15px;
+  }
+
+  @include vp-768 {
+    font-size: 16px;
+    line-height: 16px;
+    margin-bottom: 18px;
+  }
+}
+
+.about__text {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 30px;
+  font-style: normal;
+
+  @include vp-1200 {
+    width: 342px;
+  }
+
+  @include vp-768 {
+    width: auto;
+    line-height: 20px;
+    margin-bottom: 42px;
+  }
+}
+
+.about__image-clouds {
+  position: absolute;
+  top: -200px;
+  right: 0;
+
+  @include vp-1200 {
+    display: none;
+  }
+}

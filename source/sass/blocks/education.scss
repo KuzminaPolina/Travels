@@ -13,15 +13,15 @@
 }
 
 .education__container {
-  padding: 30px 120px 0;
+  padding: 30px 90px 0;
   position: relative;
 
   @include vp-1440 {
-    padding: 24px 45px 0;
+    padding: 24px 15px 0;
   }
 
   @include vp-1200 {
-    padding: 24px 45px 0;
+    padding: 24px 25px 0;
   }
 
   @include vp-768 {
@@ -37,11 +37,13 @@
   z-index: 10;
   margin: 0;
   margin-bottom: 30px;
+  padding-left: 30px;
 
   @include vp-1200 {
     font-size: 25px;
     line-height: 25px;
     margin-bottom: 20px;
+    padding-left: 20px;
   }
 
   @include vp-768 {
@@ -49,6 +51,7 @@
     font-size: 22px;
     line-height: 22px;
     margin-bottom: 15px;
+    padding-left: 0;
   }
 }
 
@@ -62,15 +65,18 @@
   line-height: 55px;
   color: $color-default-dark;
   opacity: 0.03;
+  padding-left: 30px;
 
   @include vp-1200 {
     font-size: 40px;
     line-height: 40px;
+    padding-left: 20px;
   }
 
   @include vp-768 {
     font-size: 26px;
     line-height: 26px;
+    padding-left: 0;
   }
 }
 
@@ -79,40 +85,44 @@
   font-weight: 700;
   line-height: 21px;
   margin: 0;
-  margin-bottom: 41px;
+  margin-bottom: 11px;
+  padding-left: 30px;
 
   @include vp-1200 {
     font-size: 18px;
     line-height: 18px;
-    margin-bottom: 32px;
+    margin-bottom: 0;
+    padding-left: 20px;
   }
 
   @include vp-768 {
     font-size: 16px;
     line-height: 16px;
+    margin-bottom: 32px;
+    padding-left: 0;
   }
 }
 
 .education__slider-buttons {
   position: absolute;
-  top: 215px;
-  right: 122px;
+  top: 14px;
+  right: 32px;
   display: flex;
   gap: 4px;
 
   @include vp-1440 {
-    top: 221px;
-    right: 45px;
+    top: 0;
+    right: 30px;
   }
 
   @include vp-1200 {
-    top: 221px;
-    right: 45px;
+    top: 13px;
+    right: 20px;
   }
 
   @include vp-768 {
-    right: 15px;
-    top: 243px;
+    right: 0;
+    top: 11px;
   }
 }
 
@@ -148,10 +158,12 @@
   margin: 0;
   margin-bottom: 58px;
   width: 70%;
+  padding-left: 30px;
 
   @include vp-1200 {
     width: 80%;
     margin-bottom: 67px;
+    padding-left: 20px;
   }
 
   @include vp-768 {
@@ -159,6 +171,7 @@
     line-height: 20px;
     width: 100%;
     margin-bottom: 50px;
+    padding-left: 0;
   }
 }
 
@@ -166,35 +179,51 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  //padding: 30px 20px;
+
+  @include vp-768 {
+    padding: 0;
+  }
 }
 
 .education__content {
-  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
-  margin-bottom: 51px;
+  //box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+  margin-bottom: 21px;
+  padding: 30px 30px;
 
   @include vp-1200 {
-    margin-bottom: 43px;
+    //margin-bottom: 43px;
+    margin-bottom: 16px;
+    padding: 30px 20px;
   }
 
   @include vp-768 {
-    margin-bottom: 39px;
+    padding: 0;
+    margin-bottom: 38px;
+    box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
   }
 }
 
 .education__item {
   height: 100%;
+  width: 100%;
+  object-fit: cover;
   padding: 19px;
   border: 1px solid $color-default-white;
   background: $color-default-white;
   box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.1);
+  //width: 278px;
 
   @include vp-1200 {
     height: 100%;
     padding: 14px;
+    //width: 206px;
   }
 
   @include vp-768 {
     height: 100%;
+    width: 100%;
+    max-width: 100%;
     padding: 20px 20px;
   }
 }
@@ -266,5 +295,9 @@
 }
 
 .education__slider-container {
+  position: relative;
+}
+
+.education__buttons-positioning {
   position: relative;
 }

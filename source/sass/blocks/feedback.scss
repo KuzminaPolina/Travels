@@ -1,0 +1,275 @@
+.feedback {
+  position: relative;
+}
+
+.feedback__content {
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 26px 0 0 90px;
+
+  @include vp-1440 {
+    padding: 26px 0 0 15px;
+  }
+
+  @include vp-1200 {
+    padding: 26px 0 0 15px;
+  }
+
+  @include vp-768 {
+    padding: 26px 0 0;
+  }
+}
+
+.feedback__container {
+  padding: 27px 30px 30px;
+
+  @include vp-768 {
+    padding: 15px;
+  }
+}
+
+.feedback__header {
+  font-size: 35px;
+  font-weight: 800;
+  line-height: 35px;
+  position: relative;
+  z-index: 10;
+  margin: 0;
+  margin-left: 30px;
+
+  @include vp-1200 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-top: 34px;
+  }
+
+  @include vp-768 {
+    font-size: 22px;
+    line-height: 22px;
+    margin: 0;
+    margin-left: 15px;
+    margin-bottom: 19px;
+  }
+}
+
+.feedback__header::after {
+  content: 'Отзывы';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  font-size: 55px;
+  font-weight: 800;
+  line-height: 55px;
+  color: $color-default-dark;
+  opacity: 0.03;
+
+  @include vp-1200 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+
+  @include vp-768 {
+    font-size: 26px;
+    line-height: 26px;
+  }
+}
+
+.feedback__slider {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  //padding: 27px 30px 30px;
+
+  @include vp-768 {
+    //padding: 15px;
+  }
+}
+
+.feedback__item {
+  padding: 20px 40px 20px 20px;
+  box-shadow: 0px 0px 30px 0px rgba(28, 51, 116, 0.10);
+  max-width: 790px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-1200 {
+    padding: 20px 30px 20px 20px;
+    max-width: 560px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  @include vp-768 {
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.feedback__slide-content {
+  display: grid;
+  grid-template-columns: 258px 442px;
+  column-gap: 30px;
+
+  @include vp-1440 {
+    grid-template-columns: 258px 1fr;
+  }
+
+  @include vp-1200 {
+    grid-template-columns: 186px 1fr;
+  }
+
+  @include vp-768 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.feedback__text,
+.feedback__name,
+.feedback__data {
+  padding: 0;
+  margin: 0;
+}
+
+
+.feedback__photo {
+  width: 100%;
+  height: auto;
+}
+
+.feedback__photo picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feedback__info {
+  padding-top: 13px;
+  display: grid;
+  grid-template-rows: 164px 33px;
+  row-gap: 26px;
+
+  @include vp-1200 {
+    padding-top: 0;
+    display: grid;
+    grid-template-rows: 185px 31px;
+    row-gap: 15px;
+  }
+
+  @include vp-768 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.feedback__text-block {
+  grid-row: 1 / 2;
+}
+
+.feedback__info-block {
+  grid-row: 2 / 3;
+}
+
+.feedback__text {
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  margin-bottom: 10px;
+
+  @include vp-1200 {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+
+.feedback__text:last-child {
+  margin-bottom: 0;
+}
+
+.feedback__slider-buttons {
+  position: absolute;
+  top: 9px;
+  right: 120px;
+  display: flex;
+  gap: 4px;
+
+  @include vp-1440 {
+    right: 45px;
+  }
+
+  @include vp-1200 {
+    top: 5px;
+    right: 45px;
+  }
+
+  @include vp-768 {
+    right: 15px;
+    top: 13px;
+  }
+}
+.feedback__button {
+  width: 37px;
+  height: 35px;
+  background-color: $color-navy-blue;
+  position: static;
+  border: none;
+}
+
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+  content: "←";
+  font-family: $ff-primary;
+  color: $color-default-white;
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+
+.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
+  content: "→";
+  font-family: $ff-primary;
+  color: $color-default-white;
+  font-size: 18px;
+  padding-bottom: 3px
+}
+
+.feedback__name {
+  font-size: 13px;
+  line-height: 13px;
+  font-weight: 700;
+  margin-bottom: 8px;
+  //margin-top: 24px;
+
+  @include vp-1200 {
+    font-size: 12px;
+  }
+
+  @include vp-768 {
+    margin-top: 0;
+  }
+}
+
+.feedback__data {
+  font-size: 12px;
+  font-weight: 300;
+  line-height: 12px;
+}
+
+.feedback__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  @include vp-768 {
+    margin-bottom: 20px;
+  }
+}
+
+.feedback__buttons-positioning {
+  position: relative;
+}

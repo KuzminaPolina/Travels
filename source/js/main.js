@@ -3,6 +3,11 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/video';
 
+// let desktopBreakpoint = window.matchMedia('(min-width: 1200px)');
+// let tabletBreakpoint = window.matchMedia('(min-width: 768px) and (max-width: 1199px)');
+// let mobileBreakpoint = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
+
+// let init = false;
 // ---------------------------------
 const Swiper = window.Swiper;
 const initHeaderSlider = () =>
@@ -20,7 +25,7 @@ const initHeaderSlider = () =>
       768: {
         slidesPerView: 1,
       },
-      1440: {
+      1200: {
         slidesPerView: 1,
       },
     },
@@ -54,7 +59,7 @@ const initCatalogSlider = () =>
     },
   });
 
-const initINstructorsSlider = () =>
+const initInstructorsSlider = () =>
   new Swiper('.education__content', {
     direction: 'horizontal',
     loop: false,
@@ -80,6 +85,91 @@ const initINstructorsSlider = () =>
     },
   });
 
+
+const initFeedbackSlider = () =>
+  new Swiper('.feedback__container', {
+    direction: 'horizontal',
+    loop: false,
+    navigation: {
+      nextEl: '.feedback__button--next',
+      prevEl: '.feedback__button--prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      768: {
+        slidesPerView: 1.2,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+      },
+      1200: {
+        slidesPerView: 1.5,
+        slidesPerGroup: 1,
+        spaceBetween: 30,
+      },
+    },
+  });
+
+const initGallerySlider = () =>
+  new Swiper('.photogallery__content', {
+    direction: 'horizontal',
+    loop: false,
+    navigation: {
+      nextEl: '.photogallery__button--next',
+      prevEl: '.photogallery__button--prev',
+    },
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        slidesPerGroup: 1,
+      },
+      768: {
+        slidesPerView: 1.5,
+        slidesPerGroup: 1,
+        spaceBetween: 5,
+      },
+      1200: {
+        slidesPerView: 2.5,
+        slidesPerGroup: 2,
+        spaceBetween: 5,
+      },
+    },
+  });
+// const initDesktopOnlySlider = () =>
+//  new Swiper('.advantages__container', {
+//    slidesPerView: 3.6,
+//    centeredSlides: true,
+//    loop: true,
+//    spaceBetween: 30,
+//    direction: 'horizontal',
+
+//    navigation: {
+//      nextEl: '.advantages__button--next',
+//      prevEl: '.advantages__button--prev',
+//    },
+
+//    breakpoints: {
+//      1200: {
+//        slidesPerView: 3.6,
+//        spaceBetween: 30,
+//      },
+//    },
+//  });
+
+// const breakpointChecker = () => {
+//  if (desktopBreakpoint.matches) {
+//    if (!init) {
+//      init = true;
+//      initDesktopOnlySlider();
+//    }
+//  } else if (!tabletBreakpoint.matches && !mobileBreakpoint.matches) {
+//    Swiper.destroy();
+//    init = false;
+//  }
+// };
+
 window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
@@ -90,7 +180,14 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   initHeaderSlider();
   initCatalogSlider();
-  initINstructorsSlider();
+  initInstructorsSlider();
+  initFeedbackSlider();
+  initGallerySlider();
+  // breakpointChecker();
+
+  // desktopBreakpoint.addEventListener(breakpointChecker);
+  // tabletBreakpoint.addEventListener(breakpointChecker);
+  // mobileBreakpoint.addEventListener(breakpointChecker);
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'
@@ -102,6 +199,10 @@ window.addEventListener('DOMContentLoaded', () => {
     form.init();
   });
 });
+
+// window.addEventListener('resize', function () {
+// breakpointChecker();
+// });
 
 // ---------------------------------
 
