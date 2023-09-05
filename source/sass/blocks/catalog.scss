@@ -346,6 +346,15 @@
   position: absolute;
   top: -20px;
   right: 0;
+
+  @include vp-1200 {
+    top: -95px;
+  }
+
+  @include vp-1200 {
+    bottom: -96px;
+    top: auto;
+  }
 }
 
 .catalog__background-small {

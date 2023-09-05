@@ -2,6 +2,10 @@
   position: relative;
   margin-top: 130px;
 
+  @include vp-1200 {
+    margin-top: 0;
+  }
+
   @include vp-768 {
     margin-top: 6px;
   }
@@ -20,7 +24,8 @@
   }
 
   @include vp-1200 {
-    padding: 24px 25px 0;
+    padding: 0 25px 0;
+    margin-bottom: 0;
   }
 
   @include vp-768 {
@@ -91,7 +96,7 @@
   }
 
   @include vp-1200 {
-    bottom: 0;
+    bottom: 18px;
     right: 45px;
   }
 
@@ -134,9 +139,11 @@
   width: 70%;
 
   @include vp-1200 {
-    width: 80%;
-    margin-bottom: 67px;
+    width: 60%;
+    margin-bottom: 36px;
     padding-left: 20px;
+    font-size: 14px;
+    font-style: normal;
   }
 
   @include vp-768 {
@@ -175,14 +182,19 @@
 
 .photogallery__item {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 5px;
+  grid-template-columns: 48% 51.3%;
+  column-gap: 5px;
   height: 100%;
   width: auto;
   object-fit: cover;
 
+  @include vp-1200 {
+    grid-template-columns: 46.5% 52.5%;
+  }
+
   @include vp-768 {
     row-gap: 3px;
+    grid-template-columns: 49.5% 50%;
   }
 }
 

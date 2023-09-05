@@ -3,11 +3,6 @@ import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/video';
 
-// let desktopBreakpoint = window.matchMedia('(min-width: 1200px)');
-// let tabletBreakpoint = window.matchMedia('(min-width: 768px) and (max-width: 1199px)');
-// let mobileBreakpoint = window.matchMedia('(min-width: 0px) and (max-width: 767px)');
-
-// let init = false;
 // ---------------------------------
 const Swiper = window.Swiper;
 const initHeaderSlider = () =>
@@ -126,7 +121,7 @@ const initGallerySlider = () =>
         slidesPerGroup: 1,
       },
       768: {
-        slidesPerView: 1.5,
+        slidesPerView: 1.3,
         slidesPerGroup: 1,
         spaceBetween: 5,
       },
@@ -137,38 +132,24 @@ const initGallerySlider = () =>
       },
     },
   });
-// const initDesktopOnlySlider = () =>
-//  new Swiper('.advantages__container', {
-//    slidesPerView: 3.6,
-//    centeredSlides: true,
-//    loop: true,
-//    spaceBetween: 30,
-//    direction: 'horizontal',
 
-//    navigation: {
-//      nextEl: '.advantages__button--next',
-//      prevEl: '.advantages__button--prev',
-//    },
 
-//    breakpoints: {
-//      1200: {
-//        slidesPerView: 3.6,
-//        spaceBetween: 30,
-//      },
-//    },
-//  });
-
-// const breakpointChecker = () => {
-//  if (desktopBreakpoint.matches) {
-//    if (!init) {
-//      init = true;
-//      initDesktopOnlySlider();
-//    }
-//  } else if (!tabletBreakpoint.matches && !mobileBreakpoint.matches) {
-//    Swiper.destroy();
-//    init = false;
-//  }
-// };
+const initDesktopOnlySlider = () => {
+  if (window.matchMedia('(min-width: 1200px)').matches) {
+    // eslint-disable-next-line no-new
+    new Swiper('.advantages__container', {
+      slidesPerView: 3.6,
+      centeredSlides: true,
+      loop: true,
+      spaceBetween: 30,
+      direction: 'horizontal',
+      navigation: {
+        nextEl: '.advantages__button--next',
+        prevEl: '.advantages__button--prev',
+      },
+    });
+  }
+};
 
 window.addEventListener('DOMContentLoaded', () => {
 
@@ -183,11 +164,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initInstructorsSlider();
   initFeedbackSlider();
   initGallerySlider();
-  // breakpointChecker();
+  initDesktopOnlySlider();
 
-  // desktopBreakpoint.addEventListener(breakpointChecker);
-  // tabletBreakpoint.addEventListener(breakpointChecker);
-  // mobileBreakpoint.addEventListener(breakpointChecker);
   // ---------------------------------
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

@@ -636,7 +636,27 @@
           </div>
           <div class="catalog__background-big">
             <picture>
-              <img class="catalog__background-big-img" src="img/tours/clouds_background.png" srcset="img/tours/clouds_background@x2.png 2x" width="602" height="1364" alt="photo 1">
+              <source
+                media="(max-width: 767px)"
+                srcset="
+                ./img/tours/clouds_background_mobile.png 1x,
+                ./img/tours/clouds_background_mobile@x2.png 2x
+                "
+              >
+              <source
+                media="(max-width: 1199px)"
+                srcset="
+                ./img/tours/clouds_background_tablet.png 1x,
+                ./img/tours/clouds_background_tablet@x2.png 2x
+                "
+              >
+              <img
+                class="catalog__background-big-img"
+                src="img/tours/clouds_background.png"
+                srcset="img/tours/clouds_background@x2.png 2x"
+                width="602" height="1364"
+                alt="Задний фон большой"
+              >
             </picture>
           </div>
           <div class="catalog__background-small">
@@ -1161,7 +1181,7 @@
                       </svg>
                     </div>
                     <h3 class="advantages__subheader">Бережное отношение к природе</h3>
-                    <p class="advantages__text">Уделяем первостепенное внимание охране окружающей среды  и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+                    <p class="advantages__text">Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
                   </li>
                 </ul>
               </div>
@@ -1330,6 +1350,136 @@
             </ul>
           </div>
         </section>
+        <section class="form">
+          <div class="form__container">
+            <div class="form__background">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                  ./img/form/background-mobile.jpg 1x,
+                  ./img/form/background-mobile@x2.jpg 2x
+                  "
+                >
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                  ./img/form/background-tablet.jpg 1x,
+                  ./img/form/background-tablet@x2.jpg 2x
+                  "
+                >
+                <img
+                  src="./img/form/background-desktop.jpg"
+                  srcset="./img/form/background-desktop@x2.jpg 2x"
+                  width="1440"
+                  height="800"
+                  alt="Лес в тумане"
+                >
+              </picture>
+            </div>
+            <div class="form__content">
+              <h2 class="form__header">Остались вопросы?</h2>
+              <p class="form__text">Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
+              <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
+                <fieldset>
+                  <div
+                  class="info__input custom-input"
+                  data-validate-type="text"
+                  data-on-input-validate
+                  data-limitation="letters"
+                  data-message-base="Заполнение обязательно"
+                  data-message-extra="Заполнено некорректно"
+                  data-required>
+                    <label for="name">
+                      <input id="name" aria-label="name" type="text" name="name" placeholder="Как к вам обращаться?" data-required>
+                    </label>
+                  </div>
+                  <div
+                  class="info__input custom-input"
+                  data-validate-type="phone"
+                  data-on-input-validate
+                  data-message-base="Заполнение обязательно"
+                  data-message-extra="Заполнено некорректно"
+                  data-phone-length="18"
+                  data-required>
+                    <label for="phone">
+                      <input id="phone" aria-label="phone" type="tel" name="phone" placeholder="Телефон" data-required>
+                    </label>
+                  </div>
+                </fieldset>
+                <button class="form-input form__submit" type="submit" aria-label="Отправить">Отправить</button>
+              </form>
+            </div>
+          </div>
+        </section>
+        <section class="contacts">
+          <div class="contacts__container">
+            <div class="contacts__info">
+              <h2 class="contacts__header">Контакты</h2>
+              <p class="contacts__foreword">Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
+              <ul class="contacts__list">
+                <li class="contacts__item">
+                  <div class="contacts__icon-wrapper">
+                    <svg class="contacts__icon" width="26" height="26" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/sprite.svg#phone"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__text">
+                    <p class="contacts__subheader">Телефон</p>
+                    <p class="contacts__data"><a href="tel:+89837454545">8 983 745 45 45</a></p>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__icon-wrapper">
+                    <svg class="contacts__icon" width="26" height="26" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/sprite.svg#mail"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__text">
+                    <p class="contacts__subheader">E-mail</p>
+                    <p class="contacts__data"><a href="mailto:info@lifetour.com">info@lifetour.com</a></p>
+                  </div>
+                </li>
+                <li class="contacts__item">
+                  <div class="contacts__icon-wrapper">
+                    <svg class="contacts__icon" width="26" height="26" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/sprite.svg#pin_stroke"></use>
+                    </svg>
+                  </div>
+                  <div class="contacts__text">
+                    <p class="contacts__subheader">Адрес</p>
+                    <p class="contacts__data">г. Москва, пр-т Мира, д. 14, офис 101</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="contacts__map">
+              <picture>
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                  ./img/map/map-mobile.jpg 1x,
+                  ./img/map/map-mobile@x2.jpg 2x
+                  "
+                >
+                <source
+                  media="(max-width: 1199px)"
+                  srcset="
+                  ./img/map/map-tablet.jpg 1x,
+                  ./img/map/map-tablet@x2.jpg 2x
+                  "
+                >
+                <img
+                  src="./img/map/map-desktop.jpg"
+                  srcset="./img/map/map-desktop@x2.jpg 2x"
+                  width="585"
+                  height="324"
+                  alt="Карта"
+                >
+              </picture>
+            </div>
+          </div>
+        </section>
       </main>
 
       <footer class="footer">
@@ -1340,7 +1490,7 @@
                 <svg class="footer__logo-desktop" width="205" height="62" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/sprite.svg#logotype"></use>
                 </svg>
-                <svg class="footer__logo-tablet" width="118" height="34" aria-hidden="true" focusable="false">
+                <svg class="footer__logo-tablet" width="120" height="34" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/sprite.svg#logotype"></use>
                 </svg>
                 <svg class="footer__logo-mobile" width="112" height="34" aria-hidden="true" focusable="false">
