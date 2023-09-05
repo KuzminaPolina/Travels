@@ -50,17 +50,36 @@
         width: 100%;
       }
 
+      &:active {
+        border: 1px solid $color-resolution-blue;
+        color: $color-resolution-blue;
+      }
+
       &:hover {
-        border: 2px solid rgba(#000000, 0.5);
+        border: 1px solid $color-navy-blue;
       }
 
       &:focus {
-        border: 2px solid rgba(#000000, 0.8);
+        outline: none;
+        border: 1px solid $color-resolution-blue;
+      }
+
+      &:disabled {
+        color: $color-default-white;
+        border-bottom: solid 1px $color-default-white;
+      }
+
+      &:hover::placeholder {
+        color: $color-navy-blue;
       }
     }
 
     input::placeholder {
       font-size: 16px;
+
+      &:hover {
+        color: $color-navy-blue;
+      }
 
       @include vp-1200 {
         font-size: 14px;
@@ -93,22 +112,25 @@
   &.is-invalid {
     input,
     textarea {
-      border: 2px solid #ff1553;
+      border: 1px solid #ff1553;
 
       &:focus,
       &:hover {
-        border: 2px solid rgba(#ff1553, 0.5);
+        border: 1px solid rgba(#ff1553, 0.5);
       }
     }
   }
 
   &.is-valid {
     input {
-      border: 2px solid #22b259;
+      border: 1px solid $color-resolution-blue;
 
-      &:focus,
+      &:focus {
+        border: 1px solid $color-resolution-blue;
+      }
       &:hover {
-        border: 2px solid rgba(#22b259, 0.5);
+        border: 1px solid $color-navy-blue;
+        color: $color-navy-blue;
       }
     }
   }

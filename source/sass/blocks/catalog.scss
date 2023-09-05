@@ -282,15 +282,40 @@
   height: 35px;
   background-color: $color-navy-blue;
   position: static;
-  border: none;
+  border: solid 1px $color-navy-blue;
+  color: $color-default-white;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-default-white;
+    border: solid 1px $color-resolution-blue;
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+  }
 }
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
   content: "←";
   font-family: $ff-primary;
-  color: $color-default-white;
+  color: inherit;
   font-size: 18px;
   padding-bottom: 3px;
+}
+
+.swiper-button-prev:hover:after, .swiper-rtl .swiper-button-next:hover:after {
+  color: $color-resolution-blue;
+}
+
+.swiper-button-prev:active:after, .swiper-rtl .swiper-button-next:active:after {
+  color:$color-default-white;
+}
+
+.swiper-button-prev:focus-visible:after, .swiper-rtl .swiper-button-next:focus-visible:after {
+  color: $color-resolution-blue;
 }
 
 .swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
@@ -299,6 +324,18 @@
   color: $color-default-white;
   font-size: 18px;
   padding-bottom: 3px
+}
+
+.swiper-button-next:hover:after, .swiper-rtl .swiper-button-prev:hover:after {
+  color: $color-resolution-blue;
+}
+
+.swiper-button-next:active:after, .swiper-rtl .swiper-button-prev:active:after {
+  color:$color-default-white;
+}
+
+.swiper-button-next:focus-visible:after, .swiper-rtl .swiper-button-prev:focus-visible:after {
+  color: $color-resolution-blue;
 }
 
 .catalog__stars {

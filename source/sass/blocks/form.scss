@@ -123,3 +123,25 @@
   }
 }
 
+.form__submit:hover {
+  background-color: $color-default-white;
+  color: $color-resolution-blue;
+  border: solid 1px $color-resolution-blue;
+}
+
+.form__submit:active {
+  background-color: $color-resolution-blue;
+  color: $color-default-white;
+  border: solid 1px $color-resolution-blue;
+}
+
+.form__submit:focus-visible {
+  outline: none;
+  background-color: $color-default-white;
+  color: $color-resolution-blue;
+  border: solid 1px $color-resolution-blue;
+}
+
+.form__submit:disabled {
+  opacity: 0.1;
+}

@@ -96,9 +96,26 @@
 .video__button:before {
   content: "";
   position: absolute;
-  width: 17px;
-  height: 17px;
+  width: 16px;
+  height: 16px;
   left: 15px;
+  background-color: $color-default-white;
+  transform: rotate(45deg);
+  mask:
+    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%),
+    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%);
+  -webkit-mask:
+    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%),
+    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%);
+}
+
+.video__button:after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 21px;
+  left: 18px;
   background-color: $color-default-white;
   transform: rotate(45deg);
   mask:
@@ -112,39 +129,40 @@
 .video__button:hover,
 .video__button:focus-visible {
   border: solid 1px $color-resolution-blue;
-  background-color: $color-transparent;
-  outline: none;
+}
+
+.video__button:hover:before,
+.video__button:focus-visible:before {
+  background-color: $color-resolution-blue;
+}
+
+.video__button:hover:after {
+  background-color: $color-default-white;
 }
 
 .video__button:active {
   background-color: $color-resolution-blue;
-  color: $color-default-white;
-}
-
-.video__button:hover > .video__play-icon,
-.video__button:focus-visible > .video__play-icon {
-  color: $color-default-white;
   border: solid 1px $color-resolution-blue;
-  outline: none;
 }
 
-.video__button:active > .video__play-icon {
-  color: $color-default-white;
+.video__button:active:before {
+  background-color: $color-resolution-blue;
+  border: solid 2px $color-resolution-blue;
 }
 
-.video__button:hover::before,
-.video__button:active::before,
-.video__button:focus-visible::before {
-  background: $color-resolution-blue;
-  outline: none;
+.video__button:active:after {
+  background-color: $color-default-white;
+  border: solid 2px $color-default-white;
 }
 
 .video__button:disabled {
-  background: $color-default-white;
-  opacity: 0.5;
+  border: solid 1px rgba(2, 102, 193, 0.1);
+}
+
+.video__button:disabled::after {
+  background-color: rgba(2, 102, 193, 0.1);
 }
 
 .video__button:disabled::before {
-  background: $color-resolution-blue;
-  opacity: 0.5;
+  background-color: rgba(2, 102, 193, 0.1);
 }

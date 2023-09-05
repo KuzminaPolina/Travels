@@ -1,7 +1,7 @@
 .slider {
   width: 100%;
   max-width: 1440px;
-   margin: 0 auto;
+  margin: 0 auto;
 
   @include vp-1200 {
     width: 100%;
@@ -230,6 +230,30 @@
     width: 180px;
     padding: 16px 0;
   }
+}
+
+.slider__more-button:hover {
+  background-color: $color-default-white;
+  color: $color-resolution-blue;
+  border: solid 1px $color-resolution-blue;
+}
+
+.slider__more-button:active {
+  background-color: $color-resolution-blue;
+  color: $color-default-white;
+  border: solid 1px $color-resolution-blue;
+}
+
+.slider__more-button:focus-visible {
+  outline: none;
+  background-color: $color-default-white;
+  color: $color-resolution-blue;
+  border: solid 1px $color-resolution-blue;
+}
+
+.slider__more-button:disabled {
+  opacity: 0.1;
+  cursor: default;
 }
 
 .slider__pagination {

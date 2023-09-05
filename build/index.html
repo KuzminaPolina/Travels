@@ -11,6 +11,9 @@
     >
     <title>Путешествия по Кавказу</title>
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""/>
   </head>
   <body>
     <div class="wrapper">
@@ -102,9 +105,6 @@
                           <div class="video__overlay video__overlay--open">
                             <div class="video__button-group">
                               <button class="video__button" type="button">
-                                <svg class="video__play-icon" width="12" height="22" aria-hidden="true" focusable="false">
-                                  <use xlink:href="./img/sprite.svg#play"></use>
-                                </svg>
                                 <span class="visually-hidden">Кнопка воспроизведения</span>
                               </button>
                             </div>
@@ -1377,7 +1377,7 @@
                 >
               </picture>
             </div>
-            <div class="form__content">
+            <div class="form__content" data-form-validate data-callback="base">
               <h2 class="form__header">Остались вопросы?</h2>
               <p class="form__text">Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
               <form action="https://echo.htmlacademy.ru/" method="post" autocomplete="off" novalidate>
@@ -1387,8 +1387,8 @@
                   data-validate-type="text"
                   data-on-input-validate
                   data-limitation="letters"
-                  data-message-base="Заполнение обязательно"
-                  data-message-extra="Заполнено некорректно"
+                  data-message-base=""
+                  data-message-extra=""
                   data-required>
                     <label for="name">
                       <input id="name" aria-label="name" type="text" name="name" placeholder="Как к вам обращаться?" data-required>
@@ -1398,8 +1398,8 @@
                   class="info__input custom-input"
                   data-validate-type="phone"
                   data-on-input-validate
-                  data-message-base="Заполнение обязательно"
-                  data-message-extra="Заполнено некорректно"
+                  data-message-base=""
+                  data-message-extra=""
                   data-phone-length="18"
                   data-required>
                     <label for="phone">
@@ -1453,30 +1453,9 @@
                 </li>
               </ul>
             </div>
-            <div class="contacts__map">
-              <picture>
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                  ./img/map/map-mobile.jpg 1x,
-                  ./img/map/map-mobile@x2.jpg 2x
-                  "
-                >
-                <source
-                  media="(max-width: 1199px)"
-                  srcset="
-                  ./img/map/map-tablet.jpg 1x,
-                  ./img/map/map-tablet@x2.jpg 2x
-                  "
-                >
-                <img
-                  src="./img/map/map-desktop.jpg"
-                  srcset="./img/map/map-desktop@x2.jpg 2x"
-                  width="585"
-                  height="324"
-                  alt="Карта"
-                >
-              </picture>
+            <div class="contacts__map map">
+              <div class="map__id" id="map">
+              </div>
             </div>
           </div>
         </section>
@@ -1540,5 +1519,8 @@
 
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
   </body>
 </html>
