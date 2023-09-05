@@ -348,17 +348,3 @@
   width: 442px;
   height: auto;
 }
-
-.slider__podcast {
-  margin-top: 99px;
-  width: 340px;
-  height: 220px;
-  border: 2px solid $color-default-white;
-  background: rgba(245, 246, 250, 0.90);
-  padding: 39px;
-
-  @include vp-1200 {
-    margin: 0 auto;
-    margin-top: 34px;
-  }
-}

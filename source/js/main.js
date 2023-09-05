@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import './modules/video';
+import './modules/menu';
 
 const leaflet = () => {
   const L = window.L;
