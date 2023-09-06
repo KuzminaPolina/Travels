@@ -169,6 +169,21 @@
   }
 }
 
+.header__item:hover {
+  border-bottom: solid 1px $color-default-white;
+}
+
+.header__item:active {
+  border-bottom: solid 1px $color-transparent;
+}
+
+.header__link:focus-visible,
+.header__phone:focus-visible,
+.header__logo-link:focus-visible {
+  outline: solid 1px $color-default-white;
+  outline-offset: 2px;
+}
+
 .header__phone {
   font-weight: 600;
   color: inherit;

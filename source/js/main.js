@@ -6,7 +6,7 @@ import './modules/menu';
 
 const leaflet = () => {
   const L = window.L;
-  const map = L.map('map').setView([55.81322, 37.63729], 19);
+  const map = L.map('map').setView([55.81322, 37.63729], 12);
 
   const purpleIcon = L.icon({
     iconUrl: './img/map/pin_filled.png',
@@ -27,11 +27,16 @@ const Swiper = window.Swiper;
 const initHeaderSlider = () =>
   new Swiper('.slider__container', {
     direction: 'horizontal',
-    loop: !0,
+    loop: true,
     pagination: {
       el: '.slider__pagination',
-      clickable: !0,
+      clickable: true,
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
+    speed: 300,
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -54,6 +59,10 @@ const initCatalogSlider = () =>
     navigation: {
       nextEl: '.catalog__button--next',
       prevEl: '.catalog__button--prev',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
     },
     breakpoints: {
       320: {
@@ -80,6 +89,10 @@ const initInstructorsSlider = () =>
     navigation: {
       nextEl: '.education__button--next',
       prevEl: '.education__button--prev',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
     },
     breakpoints: {
       320: {
@@ -108,6 +121,10 @@ const initFeedbackSlider = () =>
       nextEl: '.feedback__button--next',
       prevEl: '.feedback__button--prev',
     },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
+    },
     breakpoints: {
       320: {
         slidesPerView: 1,
@@ -133,6 +150,10 @@ const initGallerySlider = () =>
     navigation: {
       nextEl: '.photogallery__button--next',
       prevEl: '.photogallery__button--prev',
+    },
+    keyboard: {
+      enabled: true,
+      onlyInViewport: false,
     },
     breakpoints: {
       320: {
@@ -162,6 +183,10 @@ const initDesktopOnlySlider = () => {
       loop: true,
       spaceBetween: 30,
       direction: 'horizontal',
+      keyboard: {
+        enabled: true,
+        onlyInViewport: false,
+      },
       navigation: {
         nextEl: '.advantages__button--next',
         prevEl: '.advantages__button--prev',

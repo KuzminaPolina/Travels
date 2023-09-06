@@ -195,6 +195,20 @@
 .contacts__data a {
   font-size: 16px;
   line-height: 24px;
+  border-bottom: solid 1px $color-default-white;
+
+  &:hover {
+    border-bottom: solid 1px $color-default-dark;
+  }
+
+  &:active {
+    border-bottom: solid 1px $color-default-white;
+  }
+
+  &:focus-visible {
+    outline: solid 1px $color-default-dark;
+    outline-offset: 2px;
+  }
 
   @include vp-1200 {
     font-size: 14px;

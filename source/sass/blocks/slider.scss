@@ -78,7 +78,10 @@
   }
 
   @include vp-768 {
-    padding: 139px 15px 40px;
+    padding: 60px 15px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 

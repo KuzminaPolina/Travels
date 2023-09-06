@@ -275,6 +275,18 @@
   background-color: $color-navy-blue;
   position: static;
   border: none;
+
+  &:hover,
+  &:focus-visible {
+    background-color: $color-default-white;
+    border: solid 1px $color-resolution-blue;
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    background-color: $color-resolution-blue;
+  }
 }
 
 .swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
