@@ -27,24 +27,19 @@
 
 .visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   padding: 0;
   overflow: hidden;
-
   white-space: nowrap;
-
   border: 0;
-
   clip: rect(0 0 0 0);
   clip-path: inset(100%);
 }
 
 .scroll-lock-ios {
   position: fixed;
-
   overflow: hidden;
 }
 
@@ -68,4 +63,52 @@
 
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
+}
+
+.swiper-button-prev::after,
+.swiper-rtl .swiper-button-next::after {
+  content: "←";
+  font-family: $ff-primary;
+  color: inherit;
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-rtl .swiper-button-next:hover::after {
+  color: $color-resolution-blue;
+}
+
+.swiper-button-prev:active::after,
+.swiper-rtl .swiper-button-next:active::after {
+  color: $color-default-white;
+}
+
+.swiper-button-prev:focus-visible::after,
+.swiper-rtl .swiper-button-next:focus-visible::after {
+  color: $color-resolution-blue;
+}
+
+.swiper-button-next::after,
+.swiper-rtl .swiper-button-prev::after {
+  content: "→";
+  font-family: $ff-primary;
+  color: $color-default-white;
+  font-size: 18px;
+  padding-bottom: 3px;
+}
+
+.swiper-button-next:hover::after,
+.swiper-rtl .swiper-button-prev:hover::after {
+  color: $color-resolution-blue;
+}
+
+.swiper-button-next:active::after,
+.swiper-rtl .swiper-button-prev:active::after {
+  color: $color-default-white;
+}
+
+.swiper-button-next:focus-visible::after,
+.swiper-rtl .swiper-button-prev:focus-visible::after {
+  color: $color-resolution-blue;
 }

@@ -7,7 +7,6 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
-  //position: relative;
 }
 
 .header__nav-container {
@@ -50,7 +49,6 @@
 
   @include vp-768 {
     display: grid;
-    row-gap: 0;
     grid-template-columns: 26px 1fr;
     grid-template-rows: 22px 22px 1fr;
     padding: 15px 15px 60px;
@@ -69,21 +67,6 @@
   @include vp-1200 {
     background-color: transparent;
     color: $color-default-white;
-  }
-}
-
-.header__logo {
-  color: inherit;
-
-  @include vp-1200 {
-    margin: auto;
-    color: inherit;
-    padding-left: 105px;
-  }
-
-  @include vp-768 {
-    margin-right: 0;
-    margin-left: auto;
   }
 }
 
@@ -192,7 +175,7 @@
   font-size: 18px;
 
   @include vp-1200 {
-    margin:auto;
+    margin: auto;
     margin-right: 0;
     padding-top: 3px;
     font-size: 16px;
@@ -226,4 +209,25 @@
 
 .header__menu-button--hidden {
   display: none;
+}
+
+.header__logo {
+  width: 205px;
+  height: 62px;
+  color: inherit;
+
+  @include vp-1200 {
+    width: 144px;
+    height: 44px;
+    margin: auto;
+    color: inherit;
+    margin-left: 122px;
+  }
+
+  @include vp-768 {
+    width: 112px;
+    height: 34px;
+    margin-right: 0;
+    margin-left: auto;
+  }
 }

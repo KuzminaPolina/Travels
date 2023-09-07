@@ -60,7 +60,7 @@
 }
 
 .photogallery__header::after {
-  content: 'Фотогалерея';
+  content: attr(data-header) "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -124,22 +124,6 @@
   &:active {
     background-color: $color-resolution-blue;
   }
-}
-
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-  content: "←";
-  font-family: $ff-primary;
-  color: $color-default-white;
-  font-size: 18px;
-  padding-bottom: 3px;
-}
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  content: "→";
-  font-family: $ff-primary;
-  color: $color-default-white;
-  font-size: 18px;
-  padding-bottom: 3px
 }
 
 .photogallery__text {

@@ -20,13 +20,11 @@
   z-index: 10;
   margin: 0 auto;
   width: fit-content;
- //margin-left: 30px;
 
   @include vp-1200 {
     font-size: 25px;
     line-height: 25px;
     margin: 0 auto;
-    //margin-top: 34px;
   }
 
   @include vp-768 {
@@ -34,13 +32,11 @@
     line-height: 22px;
     margin: 0 auto;
     margin-bottom: 30px;
-    //margin-left: 15px;
-    //margin-bottom: 19px;
   }
 }
 
 .advantages__header::after {
-  content: 'Преимущества';
+  content: attr(data-header) "";
   position: absolute;
   bottom: 0;
   left: -30%;
@@ -118,7 +114,6 @@
     padding: 0;
     gap: 15px;
   }
-
 }
 
 .advantages__item {
@@ -233,7 +228,7 @@
 
   @include vp-768 {
     font-size: 14px;
-    line-height: 14px;;
+    line-height: 14px;
   }
 }
 
@@ -287,22 +282,6 @@
   &:active {
     background-color: $color-resolution-blue;
   }
-}
-
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-  content: "←";
-  font-family: $ff-primary;
-  color: $color-default-white;
-  font-size: 18px;
-  padding-bottom: 3px;
-}
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  content: "→";
-  font-family: $ff-primary;
-  color: $color-default-white;
-  font-size: 18px;
-  padding-bottom: 3px
 }
 
 .advantages__icon {

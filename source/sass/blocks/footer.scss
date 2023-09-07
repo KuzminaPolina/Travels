@@ -40,7 +40,17 @@
 }
 
 .footer__logo {
+  width: 205px;
+  height: 62px;
+
+  @include vp-1200 {
+    width: 120px;
+    height: 34px;
+  }
+
   @include vp-768 {
+    width: 112px;
+    height: 34px;
     margin-bottom: 20px;
   }
 }

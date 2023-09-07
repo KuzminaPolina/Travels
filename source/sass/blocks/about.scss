@@ -6,6 +6,12 @@
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  z-index: 10;
+  position: relative;
+
+  @include vp-768 {
+    position: static;
+  }
 }
 
 .about__image-container {
@@ -33,16 +39,6 @@
   @include vp-768 {
     width: 320px;
     height: 402px;
-  }
-}
-
-.about__container {
-  z-index: 10;
-  position: relative;
-  width: 100%;
-
-  @include vp-768 {
-    position: static;
   }
 }
 
@@ -101,7 +97,7 @@
 }
 
 .about__header::after {
-  content: 'О  нас';
+  content: attr(data-header) "";
   position: absolute;
   bottom: 0;
   left: 0;

@@ -94,7 +94,7 @@
   }
 
   &--third {
-   margin-bottom: 151px;
+    margin-bottom: 151px;
   }
 
   @include vp-1200 {
@@ -261,7 +261,6 @@
 
 .slider__pagination {
   margin: 0;
-  padding: 0;
   padding: 15px 0;
   list-style: none;
   position: absolute;
@@ -279,7 +278,10 @@
   }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction {
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets.swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
   bottom: 81px;
   right: 0;
   width: 70px;
@@ -303,7 +305,8 @@
   }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
   width: 10px;
   height: 10px;
   background-color: $color-transparent;
@@ -317,8 +320,9 @@
   }
 }
 
-.swiper-horizontal>.swiper-pagination-bullets .swiper-pagination-bullet-active, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
-  background-color: white;
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
 }
 
 .slider__media {

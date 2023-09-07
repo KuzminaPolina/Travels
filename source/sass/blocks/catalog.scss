@@ -61,7 +61,7 @@
 }
 
 .catalog__header::after {
-  content: 'Ближайшие туры';
+  content: attr(data-header) "";
   position: absolute;
   bottom: 0;
   left: 0;
@@ -101,7 +101,7 @@
   top: 0;
   left: 0;
   color: $color-default-white;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.50) 61.90%, rgba(0, 0, 0, 0.00) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 61.9%, rgba(0, 0, 0, 0) 100%);
   height: 100%;
   width: 100%;
   padding: 20px 20px 25px;
@@ -111,7 +111,6 @@
 }
 
 .catalog__top-features {
-  //margin-top: 186px;
   display: flex;
   justify-content: flex-start;
   gap: 37px;
@@ -199,6 +198,11 @@
 
 .catalog__star-icon {
   margin-right: 0;
+
+  @include vp-768 {
+    width: 12px;
+    height: 11px;
+  }
 }
 
 .catalog__card-header {
@@ -247,16 +251,9 @@
   line-height: 12px;
 }
 
-.catalog__star-icon {
-  @include vp-768 {
-    width: 12px;
-    height: 11px;
-  }
-}
-
 .catalog__bottom-feature span {
   display: inline-block;
-  font-weight: 14px;
+  font-size: 14px;
   font-weight: 700;
   padding-top: 8px;
   padding-left: 2px;
@@ -270,7 +267,7 @@
   gap: 4px;
 
   @include vp-1440 {
-    right: 45px
+    right: 45px;
   }
 
   @include vp-1200 {
@@ -305,46 +302,6 @@
   }
 }
 
-.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
-  content: "←";
-  font-family: $ff-primary;
-  color: inherit;
-  font-size: 18px;
-  padding-bottom: 3px;
-}
-
-.swiper-button-prev:hover:after, .swiper-rtl .swiper-button-next:hover:after {
-  color: $color-resolution-blue;
-}
-
-.swiper-button-prev:active:after, .swiper-rtl .swiper-button-next:active:after {
-  color:$color-default-white;
-}
-
-.swiper-button-prev:focus-visible:after, .swiper-rtl .swiper-button-next:focus-visible:after {
-  color: $color-resolution-blue;
-}
-
-.swiper-button-next:after, .swiper-rtl .swiper-button-prev:after {
-  content: "→";
-  font-family: $ff-primary;
-  color: $color-default-white;
-  font-size: 18px;
-  padding-bottom: 3px
-}
-
-.swiper-button-next:hover:after, .swiper-rtl .swiper-button-prev:hover:after {
-  color: $color-resolution-blue;
-}
-
-.swiper-button-next:active:after, .swiper-rtl .swiper-button-prev:active:after {
-  color:$color-default-white;
-}
-
-.swiper-button-next:focus-visible:after, .swiper-rtl .swiper-button-prev:focus-visible:after {
-  color: $color-resolution-blue;
-}
-
 .catalog__stars {
   margin-top: 8px;
 }
@@ -370,7 +327,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
-  line-height: 16px; /* 100% */
+  line-height: 16px;
   letter-spacing: 0.64px;
   text-transform: uppercase;
   text-align: center;
@@ -395,12 +352,8 @@
   outline: none;
 }
 
-.catalog__link:focus-visible {
-  color: $color-resolution-blue;
-}
-
 .catalog__link:disabled {
-  color: rgba(2, 102, 193, 0.10);
+  color: rgba(2, 102, 193, 0.1);
 }
 
 .catalog__link-icon {

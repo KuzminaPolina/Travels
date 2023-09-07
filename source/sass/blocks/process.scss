@@ -1,7 +1,6 @@
 .process__list {
   list-style-type: none;
   margin: 0;
-  padding: 0;
   display: grid;
   grid-template-columns: 276px 275px 277px 277px;
   column-gap: 32px;
@@ -37,7 +36,7 @@
   @include vp-768 {
     width: 1px;
     height: 183px;
-    content: '';
+    content: "";
     background-color: rgba(2, 102, 193, 0.2);
     position: absolute;
     top: 15px;
@@ -62,7 +61,6 @@
     column-gap: 12px;
     padding: 0;
     padding-left: 38px;
-
   }
 }
 
@@ -152,7 +150,7 @@
 }
 
 .process__item::after {
-  content: '';
+  content: "";
   width: 14px;
   height: 14px;
   background-color: $color-navy-blue;
@@ -168,7 +166,7 @@
 
 .process__item--first::after {
   @include vp-1200 {
-    content: '';
+    content: "";
     width: 14px;
     height: 14px;
     background-color: $color-navy-blue;
@@ -187,7 +185,7 @@
 
 .process__item--second::after {
   @include vp-1200 {
-    content: '';
+    content: "";
     width: 14px;
     height: 14px;
     background-color: $color-navy-blue;
@@ -206,7 +204,7 @@
 
 .process__item--fourth::after {
   @include vp-1200 {
-    content: '';
+    content: "";
     width: 14px;
     height: 14px;
     background-color: $color-navy-blue;
@@ -225,7 +223,7 @@
 
 .process__item--fifth::after {
   @include vp-1200 {
-    content: '';
+    content: "";
     width: 14px;
     height: 14px;
     background-color: $color-navy-blue;

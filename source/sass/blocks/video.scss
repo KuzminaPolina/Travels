@@ -93,7 +93,7 @@
   }
 }
 
-.video__button:before {
+.video__button::before {
   content: "";
   position: absolute;
   width: 16px;
@@ -102,14 +102,15 @@
   background-color: $color-default-white;
   transform: rotate(45deg);
   mask:
-    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%),
-    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 50%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 50%);
+  /* stylelint-disable-next-line */
   -webkit-mask:
-    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%),
-    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 50%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 50%);
 }
 
-.video__button:after {
+.video__button::after {
   content: "";
   position: absolute;
   width: 12px;
@@ -119,11 +120,12 @@
   background-color: $color-default-white;
   transform: rotate(45deg);
   mask:
-    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%),
-    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 50%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 50%);
+  /* stylelint-disable-next-line */
   -webkit-mask:
-    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%),
-    linear-gradient(45deg, rgba(255,255,255,0) 50%, rgba(0,0,0,1) 50%);
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 50%),
+    linear-gradient(45deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 1) 50%);
 }
 
 .video__button:hover,
@@ -131,12 +133,12 @@
   border: solid 1px $color-resolution-blue;
 }
 
-.video__button:hover:before,
-.video__button:focus-visible:before {
+.video__button:hover::before,
+.video__button:focus-visible::before {
   background-color: $color-resolution-blue;
 }
 
-.video__button:hover:after {
+.video__button:hover::after {
   background-color: $color-default-white;
 }
 
@@ -145,12 +147,12 @@
   border: solid 1px $color-resolution-blue;
 }
 
-.video__button:active:before {
+.video__button:active::before {
   background-color: $color-resolution-blue;
   border: solid 2px $color-resolution-blue;
 }
 
-.video__button:active:after {
+.video__button:active::after {
   background-color: $color-default-white;
   border: solid 2px $color-default-white;
 }
