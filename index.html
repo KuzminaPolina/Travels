@@ -9,6 +9,50 @@
       name="keywords"
       content="путешествия, Россия, Кавказ, горы, Эльбрус, Камчатка, Алтай, природа, туризм, восхождения, пеший поход"
     >
+    <link
+      rel="preload"
+      href="fonts/montserrat-v25-cyrillic-300.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+    <link
+      rel="preload"
+      href="fonts/montserrat-v25-cyrillic-regular.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+    <link
+      rel="preload"
+      href="fonts/montserrat-v25-cyrillic-500.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+    <link
+      rel="preload"
+      href="fonts/montserrat-v25-cyrillic-600.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+    <link
+      rel="preload"
+      href="fonts/montserrat-v25-cyrillic-700.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+    <link
+      rel="preload"
+      href="fonts/montserrat-v25-cyrillic-800.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
+    >
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Путешествия по России</title>
     <link rel="stylesheet" href="css/style.min.css">
   </head>
@@ -28,18 +72,12 @@
               </div>
               <div class="header__logo">
                 <a class="header__logo-link" href="#">
-                  <svg class="header__logo-desktop" width="205" height="62" aria-hidden="true" focusable="false">
-                    <use xlink:href="./img/sprite.svg#logotype"></use>
-                  </svg>
-                  <svg class="header__logo-tablet" width="144" height="44" aria-hidden="true" focusable="false">
-                    <use xlink:href="./img/sprite.svg#logotype"></use>
-                  </svg>
-                  <svg class="header__logo-mobile" width="112" height="34" aria-hidden="true" focusable="false">
+                  <svg class="header__logo" width="205" height="62" aria-hidden="true" focusable="false">
                     <use xlink:href="./img/sprite.svg#logotype"></use>
                   </svg>
                 </a>
               </div>
-              <ul class="header__list header__list--hidden"><!--header__list--hidden-->
+              <ul class="header__list header__list--hidden">
                 <li class="header__item"><a class="header__link" href="#catalog">Туры</a></li>
                 <li class="header__item"><a class="header__link" href="#education">Обучение</a></li>
                 <li class="header__item"><a class="header__link" href="#about">О нас</a></li>
@@ -57,13 +95,35 @@
         <section class="slider">
           <h1 class="visually-hidden">Незабываемые путешествия по России</h1>
           <div class="slider__container swiper">
-            <!-- Additional required wrapper -->
-            <ul class="slider__list swiper-wrapper">
-              <!-- Slides -->
+              <ul class="slider__list swiper-wrapper">
               <li class="slider__item swiper-slide">
                 <div class="slider__image-container">
                   <picture>
                     <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                      ./img/header_slider/slide_1_mobile.webp 1x,
+                      ./img/header_slider/slide_1_mobile@x2.webp 2x
+                      "
+                    >
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                      srcset="
+                      ./img/header_slider/slide_1_tablet.webp 1x,
+                      ./img/header_slider/slide_1_tablet@x2.webp 2x
+                      "
+                    >
+                    <source
+                      type="image/webp"
+                      srcset="
+                      ./img/header_slider/slide_1.webp 1x,
+                      ./img/header_slider/slide_1@x2.webp 2x
+                      "
+                    >
+                    <source
+                      type="image/jpg"
                       media="(max-width: 767px)"
                       srcset="
                       ./img/header_slider/slide_1_mobile.jpg 1x,
@@ -71,6 +131,7 @@
                       "
                     >
                     <source
+                      type="image/jpg"
                       media="(max-width: 1199px)"
                       srcset="
                       ./img/header_slider/slide_1_tablet.jpg 1x,
@@ -91,6 +152,13 @@
                       <div class="video__preview">
                           <iframe class="video__iframe video__iframe--hidden" src="https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                           <picture>
+                            <source
+                              type="image/webp"
+                              srcset="
+                              ./img/header_slider/video_thumbnail.webp 1x,
+                              ./img/header_slider/video_thumbnail@x2.webp 2x
+                              "
+                            >
                             <img
                               src="./img/header_slider/video_thumbnail.jpg"
                               srcset="./img/header_slider/video_thumbnail@x2.jpg 2x"
@@ -129,6 +197,29 @@
                 <div class="slider__image-container">
                   <picture>
                     <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                      ./img/header_slider/slide_2_mobile.webp 1x,
+                      ./img/header_slider/slide_2_mobile@x2.webp 2x
+                      "
+                    >
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                      srcset="
+                      ./img/header_slider/slide_2_tablet.webp 1x,
+                      ./img/header_slider/slide_2_tablet@x2.webp 2x
+                      "
+                    >
+                    <source
+                      type="image/webp"
+                      srcset="
+                      ./img/header_slider/slide_2.webp 1x,
+                      ./img/header_slider/slide_2@x2.webp 2x
+                      "
+                    >
+                    <source
                     media="(max-width: 767px)"
                     srcset="
                     ./img/header_slider/slide_2_mobile.jpg 1x,
@@ -156,6 +247,21 @@
                       <div class="slider__media-wrapper">
                         <picture>
                           <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                            ./img/header_slider/slider2-img-tablet.webp 1x,
+                            ./img/header_slider/slider2-img-tablet@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            srcset="
+                            ./img/header_slider/slider2-img.webp 1x,
+                            ./img/header_slider/slider2-img@x2.webp 2x
+                            "
+                          >
+                          <source
                             media="(max-width: 1199px)"
                             srcset="
                               ./img/header_slider/slider2-img-tablet.png 1x,
@@ -163,7 +269,7 @@
                             "
                           >
                           <img
-                          class="slider__media-img"
+                            class="slider__media-img"
                             src="./img/header_slider/slider2-img.png"
                             srcset="./img/header_slider/slider2-img@x2.png 2x"
                             width="410"
@@ -194,6 +300,30 @@
                 <div class="slider__image-container">
                   <picture>
                     <source
+                      type="image/webp"
+                      media="(max-width: 767px)"
+                      srcset="
+                      ./img/header_slider/slide_3_mobile.webp 1x,
+                      ./img/header_slider/slide_3_mobile@x2.webp 2x
+                      "
+                    >
+                    <source
+                      type="image/webp"
+                      media="(max-width: 1199px)"
+                      srcset="
+                      ./img/header_slider/slide_3_tablet.webp 1x,
+                      ./img/header_slider/slide_3_tablet@x2.webp 2x
+                      "
+                    >
+                    <source
+                      type="image/webp"
+                      srcset="
+                      ./img/header_slider/slide_3.webp 1x,
+                      ./img/header_slider/slide_3@x2.webp 2x
+                      "
+                    >
+                    <source
+                    type="image/jpg"
                     media="(max-width: 767px)"
                     srcset="
                     ./img/header_slider/slide_3_mobile.jpg 1x,
@@ -201,6 +331,7 @@
                     "
                   >
                   <source
+                    type="image/jpg"
                     media="(max-width: 1199px)"
                     srcset="
                       ./img/header_slider/slide_3_tablet.jpg 1x,
@@ -221,7 +352,7 @@
                       <div class="slider__media-wrapper">
                         <div class="slider__podcast podcast">
                           <div class="podcast__iframe">
-                            <iframe frameborder="0" style="border:none;width:340px;height:220px;" width="320" height="241" src="https://music.yandex.ru/iframe/#album/25474374">Слушайте <a href='https://music.yandex.ru/album/25474374'>Про код</a> на Яндекс Музыке</iframe>
+                            <iframe style="border:none; width:340px; height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/#album/25474374"></iframe>
                           </div>
                           <div class="podcast__content">
                             <h3 class="podcast__header">Алтай</h3>
@@ -320,13 +451,37 @@
         <section class="catalog" id="catalog">
           <div class="catalog__wrapper">
             <div class="catalog__container">
-              <h2 class="catalog__header">Ближайшие туры</h2>
+              <h2 class="catalog__header" data-header="Ближайшие туры">Ближайшие туры</h2>
               <div class="catalog__content swiper">
                 <ul class="catalog__list swiper-wrapper">
                   <li class="catalog__item swiper-slide">
                     <div class="catalog__image">
                       <picture>
                         <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/tours/photo_1_mobile.webp 1x,
+                          ./img/tours/photo_1_mobile@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/tours/photo_1_tablet.webp 1x,
+                          ./img/tours/photo_1_tablet@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/webp"
+                          srcset="
+                          ./img/tours/photo_1.webp 1x,
+                          ./img/tours/photo_1@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/jpg"
                           media="(max-width: 767px)"
                           srcset="
                           ./img/tours/photo_1_mobile.jpg 1x,
@@ -334,6 +489,7 @@
                           "
                         >
                         <source
+                          type="image/jpg"
                           media="(max-width: 1199px)"
                           srcset="
                           ./img/tours/photo_1_tablet.jpg 1x,
@@ -400,6 +556,30 @@
                     <div class="catalog__image">
                       <picture>
                         <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/tours/photo_2_mobile.webp 1x,
+                          ./img/tours/photo_2_mobile@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/tours/photo_2_tablet.webp 1x,
+                          ./img/tours/photo_2_tablet@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/webp"
+                          srcset="
+                          ./img/tours/photo_2.webp 1x,
+                          ./img/tours/photo_2@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/jpg"
                           media="(max-width: 767px)"
                           srcset="
                           ./img/tours/photo_2_mobile.jpg 1x,
@@ -407,6 +587,7 @@
                           "
                         >
                         <source
+                          type="image/jpg"
                           media="(max-width: 1199px)"
                           srcset="
                           ./img/tours/photo_2_tablet.jpg 1x,
@@ -473,6 +654,30 @@
                     <div class="catalog__image">
                       <picture>
                         <source
+                          type="image/webp"
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/tours/photo_3_mobile.webp 1x,
+                          ./img/tours/photo_3_mobile@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/webp"
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/tours/photo_3_tablet.webp 1x,
+                          ./img/tours/photo_3_tablet@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/webp"
+                          srcset="
+                          ./img/tours/photo_3.webp 1x,
+                          ./img/tours/photo_3@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/jpg"
                           media="(max-width: 767px)"
                           srcset="
                           ./img/tours/photo_2_mobile.jpg 1x,
@@ -480,6 +685,7 @@
                           "
                         >
                         <source
+                          type="image/jpg"
                           media="(max-width: 1199px)"
                           srcset="
                           ./img/tours/photo_2_tablet.jpg 1x,
@@ -546,17 +752,42 @@
                     <div class="catalog__image">
                       <picture>
                         <source
+                          type="image/webp"
                           media="(max-width: 767px)"
                           srcset="
-                          ./img/tours/photo_2_mobile.jpg 1x,
-                          ./img/tours/photo_2_mobile@x2.jpg 2x
+                          ./img/tours/photo_1_mobile.webp 1x,
+                          ./img/tours/photo_1_mobile@x2.webp 2x
                           "
                         >
                         <source
+                          type="image/webp"
                           media="(max-width: 1199px)"
                           srcset="
-                          ./img/tours/photo_2_tablet.jpg 1x,
-                          ./img/tours/photo_2_tablet@x2.jpg 2x
+                          ./img/tours/photo_1_tablet.webp 1x,
+                          ./img/tours/photo_1_tablet@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/webp"
+                          srcset="
+                          ./img/tours/photo_1.webp 1x,
+                          ./img/tours/photo_1@x2.webp 2x
+                          "
+                        >
+                        <source
+                          type="image/jpg"
+                          media="(max-width: 767px)"
+                          srcset="
+                          ./img/tours/photo_1_mobile.jpg 1x,
+                          ./img/tours/photo_1_mobile@x2.jpg 2x
+                          "
+                        >
+                        <source
+                          type="image/jpg"
+                          media="(max-width: 1199px)"
+                          srcset="
+                          ./img/tours/photo_1_tablet.jpg 1x,
+                          ./img/tours/photo_1_tablet@x2.jpg 2x
                           "
                         >
                         <img
@@ -637,6 +868,30 @@
           <div class="catalog__background-big">
             <picture>
               <source
+                type="image/webp"
+                media="(max-width: 767px)"
+                srcset="
+                ./img/tours/clouds_background_mobile.webp 1x,
+                ./img/tours/clouds_background_mobile@x2.webp 2x
+                "
+              >
+              <source
+                type="image/webp"
+                media="(max-width: 1199px)"
+                srcset="
+                ./img/tours/clouds_background_tablet.webp 1x,
+                ./img/tours/clouds_background_tablet@x2.webp 2x
+                "
+              >
+              <source
+                type="image/webp"
+                srcset="
+                ./img/tours/clouds_background.webp 1x,
+                ./img/tours/clouds_background@x2.webp 2x
+                "
+              >
+              <source
+                type="image/jpg"
                 media="(max-width: 767px)"
                 srcset="
                 ./img/tours/clouds_background_mobile.png 1x,
@@ -644,6 +899,7 @@
                 "
               >
               <source
+                type="image/jpg"
                 media="(max-width: 1199px)"
                 srcset="
                 ./img/tours/clouds_background_tablet.png 1x,
@@ -661,6 +917,13 @@
           </div>
           <div class="catalog__background-small">
             <picture>
+              <source
+                type="image/webp"
+                srcset="
+                ./img/tours/small-clouds.webp 1x,
+                ./img/tours/small-clouds@x2.webp 2x
+                "
+              >
               <img class="catalog__background-small-img" src="img/tours/small-clouds.png" srcset="img/tours/small-clouds@x2.png 2x" width="418" height="279" alt="photo 1">
             </picture>
           </div>
@@ -668,7 +931,7 @@
         <section class="education" id="education">
           <div class="education__wrapper">
             <div class="education__container">
-              <h2 class="education__header">Обучение</h2>
+              <h2 class="education__header" data-header="Обучение">Обучение</h2>
               <p class="education__text">Обучение проводится квалифицированными специалистами, за&nbsp;плечами которых десятки пройденных маршрутов Кавказа, Крыма, Гималаев, Эльбруса, Алтая, Карелии, Адыгеи и&nbsp;других.</p>
               <div class="education__buttons-positioning">
                 <h2 class="education__subheader">Наши инструкторы</h2>
@@ -678,6 +941,31 @@
                       <div class="education__image">
                         <picture>
                           <source
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                            srcset="
+                            ./img/instructors/photo_1_mobile.webp 1x,
+                            ./img/instructors/photo_1_mobile@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                            ./img/instructors/photo_1_tablet.webp 1x,
+                            ./img/instructors/photo_1_tablet@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            srcset="
+                            ./img/instructors/photo_1.webp 1x,
+                            ./img/instructors/photo_1@x2.webp 2x
+                            "
+                          >
+
+                          <source
+                            type="image/jpg"
                             media="(max-width: 767px)"
                             srcset="
                             ./img/instructors/photo_1_mobile.jpg 1x,
@@ -685,6 +973,7 @@
                             "
                           >
                           <source
+                            type="image/jpg"
                             media="(max-width: 1199px)"
                             srcset="
                             ./img/instructors/photo_1_tablet.jpg 1x,
@@ -709,13 +998,38 @@
                             </svg>
                           </a>
                         </div>
-                        <p class="education__instructor-text">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                        <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
                       </div>
                     </li>
                     <li class="education__item swiper-slide">
                       <div class="education__image">
                         <picture>
                           <source
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                            srcset="
+                            ./img/instructors/photo_2_mobile.webp 1x,
+                            ./img/instructors/photo_2_mobile@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                            ./img/instructors/photo_2_tablet.webp 1x,
+                            ./img/instructors/photo_2_tablet@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            srcset="
+                            ./img/instructors/photo_2.webp 1x,
+                            ./img/instructors/photo_2@x2.webp 2x
+                            "
+                          >
+
+                          <source
+                            type="image/jpg"
                             media="(max-width: 767px)"
                             srcset="
                             ./img/instructors/photo_2_mobile.jpg 1x,
@@ -723,6 +1037,7 @@
                             "
                           >
                           <source
+                            type="image/jpg"
                             media="(max-width: 1199px)"
                             srcset="
                             ./img/instructors/photo_2_tablet.jpg 1x,
@@ -747,13 +1062,37 @@
                             </svg>
                           </a>
                         </div>
-                        <p class="education__instructor-text">Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
+                        <p>Видеть мир вокруг, познавать его опасности, находить друг друга, становиться ближе, чувствовать&nbsp;&mdash; в&nbsp;этом назначение жизни.</p>
                       </div>
                     </li>
                     <li class="education__item swiper-slide">
                       <div class="education__image">
                         <picture>
                           <source
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                            srcset="
+                            ./img/instructors/photo_3_mobile.webp 1x,
+                            ./img/instructors/photo_3_mobile@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                            ./img/instructors/photo_3_tablet.webp 1x,
+                            ./img/instructors/photo_3_tablet@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            srcset="
+                            ./img/instructors/photo_3.webp 1x,
+                            ./img/instructors/photo_3@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/jpg"
                             media="(max-width: 767px)"
                             srcset="
                             ./img/instructors/photo_3_mobile.jpg 1x,
@@ -761,6 +1100,7 @@
                             "
                           >
                           <source
+                            type="image/jpg"
                             media="(max-width: 1199px)"
                             srcset="
                             ./img/instructors/photo_3_tablet.jpg 1x,
@@ -785,13 +1125,37 @@
                             </svg>
                           </a>
                         </div>
-                        <p class="education__instructor-text">Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
+                        <p>Участники говорят, что Надежда ответственная, приятная в&nbsp;общении, и&nbsp;в&nbsp;поездках с&nbsp;ней чувствуешь себя спокойно и&nbsp;уверенно.</p>
                       </div>
                     </li>
                     <li class="education__item swiper-slide">
                       <div class="education__image">
                         <picture>
                           <source
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                            srcset="
+                            ./img/instructors/photo_4_mobile.webp 1x,
+                            ./img/instructors/photo_4_mobile@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                            ./img/instructors/photo_4_tablet.webp 1x,
+                            ./img/instructors/photo_4_tablet@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            srcset="
+                            ./img/instructors/photo_4.webp 1x,
+                            ./img/instructors/photo_4@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/jpg"
                             media="(max-width: 767px)"
                             srcset="
                             ./img/instructors/photo_4_mobile.jpg 1x,
@@ -799,6 +1163,7 @@
                             "
                           >
                           <source
+                            type="image/jpg"
                             media="(max-width: 1199px)"
                             srcset="
                             ./img/instructors/photo_4_tablet.jpg 1x,
@@ -823,13 +1188,37 @@
                             </svg>
                           </a>
                         </div>
-                        <p class="education__instructor-text">Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
+                        <p>Опыт походов: Ходит в&nbsp;походы с&nbsp;2001&nbsp;года. В&nbsp;России побывал в&nbsp;горных районах Хибины, Архыз, много путешествует по&nbsp;Европе.</p>
                       </div>
                     </li>
                     <li class="education__item swiper-slide">
                       <div class="education__image">
                         <picture>
                           <source
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                            srcset="
+                            ./img/instructors/photo_1_mobile.webp 1x,
+                            ./img/instructors/photo_1_mobile@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                            ./img/instructors/photo_1_tablet.webp 1x,
+                            ./img/instructors/photo_1_tablet@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            srcset="
+                            ./img/instructors/photo_1.webp 1x,
+                            ./img/instructors/photo_1@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/jpg"
                             media="(max-width: 767px)"
                             srcset="
                             ./img/instructors/photo_1_mobile.jpg 1x,
@@ -837,6 +1226,7 @@
                             "
                           >
                           <source
+                            type="image/jpg"
                             media="(max-width: 1199px)"
                             srcset="
                             ./img/instructors/photo_1_tablet.jpg 1x,
@@ -861,7 +1251,7 @@
                             </svg>
                           </a>
                         </div>
-                        <p class="education__instructor-text">Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
+                        <p>Строгий и&nbsp;внимательный инструктор, веселый и&nbsp;общительный человек. Любит природу.</p>
                       </div>
                     </li>
                   </ul>
@@ -883,26 +1273,26 @@
                   <svg class="process__icon" width="25" height="25" aria-hidden="true" focusable="false">
                     <use xlink:href="./img/sprite.svg#process_map"></use>
                   </svg>
-                  <p class="process__text">Изучение спортивного туристского движения</p>
+                  <p>Изучение спортивного туристского движения</p>
                 </li>
                 <li class="process__item process__item--second">
                   <svg class="process__icon" width="24" height="24" aria-hidden="true" focusable="false">
                     <use xlink:href="./img/sprite.svg#process_boots"></use>
                   </svg>
-                  <p class="process__text">Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
+                  <p>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
                 </li>
                 <li class="process__item process__item--third"></li>
                 <li class="process__item process__item--fourth">
                   <svg class="process__icon" width="23" height="23" aria-hidden="true" focusable="false">
                     <use xlink:href="./img/sprite.svg#process_tree"></use>
                   </svg>
-                  <p class="process__text">Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
+                  <p>Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
                 </li>
                 <li class="process__item process__item--fifth">
                   <svg class="process__icon" width="25" height="25" aria-hidden="true" focusable="false">
                     <use xlink:href="./img/sprite.svg#process_mountain"></use>
                   </svg>
-                  <p class="process__text">Разъяснение сложности горных препятствий</p>
+                  <p>Разъяснение сложности горных препятствий</p>
                 </li>
               </ul>
             </div>
@@ -912,6 +1302,30 @@
           <div class="about__image-container">
             <picture>
               <source
+                type="image/webp"
+                media="(max-width: 767px)"
+                srcset="
+                ./img/about/background-mobile.webp 1x,
+                ./img/about/background-mobile@x2.webp 2x
+                "
+              >
+              <source
+                type="image/webp"
+                media="(max-width: 1199px)"
+                srcset="
+                ./img/about/background-tablet.webp 1x,
+                ./img/about/background-tablet@x2.webp 2x
+                "
+              >
+              <source
+                type="image/webp"
+                srcset="
+                ./img/about/background.webp 1x,
+                ./img/about/background@x2.webp 2x
+                "
+              >
+              <source
+                type="image/jpg"
                 media="(max-width: 767px)"
                 srcset="
                 ./img/about/background-mobile.png 1x,
@@ -919,6 +1333,7 @@
                 "
               >
               <source
+                type="image/jpg"
                 media="(max-width: 1199px)"
                 srcset="
                 ./img/about/background-tablet.png 1x,
@@ -930,23 +1345,30 @@
           </div>
           <div class="about__image-clouds">
             <picture>
+              <source
+                type="image/webp"
+                srcset="
+                ./img/about/clouds.webp 1x,
+                ./img/about/clouds@x2.webp 2x
+                "
+              >
               <img class="about__background" src="img/about/clouds.png" srcset="img/about/clouds@x2.png 2x" width="618" height="280" alt="photo 1">
             </picture>
           </div>
           <div class="about__container">
             <div class="about__info">
-              <h2 class="about__header">О нас</h2>
+              <h2 class="about__header" data-header="О нас">О нас</h2>
               <h3 class="about__subheader">История компании</h3>
-              <p class="about__text">В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения, нам это настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
+              <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения, нам это настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
               <h3 class="about__subheader">Наша цель</h3>
-              <p class="about__text">Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берем на&nbsp;себя все организационные вопросы. При организации мы&nbsp;обязательно учтем все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
+              <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берем на&nbsp;себя все организационные вопросы. При организации мы&nbsp;обязательно учтем все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
             </div>
           </div>
         </section>
         <section class="feedback" id="feedback">
           <div class="feedback__content">
             <div class="feedback__buttons-positioning">
-              <h2 class="feedback__header">Отзывы</h2>
+              <h2 class="feedback__header" data-header="Отзывы">Отзывы</h2>
               <div class="feedback__container swiper">
                 <ul class="feedback__slider swiper-wrapper">
                   <li class="feedback__item swiper-slide">
@@ -954,6 +1376,31 @@
                       <div class="feedback__photo">
                         <picture>
                           <source
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                            srcset="
+                            ./img/feedback/mobile/photo_1.webp 1x,
+                            ./img/feedback/mobile/photo_1@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                            ./img/feedback/tablet/photo_1.webp 1x,
+                            ./img/feedback/tablet/photo_1@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            srcset="
+                            ./img/feedback/desktop/photo_1.webp 1x,
+                            ./img/feedback/desktop/photo_1@x2.webp 2x
+                            "
+                          >
+
+                          <source
+                            type="image/jpg"
                             media="(max-width: 767px)"
                             srcset="
                             ./img/feedback/mobile/photo_1.jpg 1x,
@@ -961,6 +1408,7 @@
                             "
                           >
                           <source
+                            type="image/jpg"
                             media="(max-width: 1199px)"
                             srcset="
                             ./img/feedback/tablet/photo_1.jpg 1x,
@@ -978,8 +1426,8 @@
                       </div>
                       <div class="feedback__info">
                         <div class="feedback__text-block">
-                          <p class="feedback__text">Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы&nbsp;&mdash; настоящие эксперты&nbsp;&mdash; всему научили, все показали. Делились увлекательными историями о&nbsp;местах, людях, культуре места.</p>
-                          <p class="feedback__text">С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Еще никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
+                          <p>Осенью ходили в&nbsp;поход на&nbsp;Алтай с&nbsp;друзьями. Впечатления потрясающие! Инструкторы&nbsp;&mdash; настоящие эксперты&nbsp;&mdash; всему научили, все показали. Делились увлекательными историями о&nbsp;местах, людях, культуре места.</p>
+                          <p>С&nbsp;уверенностью могу сказать, что жизнь разделилась на&nbsp;до&nbsp;этого и&nbsp;после. Еще никогда не&nbsp;отдыхал так душой и&nbsp;телом. Всем очень рекомендую!</p>
                         </div>
                         <div class="feedback__info-block">
                           <p class="feedback__name">Фролов Александр</p>
@@ -993,6 +1441,30 @@
                       <div class="feedback__photo">
                         <picture>
                           <source
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                            srcset="
+                            ./img/feedback/mobile/photo_2.webp 1x,
+                            ./img/feedback/mobile/photo_2@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                            ./img/feedback/tablet/photo_2.webp 1x,
+                            ./img/feedback/tablet/photo_2@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            srcset="
+                            ./img/feedback/desktop/photo_2.webp 1x,
+                            ./img/feedback/desktop/photo_2@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/jpg"
                             media="(max-width: 767px)"
                             srcset="
                             ./img/feedback/mobile/photo_2.jpg 1x,
@@ -1000,6 +1472,7 @@
                             "
                           >
                           <source
+                            type="image/jpg"
                             media="(max-width: 1199px)"
                             srcset="
                             ./img/feedback/tablet/photo_2.jpg 1x,
@@ -1017,9 +1490,9 @@
                       </div>
                       <div class="feedback__info">
                         <div class="feedback__text-block">
-                          <p class="feedback__text">Хороший полноценный поход с&nbsp;разнообразными локациями. В&nbsp;начале дорога идет по&nbsp;лыжне, далее прошли мимо полигона, по&nbsp;болотам, у&nbsp;озер и&nbsp;лесных ручьев, остатков дач конца 19&nbsp;века.
+                          <p>Хороший полноценный поход с&nbsp;разнообразными локациями. В&nbsp;начале дорога идет по&nbsp;лыжне, далее прошли мимо полигона, по&nbsp;болотам, у&nbsp;озер и&nbsp;лесных ручьев, остатков дач конца 19&nbsp;века.
                             Было очень интересно!</p>
-                          <p class="feedback__text">Инструктор Федор дружелюбный, внимательный к&nbsp;технике безопасности и&nbsp;своим туристам.
+                          <p>Инструктор Федор дружелюбный, внимательный к&nbsp;технике безопасности и&nbsp;своим туристам.
                             Всем советую этот тур.</p>
                         </div>
                         <div class="feedback__info-block">
@@ -1034,6 +1507,30 @@
                       <div class="feedback__photo">
                         <picture>
                           <source
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                            srcset="
+                            ./img/feedback/mobile/photo_3.webp 1x,
+                            ./img/feedback/mobile/photo_3@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                            ./img/feedback/tablet/photo_3.webp 1x,
+                            ./img/feedback/tablet/photo_3@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            srcset="
+                            ./img/feedback/desktop/photo_3.webp 1x,
+                            ./img/feedback/desktop/photo_3@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/jpg"
                             media="(max-width: 767px)"
                             srcset="
                             ./img/feedback/mobile/photo_3.jpg 1x,
@@ -1041,6 +1538,7 @@
                             "
                           >
                           <source
+                            type="image/jpg"
                             media="(max-width: 1199px)"
                             srcset="
                             ./img/feedback/tablet/photo_3.jpg 1x,
@@ -1058,8 +1556,8 @@
                       </div>
                       <div class="feedback__info">
                         <div class="feedback__text-block">
-                          <p class="feedback__text">Ранее не&nbsp;ходила на&nbsp;такие длинные дистанции. В&nbsp;первый день прошли около 30&nbsp;км, физически я&nbsp;устала на&nbsp;18&nbsp;км, поэтому не&nbsp;была уверена, пройду&nbsp;ли до&nbsp;конца. Но&nbsp;я&nbsp;справилась. Второй день прошел легче, чем ожидала, видимо организм уже привык.</p>
-                          <p class="feedback__text">Спасибо ребятам, инструкторам за&nbsp;помощь и&nbsp;поддержку!<br>Я&nbsp;была рада быть в&nbsp;такой компании.</p>
+                          <p>Ранее не&nbsp;ходила на&nbsp;такие длинные дистанции. В&nbsp;первый день прошли около 30&nbsp;км, физически я&nbsp;устала на&nbsp;18&nbsp;км, поэтому не&nbsp;была уверена, пройду&nbsp;ли до&nbsp;конца. Но&nbsp;я&nbsp;справилась. Второй день прошел легче, чем ожидала, видимо организм уже привык.</p>
+                          <p>Спасибо ребятам, инструкторам за&nbsp;помощь и&nbsp;поддержку!<br>Я&nbsp;была рада быть в&nbsp;такой компании.</p>
                         </div>
                         <div class="feedback__info-block">
                           <p class="feedback__name">Евгения Баженова</p>
@@ -1073,6 +1571,30 @@
                       <div class="feedback__photo">
                         <picture>
                           <source
+                            type="image/webp"
+                            media="(max-width: 767px)"
+                            srcset="
+                            ./img/feedback/mobile/photo_4.webp 1x,
+                            ./img/feedback/mobile/photo_4@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            media="(max-width: 1199px)"
+                            srcset="
+                            ./img/feedback/tablet/photo_4.webp 1x,
+                            ./img/feedback/tablet/photo_4@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/webp"
+                            srcset="
+                            ./img/feedback/desktop/photo_4.webp 1x,
+                            ./img/feedback/desktop/photo_4@x2.webp 2x
+                            "
+                          >
+                          <source
+                            type="image/jpg"
                             media="(max-width: 767px)"
                             srcset="
                             ./img/feedback/mobile/photo_4.jpg 1x,
@@ -1080,6 +1602,7 @@
                             "
                           >
                           <source
+                            type="image/jpg"
                             media="(max-width: 1199px)"
                             srcset="
                             ./img/feedback/tablet/photo_4.jpg 1x,
@@ -1097,8 +1620,8 @@
                       </div>
                       <div class="feedback__info">
                         <div class="feedback__text-block">
-                          <p class="feedback__text">Это был опыт, изменивший мою жизнь! Думала, не&nbsp;справлюсь, но&nbsp;все получилось! Дух захватывает, когда наконец-то, преодолев все трудности и&nbsp;препятствия, взбираешься на&nbsp;вершину.</p>
-                          <p class="feedback__text">У&nbsp;нас собралась потрясающая команда. Все друг друга поддерживали, по&nbsp;вечерам мы&nbsp;сидели вместе у&nbsp;костра и&nbsp;пели песни. Обязательно повторю такое приключение!</p>
+                          <p>Это был опыт, изменивший мою жизнь! Думала, не&nbsp;справлюсь, но&nbsp;все получилось! Дух захватывает, когда наконец-то, преодолев все трудности и&nbsp;препятствия, взбираешься на&nbsp;вершину.</p>
+                          <p>У&nbsp;нас собралась потрясающая команда. Все друг друга поддерживали, по&nbsp;вечерам мы&nbsp;сидели вместе у&nbsp;костра и&nbsp;пели песни. Обязательно повторю такое приключение!</p>
                         </div>
                         <div class="feedback__info-block">
                           <p class="feedback__name">Елена Пирогова</p>
@@ -1123,16 +1646,30 @@
         <section class="advantages" id="advantages">
           <div class="advantages__big-cloud">
             <picture>
+              <source
+                type="image/webp"
+                srcset="
+                ./img/advantages/clouds.webp 1x,
+                ./img/advantages/clouds@x2.webp 2x
+                "
+              >
               <img class="advantages__decoration" src="img/advantages/clouds.png" srcset="img/advantages/clouds@x2.png 2x" width="705" height="391" alt="photo 1">
             </picture>
           </div>
           <div class="advantages__small-cloud">
             <picture>
+              <source
+                type="image/webp"
+                srcset="
+                ./img/advantages/clouds-small.webp 1x,
+                ./img/advantages/clouds-small@x2.webp 2x
+                "
+              >
               <img class="advantages__decoration" src="img/advantages/clouds-small.png" srcset="img/advantages/clouds-small@x2.png 2x" width="602" height="263" alt="photo 1">
             </picture>
           </div>
           <div class="advantages__header-container">
-            <h2 class="advantages__header">Преимущества</h2>
+            <h2 class="advantages__header" data-header="Преимущества">Преимущества</h2>
           </div>
           <div class="advantages__content">
             <div class="advantages__buttons-positioning">
@@ -1145,7 +1682,7 @@
                       </svg>
                     </div>
                     <h3 class="advantages__subheader">Безопасность и охрана</h3>
-                    <p class="advantages__text">Уделяем внимание безопасности клиентов, внедряем строгие процедуры и&nbsp;протоколы безопасности. Имеем планы действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даем гарантию полной безопасности во&nbsp;время всего тура.</p>
+                    <p>Уделяем внимание безопасности клиентов, внедряем строгие процедуры и&nbsp;протоколы безопасности. Имеем планы действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даем гарантию полной безопасности во&nbsp;время всего тура.</p>
                   </li>
                   <li class="advantages__item swiper-slide">
                     <div class="advantages__img">
@@ -1154,7 +1691,7 @@
                       </svg>
                     </div>
                     <h3 class="advantages__subheader">Экспертиза и знания</h3>
-                    <p class="advantages__text">Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях и&nbsp;технике безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере насладиться опытом без опасений.</p>
+                    <p>Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях и&nbsp;технике безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере насладиться опытом без опасений.</p>
                   </li>
                   <li class="advantages__item swiper-slide">
                     <div class="advantages__img">
@@ -1163,7 +1700,7 @@
                       </svg>
                     </div>
                     <h3 class="advantages__subheader">Оборудование и снаряжение</h3>
-                    <p class="advantages__text">Мы&nbsp;предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что делает путешествие более удобным и&nbsp;экономически выгодным.</p>
+                    <p>Мы&nbsp;предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что делает путешествие более удобным и&nbsp;экономически выгодным.</p>
                   </li>
                   <li class="advantages__item swiper-slide">
                     <div class="advantages__img">
@@ -1172,7 +1709,7 @@
                       </svg>
                     </div>
                     <h3 class="advantages__subheader">Индивидуальные маршруты</h3>
-                    <p class="advantages__text">Предлагает широкий выбор туров, отвечающих различным уровням мастерства и&nbsp;интересам. Мы&nbsp;также можем адаптировать маршруты к&nbsp;вашим конкретным потребностям и&nbsp;предпочтениям, чтобы вы&nbsp;получили индивидуальный опыт.</p>
+                    <p>Предлагает широкий выбор туров, отвечающих различным уровням мастерства и&nbsp;интересам. Мы&nbsp;также можем адаптировать маршруты к&nbsp;вашим конкретным потребностям и&nbsp;предпочтениям, чтобы вы&nbsp;получили индивидуальный опыт.</p>
                   </li>
                   <li class="advantages__item swiper-slide">
                     <div class="advantages__img">
@@ -1181,7 +1718,7 @@
                       </svg>
                     </div>
                     <h3 class="advantages__subheader">Бережное отношение к природе</h3>
-                    <p class="advantages__text">Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+                    <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
                   </li>
                 </ul>
               </div>
@@ -1198,8 +1735,8 @@
         </section>
         <section class="photogallery" id="photogallery">
           <div class="photogallery__container">
-            <h2 class="photogallery__header">Фотогалерея</h2>
-            <p class="photogallery__text">Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
+            <h2 class="photogallery__header" data-header="Фотогалерея">Фотогалерея</h2>
+            <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
             <div class="photogallery__slider-buttons">
               <button class="photogallery__button photogallery__button--prev swiper-button-prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
@@ -1214,33 +1751,57 @@
               <li class="photogallery__item swiper-slide">
                 <div class="photogallery__image-big">
                   <picture>
-                        <img
-                          src="./img/photogallery/originals/photo_1.png"
-                          width="1650"
-                          height="1100"
-                          alt="Фото природы 1"
-                        >
+                    <source
+                      type="image/webp"
+                      srcset="
+                      ./img/photogallery/originals/photo_1.webp 1x,
+                      ./img/photogallery/originals/photo_1@x2.webp 2x
+                      "
+                    >
+                    <img
+                      src="./img/photogallery/originals/photo_1.png"
+                      srcset="./img/photogallery/originals/photo_1@x2.png 2x"
+                      width="1650"
+                      height="1100"
+                      alt="Фото природы 1"
+                    >
                   </picture>
                 </div>
                 <div class="photogallery__small-pics-wrapper">
                   <div class="photogallery__small-pic-top">
                     <picture>
-                        <img
-                          src="./img/photogallery/originals/photo_2.png"
-                          width="929"
-                          height="697"
-                          alt="Фото природы 2"
-                        >
+                      <source
+                        type="image/webp"
+                        srcset="
+                        ./img/photogallery/originals/photo_2.webp 1x,
+                        ./img/photogallery/originals/photo_2@x2.webp 2x
+                        "
+                      >
+                      <img
+                        src="./img/photogallery/originals/photo_2.png"
+                        srcset="./img/photogallery/originals/photo_2@x2.png 2x"
+                        width="929"
+                        height="697"
+                        alt="Фото природы 2"
+                      >
                     </picture>
                   </div>
                   <div class="photogallery__small-pic">
                     <picture>
-                        <img
-                          src="./img/photogallery/originals/photo_3.png"
-                          width="1988"
-                          height="1263"
-                          alt="Фото природы 3"
-                        >
+                      <source
+                        type="image/webp"
+                        srcset="
+                        ./img/photogallery/originals/photo_3.webp 1x,
+                        ./img/photogallery/originals/photo_3@x2.webp 2x
+                        "
+                      >
+                      <img
+                        src="./img/photogallery/originals/photo_3.png"
+                        srcset="./img/photogallery/originals/photo_3@x2.png 2x"
+                        width="1988"
+                        height="1263"
+                        alt="Фото природы 3"
+                      >
                     </picture>
                   </div>
                 </div>
@@ -1248,33 +1809,57 @@
               <li class="photogallery__item swiper-slide">
                 <div class="photogallery__image-big">
                   <picture>
-                        <img
-                          src="./img/photogallery/originals/photo_4.jpg"
-                          width="1200"
-                          height="1200"
-                          alt="Фото природы 4"
-                        >
+                    <source
+                      type="image/webp"
+                      srcset="
+                      ./img/photogallery/originals/photo_4.webp 1x,
+                      ./img/photogallery/originals/photo_4@x2.webp 2x
+                      "
+                    >
+                    <img
+                      src="./img/photogallery/originals/photo_4.jpg"
+                      srcset="./img/photogallery/originals/photo_4@x2.jpg 2x"
+                      width="1200"
+                      height="1200"
+                      alt="Фото природы 4"
+                    >
                   </picture>
                 </div>
                 <div class="photogallery__small-pics-wrapper">
                   <div class="photogallery__small-pic-top">
                     <picture>
-                        <img
-                          src="./img/photogallery/originals/photo_5.png"
-                          width="1650"
-                          height="1100"
-                          alt="Фото природы 5"
-                        >
+                      <source
+                        type="image/webp"
+                        srcset="
+                        ./img/photogallery/originals/photo_5.webp 1x,
+                        ./img/photogallery/originals/photo_5@x2.webp 2x
+                        "
+                      >
+                      <img
+                        src="./img/photogallery/originals/photo_5.png"
+                        srcset="./img/photogallery/originals/photo_5@x2.png 2x"
+                        width="1650"
+                        height="1100"
+                        alt="Фото природы 5"
+                      >
                     </picture>
                   </div>
                   <div class="photogallery__small-pic">
                     <picture>
-                        <img
-                          src="./img/photogallery/originals/photo_6.png"
-                          width="1650"
-                          height="1100"
-                          alt="Фото природы 6"
-                        >
+                      <source
+                        type="image/webp"
+                        srcset="
+                        ./img/photogallery/originals/photo_6.webp 1x,
+                        ./img/photogallery/originals/photo_6@x2.webp 2x
+                        "
+                      >
+                      <img
+                        src="./img/photogallery/originals/photo_6.png"
+                        srcset="./img/photogallery/originals/photo_6@x2.png 2x"
+                        width="1650"
+                        height="1100"
+                        alt="Фото природы 6"
+                      >
                     </picture>
                   </div>
                 </div>
@@ -1282,8 +1867,16 @@
               <li class="photogallery__item swiper-slide">
                 <div class="photogallery__image-big">
                   <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                      ./img/photogallery/originals/photo_7.webp 1x,
+                      ./img/photogallery/originals/photo_7@x2.webp 2x
+                      "
+                    >
                     <img
                       src="./img/photogallery/originals/photo_7.png"
+                      srcset="./img/photogallery/originals/photo_7@x2.png 2x"
                       width="1650"
                       height="1100"
                       alt="Фото природы 7"
@@ -1293,8 +1886,16 @@
                 <div class="photogallery__small-pics-wrapper">
                   <div class="photogallery__small-pic-top">
                     <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                        ./img/photogallery/originals/photo_11.webp 1x,
+                        ./img/photogallery/originals/photo_11@x2.webp 2x
+                        "
+                      >
                       <img
                         src="./img/photogallery/originals/photo_11.jpg"
+                        srcset="./img/photogallery/originals/photo_11@x2.jpg 2x"
                         width="1650"
                         height="1100"
                         alt="Фото природы 8"
@@ -1303,8 +1904,16 @@
                   </div>
                   <div class="photogallery__small-pic">
                     <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                        ./img/photogallery/originals/photo_8.webp 1x,
+                        ./img/photogallery/originals/photo_8@x2.webp 2x
+                        "
+                      >
                       <img
                         src="./img/photogallery/originals/photo_8.jpg"
+                        srcset="./img/photogallery/originals/photo_8@x2.jpg 2x"
                         width="1650"
                         height="1100"
                         alt="Фото природы 9"
@@ -1316,8 +1925,16 @@
               <li class="photogallery__item swiper-slide">
                 <div class="photogallery__image-big">
                   <picture>
+                    <source
+                      type="image/webp"
+                      srcset="
+                      ./img/photogallery/originals/photo_9.webp 1x,
+                      ./img/photogallery/originals/photo_9@x2.webp 2x
+                      "
+                    >
                     <img
                       src="./img/photogallery/originals/photo_9.jpg"
+                      srcset="./img/photogallery/originals/photo_9@x2.jpg 2x"
                       width="1650"
                       height="1100"
                       alt="Фото природы 10"
@@ -1327,8 +1944,16 @@
                 <div class="photogallery__small-pics-wrapper">
                   <div class="photogallery__small-pic-top">
                     <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                        ./img/photogallery/originals/photo_10.webp 1x,
+                        ./img/photogallery/originals/photo_10@x2.webp 2x
+                        "
+                      >
                       <img
                         src="./img/photogallery/originals/photo_10.jpg"
+                        srcset="./img/photogallery/originals/photo_10@x2.jpg 2x"
                         width="1650"
                         height="1100"
                         alt="Фото природы 11"
@@ -1337,8 +1962,16 @@
                   </div>
                   <div class="photogallery__small-pic">
                     <picture>
+                      <source
+                        type="image/webp"
+                        srcset="
+                        ./img/photogallery/originals/photo_12.webp 1x,
+                        ./img/photogallery/originals/photo_12@x2.webp 2x
+                        "
+                      >
                       <img
                         src="./img/photogallery/originals/photo_12.jpg"
+                        srcset="./img/photogallery/originals/photo_12@x2.jpg 2x"
                         width="1650"
                         height="1100"
                         alt="Фото природы 12"
@@ -1352,31 +1985,6 @@
         </section>
         <section class="form" id="form">
           <div class="form__container">
-            <div class="form__background">
-              <picture>
-                <source
-                  media="(max-width: 767px)"
-                  srcset="
-                  ./img/form/background-mobile.jpg 1x,
-                  ./img/form/background-mobile@x2.jpg 2x
-                  "
-                >
-                <source
-                  media="(max-width: 1199px)"
-                  srcset="
-                  ./img/form/background-tablet.jpg 1x,
-                  ./img/form/background-tablet@x2.jpg 2x
-                  "
-                >
-                <img
-                  src="./img/form/background-desktop.jpg"
-                  srcset="./img/form/background-desktop@x2.jpg 2x"
-                  width="1440"
-                  height="800"
-                  alt="Лес в тумане"
-                >
-              </picture>
-            </div>
             <div class="form__content" data-form-validate data-callback="base">
               <h2 class="form__header">Остались вопросы?</h2>
               <p class="form__text">Заполните форму и&nbsp;наш оператор свяжется с&nbsp;вами для консультации.</p>
@@ -1415,7 +2023,7 @@
         <section class="contacts" id="contacts">
           <div class="contacts__container">
             <div class="contacts__info">
-              <h2 class="contacts__header">Контакты</h2>
+              <h2 class="contacts__header" data-header="О нас">Контакты</h2>
               <p class="contacts__foreword">Свяжитесь с&nbsp;нами любым удобным для вас способом или приходите к&nbsp;нам в&nbsp;гости. Мы&nbsp;будем рады поделиться увлекательными историями и&nbsp;подобрать для вас тур.</p>
               <ul class="contacts__list">
                 <li class="contacts__item">
@@ -1466,18 +2074,12 @@
           <nav class="footer__navbar">
             <div class="footer__logo">
               <a class="footer__logo-link" href="#">
-                <svg class="footer__logo-desktop" width="205" height="62" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/sprite.svg#logotype"></use>
-                </svg>
-                <svg class="footer__logo-tablet" width="120" height="34" aria-hidden="true" focusable="false">
-                  <use xlink:href="./img/sprite.svg#logotype"></use>
-                </svg>
-                <svg class="footer__logo-mobile" width="112" height="34" aria-hidden="true" focusable="false">
+                <svg class="footer__logo" width="205" height="62" aria-hidden="true" focusable="false">
                   <use xlink:href="./img/sprite.svg#logotype"></use>
                 </svg>
               </a>
             </div>
-            <ul class="footer__list"><!--header__list--hidden-->
+            <ul class="footer__list">
               <li class="footer__item"><a class="footer__link" href="#catalog">Туры</a></li>
               <li class="footer__item"><a class="footer__link" href="#education">Обучение</a></li>
               <li class="footer__item"><a class="footer__link" href="#photogallery">О нас</a></li>
