@@ -175,9 +175,9 @@ const initGallerySlider = () =>
 
 
 const initDesktopOnlySlider = () => {
+  let desktopSlider;
   if (window.matchMedia('(min-width: 1200px)').matches) {
-    // eslint-disable-next-line no-new
-    new Swiper('.advantages__container', {
+    desktopSlider = new Swiper('.advantages__container', {
       slidesPerView: 3,
       initialSlide: 2,
       centeredSlides: true,
@@ -194,6 +194,7 @@ const initDesktopOnlySlider = () => {
       },
     });
   }
+  return desktopSlider;
 };
 
 window.addEventListener('DOMContentLoaded', () => {
