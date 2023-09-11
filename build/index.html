@@ -82,7 +82,7 @@
                 <li class="header__item"><a class="header__link" href="#education">Обучение</a></li>
                 <li class="header__item"><a class="header__link" href="#about">О нас</a></li>
                 <li class="header__item"><a class="header__link" href="#feedback">Отзывы</a></li>
-                <li class="header__item"><a class="header__link" href="#photogallery">Фотографии</a></li>
+                <li class="header__item"><a class="header__link" href="#gallery">Фотографии</a></li>
                 <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
               </ul>
               <a class="header__phone" href="tel:+78007253232">8 800 725 32 32</a>
@@ -160,6 +160,7 @@
                               "
                             >
                             <img
+                              class="video__thumbnail"
                               src="./img/header_slider/video_thumbnail.jpg"
                               srcset="./img/header_slider/video_thumbnail@x2.jpg 2x"
                               width="482"
@@ -497,6 +498,7 @@
                           "
                         >
                         <img
+                          class="catalog__img"
                           src="./img/tours/photo_1.jpg"
                           srcset="./img/tours/photo_1@x2.jpg 2x"
                           width="380"
@@ -595,6 +597,7 @@
                           "
                         >
                         <img
+                          class="catalog__img"
                           src="./img/tours/photo_2.jpg"
                           srcset="./img/tours/photo_2@x2.jpg 2x"
                           width="380"
@@ -693,6 +696,7 @@
                           "
                         >
                         <img
+                          class="catalog__img"
                           src="./img/tours/photo_3.jpg"
                           srcset="./img/tours/photo_3@x2.jpg 2x"
                           width="380"
@@ -791,6 +795,7 @@
                           "
                         >
                         <img
+                          class="catalog__img"
                           src="./img/tours/photo_1.jpg"
                           srcset="./img/tours/photo_1@x2.jpg 2x"
                           width="380"
@@ -993,7 +998,7 @@
                         <div class="education__instructor-wrapper">
                           <h3 class="education__instructor-name">Александр Прокофьев</h3>
                           <a href="#" class="education__instructor-link">
-                            <svg class="education-icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
+                            <svg class="education__icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
                               <use xlink:href="./img/sprite.svg#social_vk"></use>
                             </svg>
                           </a>
@@ -1027,7 +1032,6 @@
                             ./img/instructors/photo_2@x2.webp 2x
                             "
                           >
-
                           <source
                             type="image/jpg"
                             media="(max-width: 767px)"
@@ -1045,6 +1049,7 @@
                             "
                           >
                           <img
+                            class="education__img"
                             src="./img/instructors/photo_2.jpg"
                             srcset="./img/instructors/photo_2@x2.jpg 2x"
                             width="238"
@@ -1057,7 +1062,7 @@
                         <div class="education__instructor-wrapper">
                           <h3 class="education__instructor-name">Светлана Афиногенова</h3>
                           <a href="#" class="education__instructor-link">
-                            <svg class="education-icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
+                            <svg class="education__icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
                               <use xlink:href="./img/sprite.svg#social_vk"></use>
                             </svg>
                           </a>
@@ -1120,7 +1125,7 @@
                         <div class="education__instructor-wrapper">
                           <h3 class="education__instructor-name">Надежда Колесниченко</h3>
                           <a href="#" class="education__instructor-link">
-                            <svg class="education-icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
+                            <svg class="education__icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
                               <use xlink:href="./img/sprite.svg#social_vk"></use>
                             </svg>
                           </a>
@@ -1183,7 +1188,7 @@
                         <div class="education__instructor-wrapper">
                           <h3 class="education__instructor-name">Федор Кайгородов</h3>
                           <a href="#" class="education__instructor-link">
-                            <svg class="education-icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
+                            <svg class="education__icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
                               <use xlink:href="./img/sprite.svg#social_vk"></use>
                             </svg>
                           </a>
@@ -1246,7 +1251,7 @@
                         <div class="education__instructor-wrapper">
                           <h3 class="education__instructor-name">Александр Прокофьев</h3>
                           <a href="#" class="education__instructor-link">
-                            <svg class="education-icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
+                            <svg class="education__icon-vk" width="16" height="9" aria-hidden="true" focusable="false">
                               <use xlink:href="./img/sprite.svg#social_vk"></use>
                             </svg>
                           </a>
@@ -1269,30 +1274,29 @@
             <div class="process">
               <h2 class="process__subheader">Процесс обучения</h2>
               <ul class="process__list">
-                <li class="process__item process__item--first">
+                <li class="process__item">
                   <svg class="process__icon" width="25" height="25" aria-hidden="true" focusable="false">
                     <use xlink:href="./img/sprite.svg#process_map"></use>
                   </svg>
                   <p>Изучение спортивного туристского движения</p>
                 </li>
-                <li class="process__item process__item--second">
+                <li class="process__item">
                   <svg class="process__icon" width="24" height="24" aria-hidden="true" focusable="false">
                     <use xlink:href="./img/sprite.svg#process_boots"></use>
                   </svg>
                   <p>Подготовка и&nbsp;техническое снаряжение в&nbsp;походах</p>
                 </li>
-                <li class="process__item process__item--third"></li>
-                <li class="process__item process__item--fourth">
-                  <svg class="process__icon" width="23" height="23" aria-hidden="true" focusable="false">
-                    <use xlink:href="./img/sprite.svg#process_tree"></use>
-                  </svg>
-                  <p>Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
-                </li>
-                <li class="process__item process__item--fifth">
+                <li class="process__item process__item--last">
                   <svg class="process__icon" width="25" height="25" aria-hidden="true" focusable="false">
                     <use xlink:href="./img/sprite.svg#process_mountain"></use>
                   </svg>
                   <p>Разъяснение сложности горных препятствий</p>
+                </li>
+                <li class="process__item">
+                  <svg class="process__icon" width="23" height="23" aria-hidden="true" focusable="false">
+                    <use xlink:href="./img/sprite.svg#process_tree"></use>
+                  </svg>
+                  <p>Лекции по&nbsp;окружающей среде, экологии и&nbsp;гигиене</p>
                 </li>
               </ul>
             </div>
@@ -1352,15 +1356,15 @@
                 ./img/about/clouds@x2.webp 2x
                 "
               >
-              <img class="about__background" src="img/about/clouds.png" srcset="img/about/clouds@x2.png 2x" width="618" height="280" alt="photo 1">
+              <img src="img/about/clouds.png" srcset="img/about/clouds@x2.png 2x" width="618" height="280" alt="photo 1">
             </picture>
           </div>
           <div class="about__container">
             <div class="about__info">
               <h2 class="about__header" data-header="О нас">О нас</h2>
-              <h3 class="about__subheader">История компании</h3>
+              <h3>История компании</h3>
               <p>В&nbsp;далеком 2000 году мы&nbsp;начали заниматься туризмом&nbsp;&mdash; походы, поездки, восхождения, нам это настолько понравилось, что мы&nbsp;этим стали жить. Спустя 5&nbsp;лет, в&nbsp;2005 году мы&nbsp;основали компанию, чтобы показывать людям удивительные места нашей страны.</p>
-              <h3 class="about__subheader">Наша цель</h3>
+              <h3>Наша цель</h3>
               <p>Подарить вам незабываемые впечатления от&nbsp;похода в&nbsp;горы. Мы&nbsp;берем на&nbsp;себя все организационные вопросы. При организации мы&nbsp;обязательно учтем все ваши пожелания. Вам останется только наслаждаться незабываемым приключением в&nbsp;приятной компании.</p>
             </div>
           </div>
@@ -1416,6 +1420,7 @@
                             "
                           >
                           <img
+                          class="feedback__img"
                             src="./img/feedback/desktop/photo_1.jpg"
                             srcset="./img/feedback/desktop/photo_1@x2.jpg 2x"
                             width="238"
@@ -1480,6 +1485,7 @@
                             "
                           >
                           <img
+                          class="feedback__img"
                             src="./img/feedback/desktop/photo_2.jpg"
                             srcset="./img/feedback/desktop/photo_2@x2.jpg 2x"
                             width="238"
@@ -1546,6 +1552,7 @@
                             "
                           >
                           <img
+                          class="feedback__img"
                             src="./img/feedback/desktop/photo_3.jpg"
                             srcset="./img/feedback/desktop/photo_3@x2.jpg 2x"
                             width="238"
@@ -1610,6 +1617,7 @@
                             "
                           >
                           <img
+                          class="feedback__img"
                             src="./img/feedback/desktop/photo_4.jpg"
                             srcset="./img/feedback/desktop/photo_4@x2.jpg 2x"
                             width="238"
@@ -1672,7 +1680,7 @@
             <h2 class="advantages__header" data-header="Преимущества">Преимущества</h2>
           </div>
           <div class="advantages__content">
-            <div class="advantages__buttons-positioning">
+            <div class="advantages__ex-buttons">
               <div class="advantages__container swiper">
                 <ul class="advantages__slider swiper-wrapper">
                   <li class="advantages__item swiper-slide">
@@ -1681,7 +1689,7 @@
                         <use xlink:href="./img/sprite.svg#adv_shield"></use>
                       </svg>
                     </div>
-                    <h3 class="advantages__subheader">Безопасность и охрана</h3>
+                    <h3 class="advantages__subheader">Безопасность и&nbsp;охрана</h3>
                     <p>Уделяем внимание безопасности клиентов, внедряем строгие процедуры и&nbsp;протоколы безопасности. Имеем планы действий на&nbsp;случай непредвиденных обстоятельств и&nbsp;даем гарантию полной безопасности во&nbsp;время всего тура.</p>
                   </li>
                   <li class="advantages__item swiper-slide">
@@ -1690,7 +1698,7 @@
                         <use xlink:href="./img/sprite.svg#adv_crown"></use>
                       </svg>
                     </div>
-                    <h3 class="advantages__subheader">Экспертиза и знания</h3>
+                    <h3 class="advantages__subheader">Экспертиза и&nbsp;знания</h3>
                     <p>Наша команда опытных гидов имеет обширные знания о&nbsp;местности, погодных условиях и&nbsp;технике безопасности. Это гарантирует, что наши клиенты находятся в&nbsp;надежных руках и&nbsp;могут в&nbsp;полной мере насладиться опытом без опасений.</p>
                   </li>
                   <li class="advantages__item swiper-slide">
@@ -1699,7 +1707,7 @@
                         <use xlink:href="./img/sprite.svg#adv_boots"></use>
                       </svg>
                     </div>
-                    <h3 class="advantages__subheader">Оборудование и снаряжение</h3>
+                    <h3 class="advantages__subheader">Оборудование и&nbsp;снаряжение</h3>
                     <p>Мы&nbsp;предоставляем клиентам все необходимое оборудование, необходимое для путешествия. Это избавляет клиентов от&nbsp;необходимости покупать, брать с&nbsp;собой снаряжение, что делает путешествие более удобным и&nbsp;экономически выгодным.</p>
                   </li>
                   <li class="advantages__item swiper-slide">
@@ -1717,87 +1725,90 @@
                         <use xlink:href="./img/sprite.svg#adv_flower"></use>
                       </svg>
                     </div>
-                    <h3 class="advantages__subheader">Бережное отношение к природе</h3>
-                    <p>Уделяем первостепенное внимание охране окружающей среды и гарантируем, что туры оказывают минимальное воздействие на природную среду. Наша компания следует принципу «Не оставлять следов».</p>
+                    <h3 class="advantages__subheader">Бережное отношение к&nbsp;природе</h3>
+                    <p>Уделяем первостепенное внимание охране окружающей среды и&nbsp;гарантируем, что туры оказывают минимальное воздействие на&nbsp;природную среду. Наша компания следует принципу &laquo;Не&nbsp;оставлять следов&raquo;.</p>
                   </li>
                 </ul>
               </div>
-              <div class="advantages__slider-buttons">
-                <button class="advantages__button advantages__button--prev swiper-button-prev" type="button">
-                  <span class="visually-hidden">Предыдущий слайд</span>
-                </button>
-                <button class="advantages__button advantages__button--next swiper-button-next" type="button">
-                  <span class="visually-hidden">Следующий слайд</span>
-                </button>
-              </div>
+            </div>
+            <div class="advantages__slider-buttons">
+              <button class="advantages__button advantages__button--prev swiper-button-prev" type="button">
+                <span class="visually-hidden">Предыдущий слайд</span>
+              </button>
+              <button class="advantages__button advantages__button--next swiper-button-next" type="button">
+                <span class="visually-hidden">Следующий слайд</span>
+              </button>
             </div>
           </div>
         </section>
-        <section class="photogallery" id="photogallery">
-          <div class="photogallery__container">
-            <h2 class="photogallery__header" data-header="Фотогалерея">Фотогалерея</h2>
+        <section class="gallery" id="gallery">
+          <div class="gallery__container">
+            <h2 class="gallery__header" data-header="Фотогалерея">Фотогалерея</h2>
             <p>Добавляйте фото в&nbsp;Instagram с&nbsp;хэштегом #лайфтур, а&nbsp;также отмечайте нас на&nbsp;фото. Лучшие фотографии украсят этот раздел нашего сайта.</p>
-            <div class="photogallery__slider-buttons">
-              <button class="photogallery__button photogallery__button--prev swiper-button-prev" type="button">
+            <div class="gallery__slider-buttons">
+              <button class="gallery__button gallery__button--prev swiper-button-prev" type="button">
                 <span class="visually-hidden">Предыдущий слайд</span>
               </button>
-              <button class="photogallery__button photogallery__button--next swiper-button-next" type="button">
+              <button class="gallery__button gallery__button--next swiper-button-next" type="button">
                 <span class="visually-hidden">Следующий слайд</span>
                 </button>
             </div>
           </div>
-          <div class="photogallery__content swiper">
-            <ul class="photogallery__list swiper-wrapper">
-              <li class="photogallery__item swiper-slide">
-                <div class="photogallery__image-big">
+          <div class="gallery__content swiper">
+            <ul class="gallery__list swiper-wrapper">
+              <li class="gallery__item swiper-slide">
+                <div class="gallery__image-big">
                   <picture>
                     <source
                       type="image/webp"
                       srcset="
-                      ./img/photogallery/originals/photo_1.webp 1x,
-                      ./img/photogallery/originals/photo_1@x2.webp 2x
+                      ./img/gallery/originals/photo_1.webp 1x,
+                      ./img/gallery/originals/photo_1@x2.webp 2x
                       "
                     >
                     <img
-                      src="./img/photogallery/originals/photo_1.png"
-                      srcset="./img/photogallery/originals/photo_1@x2.png 2x"
+                      class="gallery__img-big"
+                      src="./img/gallery/originals/photo_1.png"
+                      srcset="./img/gallery/originals/photo_1@x2.png 2x"
                       width="1650"
                       height="1100"
                       alt="Фото природы 1"
                     >
                   </picture>
                 </div>
-                <div class="photogallery__small-pics-wrapper">
-                  <div class="photogallery__small-pic-top">
+                <div class="gallery__small-pics-wrapper">
+                  <div class="gallery__small-pic-top">
                     <picture>
                       <source
                         type="image/webp"
                         srcset="
-                        ./img/photogallery/originals/photo_2.webp 1x,
-                        ./img/photogallery/originals/photo_2@x2.webp 2x
+                        ./img/gallery/originals/photo_2.webp 1x,
+                        ./img/gallery/originals/photo_2@x2.webp 2x
                         "
                       >
                       <img
-                        src="./img/photogallery/originals/photo_2.png"
-                        srcset="./img/photogallery/originals/photo_2@x2.png 2x"
+                        class="gallery__img-small"
+                        src="./img/gallery/originals/photo_2.png"
+                        srcset="./img/gallery/originals/photo_2@x2.png 2x"
                         width="929"
                         height="697"
                         alt="Фото природы 2"
                       >
                     </picture>
                   </div>
-                  <div class="photogallery__small-pic">
+                  <div class="gallery__small-pic">
                     <picture>
                       <source
                         type="image/webp"
                         srcset="
-                        ./img/photogallery/originals/photo_3.webp 1x,
-                        ./img/photogallery/originals/photo_3@x2.webp 2x
+                        ./img/gallery/originals/photo_3.webp 1x,
+                        ./img/gallery/originals/photo_3@x2.webp 2x
                         "
                       >
                       <img
-                        src="./img/photogallery/originals/photo_3.png"
-                        srcset="./img/photogallery/originals/photo_3@x2.png 2x"
+                        class="gallery__img-small"
+                        src="./img/gallery/originals/photo_3.png"
+                        srcset="./img/gallery/originals/photo_3@x2.png 2x"
                         width="1988"
                         height="1263"
                         alt="Фото природы 3"
@@ -1806,56 +1817,59 @@
                   </div>
                 </div>
               </li>
-              <li class="photogallery__item swiper-slide">
-                <div class="photogallery__image-big">
+              <li class="gallery__item swiper-slide">
+                <div class="gallery__image-big">
                   <picture>
                     <source
                       type="image/webp"
                       srcset="
-                      ./img/photogallery/originals/photo_4.webp 1x,
-                      ./img/photogallery/originals/photo_4@x2.webp 2x
+                      ./img/gallery/originals/photo_4.webp 1x,
+                      ./img/gallery/originals/photo_4@x2.webp 2x
                       "
                     >
                     <img
-                      src="./img/photogallery/originals/photo_4.jpg"
-                      srcset="./img/photogallery/originals/photo_4@x2.jpg 2x"
+                    class="gallery__img-big"
+                      src="./img/gallery/originals/photo_4.jpg"
+                      srcset="./img/gallery/originals/photo_4@x2.jpg 2x"
                       width="1200"
                       height="1200"
                       alt="Фото природы 4"
                     >
                   </picture>
                 </div>
-                <div class="photogallery__small-pics-wrapper">
-                  <div class="photogallery__small-pic-top">
+                <div class="gallery__small-pics-wrapper">
+                  <div class="gallery__small-pic-top">
                     <picture>
                       <source
                         type="image/webp"
                         srcset="
-                        ./img/photogallery/originals/photo_5.webp 1x,
-                        ./img/photogallery/originals/photo_5@x2.webp 2x
+                        ./img/gallery/originals/photo_5.webp 1x,
+                        ./img/gallery/originals/photo_5@x2.webp 2x
                         "
                       >
                       <img
-                        src="./img/photogallery/originals/photo_5.png"
-                        srcset="./img/photogallery/originals/photo_5@x2.png 2x"
+                      class="gallery__img-small"
+                        src="./img/gallery/originals/photo_5.png"
+                        srcset="./img/gallery/originals/photo_5@x2.png 2x"
                         width="1650"
                         height="1100"
                         alt="Фото природы 5"
                       >
                     </picture>
                   </div>
-                  <div class="photogallery__small-pic">
+                  <div class="gallery__small-pic">
                     <picture>
                       <source
                         type="image/webp"
                         srcset="
-                        ./img/photogallery/originals/photo_6.webp 1x,
-                        ./img/photogallery/originals/photo_6@x2.webp 2x
+                        ./img/gallery/originals/photo_6.webp 1x,
+                        ./img/gallery/originals/photo_6@x2.webp 2x
                         "
                       >
                       <img
-                        src="./img/photogallery/originals/photo_6.png"
-                        srcset="./img/photogallery/originals/photo_6@x2.png 2x"
+                      class="gallery__img-small"
+                        src="./img/gallery/originals/photo_6.png"
+                        srcset="./img/gallery/originals/photo_6@x2.png 2x"
                         width="1650"
                         height="1100"
                         alt="Фото природы 6"
@@ -1864,56 +1878,59 @@
                   </div>
                 </div>
               </li>
-              <li class="photogallery__item swiper-slide">
-                <div class="photogallery__image-big">
+              <li class="gallery__item swiper-slide">
+                <div class="gallery__image-big">
                   <picture>
                     <source
                       type="image/webp"
                       srcset="
-                      ./img/photogallery/originals/photo_7.webp 1x,
-                      ./img/photogallery/originals/photo_7@x2.webp 2x
+                      ./img/gallery/originals/photo_7.webp 1x,
+                      ./img/gallery/originals/photo_7@x2.webp 2x
                       "
                     >
                     <img
-                      src="./img/photogallery/originals/photo_7.png"
-                      srcset="./img/photogallery/originals/photo_7@x2.png 2x"
+                    class="gallery__img-big"
+                      src="./img/gallery/originals/photo_7.png"
+                      srcset="./img/gallery/originals/photo_7@x2.png 2x"
                       width="1650"
                       height="1100"
                       alt="Фото природы 7"
                     >
                   </picture>
                 </div>
-                <div class="photogallery__small-pics-wrapper">
-                  <div class="photogallery__small-pic-top">
+                <div class="gallery__small-pics-wrapper">
+                  <div class="gallery__small-pic-top">
                     <picture>
                       <source
                         type="image/webp"
                         srcset="
-                        ./img/photogallery/originals/photo_11.webp 1x,
-                        ./img/photogallery/originals/photo_11@x2.webp 2x
+                        ./img/gallery/originals/photo_11.webp 1x,
+                        ./img/gallery/originals/photo_11@x2.webp 2x
                         "
                       >
                       <img
-                        src="./img/photogallery/originals/photo_11.jpg"
-                        srcset="./img/photogallery/originals/photo_11@x2.jpg 2x"
+                      class="gallery__img-small"
+                        src="./img/gallery/originals/photo_11.jpg"
+                        srcset="./img/gallery/originals/photo_11@x2.jpg 2x"
                         width="1650"
                         height="1100"
                         alt="Фото природы 8"
                       >
                     </picture>
                   </div>
-                  <div class="photogallery__small-pic">
+                  <div class="gallery__small-pic">
                     <picture>
                       <source
                         type="image/webp"
                         srcset="
-                        ./img/photogallery/originals/photo_8.webp 1x,
-                        ./img/photogallery/originals/photo_8@x2.webp 2x
+                        ./img/gallery/originals/photo_8.webp 1x,
+                        ./img/gallery/originals/photo_8@x2.webp 2x
                         "
                       >
                       <img
-                        src="./img/photogallery/originals/photo_8.jpg"
-                        srcset="./img/photogallery/originals/photo_8@x2.jpg 2x"
+                      class="gallery__img-small"
+                        src="./img/gallery/originals/photo_8.jpg"
+                        srcset="./img/gallery/originals/photo_8@x2.jpg 2x"
                         width="1650"
                         height="1100"
                         alt="Фото природы 9"
@@ -1922,56 +1939,59 @@
                   </div>
                 </div>
               </li>
-              <li class="photogallery__item swiper-slide">
-                <div class="photogallery__image-big">
+              <li class="gallery__item swiper-slide">
+                <div class="gallery__image-big">
                   <picture>
                     <source
                       type="image/webp"
                       srcset="
-                      ./img/photogallery/originals/photo_9.webp 1x,
-                      ./img/photogallery/originals/photo_9@x2.webp 2x
+                      ./img/gallery/originals/photo_9.webp 1x,
+                      ./img/gallery/originals/photo_9@x2.webp 2x
                       "
                     >
                     <img
-                      src="./img/photogallery/originals/photo_9.jpg"
-                      srcset="./img/photogallery/originals/photo_9@x2.jpg 2x"
+                    class="gallery__img-big"
+                      src="./img/gallery/originals/photo_9.jpg"
+                      srcset="./img/gallery/originals/photo_9@x2.jpg 2x"
                       width="1650"
                       height="1100"
                       alt="Фото природы 10"
                     >
                   </picture>
                 </div>
-                <div class="photogallery__small-pics-wrapper">
-                  <div class="photogallery__small-pic-top">
+                <div class="gallery__small-pics-wrapper">
+                  <div class="gallery__small-pic-top">
                     <picture>
                       <source
                         type="image/webp"
                         srcset="
-                        ./img/photogallery/originals/photo_10.webp 1x,
-                        ./img/photogallery/originals/photo_10@x2.webp 2x
+                        ./img/gallery/originals/photo_10.webp 1x,
+                        ./img/gallery/originals/photo_10@x2.webp 2x
                         "
                       >
                       <img
-                        src="./img/photogallery/originals/photo_10.jpg"
-                        srcset="./img/photogallery/originals/photo_10@x2.jpg 2x"
+                      class="gallery__img-small"
+                        src="./img/gallery/originals/photo_10.jpg"
+                        srcset="./img/gallery/originals/photo_10@x2.jpg 2x"
                         width="1650"
                         height="1100"
                         alt="Фото природы 11"
                       >
                     </picture>
                   </div>
-                  <div class="photogallery__small-pic">
+                  <div class="gallery__small-pic">
                     <picture>
                       <source
                         type="image/webp"
                         srcset="
-                        ./img/photogallery/originals/photo_12.webp 1x,
-                        ./img/photogallery/originals/photo_12@x2.webp 2x
+                        ./img/gallery/originals/photo_12.webp 1x,
+                        ./img/gallery/originals/photo_12@x2.webp 2x
                         "
                       >
                       <img
-                        src="./img/photogallery/originals/photo_12.jpg"
-                        srcset="./img/photogallery/originals/photo_12@x2.jpg 2x"
+                      class="gallery__img-small"
+                        src="./img/gallery/originals/photo_12.jpg"
+                        srcset="./img/gallery/originals/photo_12@x2.jpg 2x"
                         width="1650"
                         height="1100"
                         alt="Фото природы 12"
@@ -2082,9 +2102,9 @@
             <ul class="footer__list">
               <li class="footer__item"><a class="footer__link" href="#catalog">Туры</a></li>
               <li class="footer__item"><a class="footer__link" href="#education">Обучение</a></li>
-              <li class="footer__item"><a class="footer__link" href="#photogallery">О нас</a></li>
+              <li class="footer__item"><a class="footer__link" href="#gallery">О нас</a></li>
               <li class="footer__item"><a class="footer__link" href="#feedback">Отзывы</a></li>
-              <li class="footer__item"><a class="footer__link" href="#photogallery">Фотографии</a></li>
+              <li class="footer__item"><a class="footer__link" href="#gallery">Фотографии</a></li>
               <li class="footer__item"><a class="footer__link" href="#contacts">Контакты</a></li>
             </ul>
             <a class="footer__phone" href="tel:+78007253232">8 800 725 32 32</a>

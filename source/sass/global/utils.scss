@@ -68,10 +68,9 @@
 .swiper-button-prev::after,
 .swiper-rtl .swiper-button-next::after {
   content: "←";
-  font-family: $ff-primary;
   color: inherit;
   font-size: 18px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
 
 .swiper-button-prev:hover::after,
@@ -92,10 +91,9 @@
 .swiper-button-next::after,
 .swiper-rtl .swiper-button-prev::after {
   content: "→";
-  font-family: $ff-primary;
   color: $color-default-white;
   font-size: 18px;
-  padding-bottom: 3px;
+  padding-bottom: 4px;
 }
 
 .swiper-button-next:hover::after,
@@ -111,4 +109,51 @@
 .swiper-button-next:focus-visible::after,
 .swiper-rtl .swiper-button-prev:focus-visible::after {
   color: $color-resolution-blue;
+}
+
+.swiper-horizontal > .swiper-pagination-bullets,
+.swiper-pagination-bullets .swiper-pagination-horizontal,
+.swiper-pagination-custom,
+.swiper-pagination-fraction {
+  bottom: 81px;
+  right: 0;
+  width: 70px;
+  left: 1257px;
+  display: flex;
+  justify-content: flex-start;
+  gap: 7px;
+
+  @include vp-1200 {
+    width: 100%;
+    bottom: 70px;
+    left: 0;
+    justify-content: center;
+    gap: 7px;
+  }
+
+  @include vp-768 {
+    padding-bottom: 0;
+    bottom: 40px;
+    gap: 4px;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: $color-transparent;
+  border-radius: 50%;
+  border: solid 1px $color-default-white;
+  opacity: 1;
+
+  @include vp-768 {
+    width: 8px;
+    height: 8px;
+  }
+}
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active,
+.swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  background-color: $color-default-white;
 }

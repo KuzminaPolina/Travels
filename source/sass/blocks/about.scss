@@ -30,7 +30,7 @@
   }
 }
 
-.about__image-container picture img {
+.about__background {
   @include vp-1200 {
     width: 475px;
     height: 402px;
@@ -118,7 +118,7 @@
   }
 }
 
-.about__subheader {
+.about__info h3 {
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;

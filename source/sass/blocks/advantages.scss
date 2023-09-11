@@ -4,12 +4,13 @@
   padding-bottom: 36px;
 
   @include vp-1200 {
-    padding-top: 56px;
-    padding-bottom: 46px;
+    padding-top: 58px;
+    padding-bottom: 42px;
   }
 
   @include vp-768 {
     padding-top: 34px;
+    padding-bottom: 48px;
   }
 }
 
@@ -61,8 +62,8 @@
   }
 }
 
-.advantages__buttons-positioning {
-  position: relative;
+.advantages__ex-buttons {
+  overflow: hidden;
 }
 
 .advantages__big-cloud {
@@ -105,8 +106,6 @@
   margin: 0;
   padding: 48px 0;
 
-  display: flex;
-
   @include vp-1200 {
     display: flex;
     flex-wrap: wrap;
@@ -116,13 +115,11 @@
 
   @include vp-768 {
     padding: 0;
-    gap: 15px;
+    gap: 16px;
   }
 }
 
 .advantages__item {
-  width: 380px;
-  max-width: 380px;
   min-width: 380px;
   height: auto;
   border: solid 1px rgba(2, 102, 193, 0.1);
@@ -190,32 +187,6 @@
   }
 }
 
-.advantages__item:nth-child(3),
-.advantages__item:nth-child(4) {
-  @include vp-1200 {
-    padding-bottom: 20px;
-  }
-}
-
-.advantages__item:nth-child(5) {
-  @include vp-1200 {
-    padding-bottom: 30px;
-    padding-top: 30px;
-  }
-
-  @include vp-768 {
-    padding-top: 18px;
-    padding-bottom: 18px;
-  }
-}
-
-.advantages__item:nth-child(5) p {
-  @include vp-1200 {
-    min-height: auto;
-    height: auto;
-  }
-}
-
 .advantages__subheader {
   margin: 0;
   font-size: 18px;
@@ -237,11 +208,17 @@
 }
 
 .advantages__container {
+  width: 1200px;
+  margin: 0 auto;
+  overflow: visible;
+
   @include vp-1200 {
+    width: auto;
     padding: 0 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    overflow: hidden;
   }
 
   @include vp-768 {
@@ -253,12 +230,12 @@
   position: absolute;
   display: flex;
   gap: 4px;
-  bottom: -36px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
 
   @include vp-1440 {
-    bottom: -35px;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%);
   }

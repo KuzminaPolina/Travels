@@ -370,7 +370,7 @@
     top: -95px;
   }
 
-  @include vp-1200 {
+  @include vp-768 {
     bottom: -96px;
     top: auto;
   }
@@ -380,6 +380,10 @@
   position: absolute;
   top: 502px;
   left: 0;
+
+  @include vp-1200 {
+    display: none;
+  }
 }
 
 .catalog__image {
@@ -387,13 +391,13 @@
   height: auto;
 }
 
-.catalog__image picture img {
+.catalog__img {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
 
-.catalog__background-big picture img {
+.catalog__background-big-img {
   @include vp-1200 {
     width: 294px;
     height: 1364px;

@@ -1,4 +1,4 @@
-.photogallery {
+.gallery {
   position: relative;
   margin-top: 130px;
 
@@ -7,7 +7,7 @@
   }
 }
 
-.photogallery__container {
+.gallery__container {
   padding: 0 120px;
   position: relative;
   max-width: 1440px;
@@ -30,7 +30,7 @@
   }
 }
 
-.photogallery__header {
+.gallery__header {
   font-size: 35px;
   font-weight: 800;
   line-height: 35px;
@@ -55,7 +55,7 @@
   }
 }
 
-.photogallery__header::after {
+.gallery__header::after {
   content: attr(data-header) "";
   position: absolute;
   bottom: 0;
@@ -79,7 +79,7 @@
   }
 }
 
-.photogallery__slider-buttons {
+.gallery__slider-buttons {
   position: absolute;
   bottom: 8px;
   right: 120px;
@@ -102,7 +102,7 @@
   }
 }
 
-.photogallery__button {
+.gallery__button {
   width: 37px;
   height: 35px;
   background-color: $color-navy-blue;
@@ -122,7 +122,7 @@
   }
 }
 
-.photogallery__container p {
+.gallery__container p {
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -148,32 +148,26 @@
   }
 }
 
-.photogallery__list {
+.gallery__list {
   list-style: none;
   padding: 0;
   margin: 0;
   max-height: 450px;
 }
 
-.photogallery__image-big picture img {
+.gallery__img-big {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.photogallery__small-pic-top picture img {
+.gallery__img-small {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.photogallery__small-pic picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.photogallery__item {
+.gallery__item {
   display: grid;
   grid-template-columns: 48% 51.3%;
   column-gap: 5px;
@@ -191,7 +185,7 @@
   }
 }
 
-.photogallery__small-pics-wrapper {
+.gallery__small-pics-wrapper {
   display: grid;
   grid-template-rows: 178px 265px;
   row-gap: 5px;

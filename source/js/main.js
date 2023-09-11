@@ -144,12 +144,12 @@ const initFeedbackSlider = () =>
   });
 
 const initGallerySlider = () =>
-  new Swiper('.photogallery__content', {
+  new Swiper('.gallery__content', {
     direction: 'horizontal',
     loop: false,
     navigation: {
-      nextEl: '.photogallery__button--next',
-      prevEl: '.photogallery__button--prev',
+      nextEl: '.gallery__button--next',
+      prevEl: '.gallery__button--prev',
     },
     keyboard: {
       enabled: true,
@@ -178,7 +178,8 @@ const initDesktopOnlySlider = () => {
   if (window.matchMedia('(min-width: 1200px)').matches) {
     // eslint-disable-next-line no-new
     new Swiper('.advantages__container', {
-      slidesPerView: 3.6,
+      slidesPerView: 3,
+      initialSlide: 2,
       centeredSlides: true,
       loop: true,
       spaceBetween: 30,

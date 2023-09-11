@@ -90,7 +90,7 @@
   object-fit: cover;
 
   @include vp-1200 {
-    padding: 20px 30px 20px 20px;
+    padding: 18px 30px 20px 20px;
     max-width: 560px;
     width: 100%;
     height: 100%;
@@ -139,11 +139,11 @@
 
   @include vp-768 {
     padding: 0 2px;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
   }
 }
 
-.feedback__photo picture img {
+.feedback__img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -156,7 +156,7 @@
   row-gap: 26px;
 
   @include vp-1200 {
-    padding-top: 0;
+    padding-top: 2px;
     display: grid;
     grid-template-rows: 185px 31px;
     row-gap: 15px;
