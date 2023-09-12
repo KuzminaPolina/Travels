@@ -6298,6 +6298,7 @@ form fieldset {
 
   .slider {
     width: 100%;
+    min-height: 568px;
   }
 
   .slider__image-container {
