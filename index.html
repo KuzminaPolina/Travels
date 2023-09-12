@@ -51,6 +51,18 @@
       type="font/woff2"
       crossorigin
     >
+    <link rel="preload" href="img/header_slider/slide_1.webp" as="image">
+    <link rel="preload" href="img/header_slider/slide_1@x2.webp" as="image">
+    <link rel="preload" href="img/header_slider/slide_1.jpg" as="image">
+    <link rel="preload" href="img/header_slider/slide_1@x2.jpg" as="image">
+    <link rel="preload" href="img/header_slider/slide_1_tablet.webp" as="image">
+    <link rel="preload" href="img/header_slider/slide_1_tablet@x2.webp" as="image">
+    <link rel="preload" href="img/header_slider/slide_1_tablet.jpg" as="image">
+    <link rel="preload" href="img/header_slider/slide_1_tablet@x2.jpg" as="image">
+    <link rel="preload" href="img/header_slider/slide_1_mobile.webp" as="image">
+    <link rel="preload" href="img/header_slider/slide_1_mobile@x2.webp" as="image">
+    <link rel="preload" href="img/header_slider/slide_1_mobile.jpg" as="image">
+    <link rel="preload" href="img/header_slider/slide_1_mobile@x2.jpg" as="image">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
     <link rel="icon" href="/favicon.ico" type="image/x-icon">
     <title>Путешествия по России</title>
@@ -95,7 +107,7 @@
         <section class="slider">
           <h1 class="visually-hidden">Незабываемые путешествия по России</h1>
           <div class="slider__container swiper">
-              <ul class="slider__list swiper-wrapper">
+            <ul class="slider__list swiper-wrapper">
               <li class="slider__item swiper-slide">
                 <div class="slider__image-container">
                   <picture>
@@ -150,7 +162,7 @@
                     </div>
                     <div class="slider__video video">
                       <div class="video__preview">
-                          <iframe class="video__iframe video__iframe--hidden" src="https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                          <iframe class="video__iframe video__iframe--hidden" src="https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
                           <picture>
                             <source
                               type="image/webp"
@@ -330,15 +342,15 @@
                     ./img/header_slider/slide_3_mobile.jpg 1x,
                     ./img/header_slider/slide_3_mobile@x2.jpg 2x
                     "
-                  >
-                  <source
-                    type="image/jpg"
-                    media="(max-width: 1199px)"
-                    srcset="
-                      ./img/header_slider/slide_3_tablet.jpg 1x,
-                      ./img/header_slider/slide_3_tablet@x2.jpg 2x
-                    "
-                  >
+                    >
+                    <source
+                      type="image/jpg"
+                      media="(max-width: 1199px)"
+                      srcset="
+                        ./img/header_slider/slide_3_tablet.jpg 1x,
+                        ./img/header_slider/slide_3_tablet@x2.jpg 2x
+                      "
+                    >
                     <img class="slider__img" src="img/header_slider/slide_3.jpg" srcset="img/header_slider/slide_3@x2.jpg 2x" width="1440" height="800" alt="photo 1">
                   </picture>
                 </div>
@@ -353,7 +365,7 @@
                       <div class="slider__media-wrapper">
                         <div class="slider__podcast podcast">
                           <div class="podcast__iframe">
-                            <iframe style="border:none; width:340px; height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/#album/25474374"></iframe>
+                            <iframe style="border:none; width:340px; height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/#album/25474374" loading="lazy"></iframe>
                           </div>
                           <div class="podcast__content">
                             <h3 class="podcast__header">Алтай</h3>
@@ -504,6 +516,7 @@
                           width="380"
                           height="412"
                           alt="Фото природы"
+                          loading="lazy"
                         >
                       </picture>
                     </div>
@@ -603,6 +616,7 @@
                           width="380"
                           height="412"
                           alt="Фото природы"
+                          loading="lazy"
                         >
                       </picture>
                     </div>
@@ -702,6 +716,7 @@
                           width="380"
                           height="412"
                           alt="Фото природы"
+                          loading="lazy"
                         >
                       </picture>
                     </div>
@@ -801,6 +816,7 @@
                           width="380"
                           height="412"
                           alt="Фото природы"
+                          loading="lazy"
                         >
                       </picture>
                     </div>
@@ -1344,7 +1360,7 @@
                 ./img/about/background-tablet@x2.png 2x
                 "
               >
-              <img class="about__background" src="img/about/background.png" srcset="img/about/background@x2.png 2x" width="808" height="474" alt="photo 1">
+              <img class="about__background" src="img/about/background.png" srcset="img/about/background@x2.png 2x" width="808" height="474" alt="photo 1" loading="lazy">
             </picture>
           </div>
           <div class="about__image-clouds">
@@ -1426,6 +1442,7 @@
                             width="238"
                             height="212"
                             alt="Турист"
+                            loading="lazy"
                           >
                         </picture>
                       </div>
@@ -1491,6 +1508,7 @@
                             width="238"
                             height="212"
                             alt="Турист"
+                            loading="lazy"
                           >
                         </picture>
                       </div>
@@ -1558,6 +1576,7 @@
                             width="238"
                             height="212"
                             alt="Турист"
+                            loading="lazy"
                           >
                         </picture>
                       </div>
@@ -1623,6 +1642,7 @@
                             width="238"
                             height="212"
                             alt="Турист"
+                            loading="lazy"
                           >
                         </picture>
                       </div>
