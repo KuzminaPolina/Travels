@@ -3240,6 +3240,7 @@ button,
   max-width: 1440px;
   color: #ffffff;
   padding: 182px 120px 80px;
+  background: linear-gradient(112deg, rgba(15, 20, 41, 0.33) 17.23%, rgba(15, 20, 41, 0) 94.93%);
 }
 
 .slider__content-wrapper {
@@ -3380,6 +3381,10 @@ button,
 .slider__media-img {
   width: 442px;
   height: auto;
+}
+
+.slider__item {
+  min-height: 800px;
 }
 
 .video {
@@ -5491,6 +5496,10 @@ form fieldset {
     position: static;
   }
 
+  .slider__item {
+    min-height: 1024px;
+  }
+
   .video {
     width: 442px;
     height: 300px;
@@ -6298,7 +6307,6 @@ form fieldset {
 
   .slider {
     width: 100%;
-    min-height: 568px;
   }
 
   .slider__image-container {
@@ -6349,6 +6357,11 @@ form fieldset {
 
   .slider__media {
     display: none;
+  }
+
+  .slider__item {
+    min-height: 568px;
+    background-color: #0266c1;
   }
 
   .video {
