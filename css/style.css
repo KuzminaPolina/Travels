@@ -3231,6 +3231,13 @@ button,
   background-color: #0266c1;
 }
 
+.slider__image-container picture img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
 .slider__overlay {
   position: absolute;
   top: 0;
@@ -3384,7 +3391,7 @@ button,
 }
 
 .slider__item {
-  min-height: 800px;
+  min-height: auto;
 }
 
 .video {
@@ -5158,12 +5165,45 @@ form fieldset {
 */
 
 @media (max-width: 1439px) {
+  .swiper-horizontal > .swiper-pagination-bullets,
+  .swiper-pagination-bullets .swiper-pagination-horizontal,
+  .swiper-pagination-custom,
+  .swiper-pagination-fraction {
+    width: 100%;
+    bottom: 10px;
+    left: 520px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    gap: 7px;
+  }
+
   .header__nav-container {
     padding: 40px 45px;
   }
 
   .slider__overlay {
-    padding: 174px 45px 90px;
+    padding: 144px 45px 90px;
+  }
+
+  .slider__content-wrapper {
+    margin-bottom: 0;
+  }
+
+  .slider__content-wrapper--second {
+    margin-bottom: 50px;
+  }
+
+  .slider__content-wrapper--third {
+    margin-bottom: 50px;
+  }
+
+  .slider__header {
+    width: 150%;
+  }
+
+  .video__preview {
+    margin-top: 90px;
   }
 
   .catalog__container {
@@ -5400,12 +5440,6 @@ form fieldset {
 
   .slider__image-container {
     height: 1024px;
-  }
-
-  .slider__img {
-    width: 100%;
-    height: 100%;
-    max-width: 100%;
   }
 
   .slider__overlay {
@@ -6313,9 +6347,10 @@ form fieldset {
     height: auto;
   }
 
-  .slider__img {
+  .slider__image-container picture img {
     width: 100%;
     height: 100%;
+    min-height: 568px;
   }
 
   .slider__overlay {
