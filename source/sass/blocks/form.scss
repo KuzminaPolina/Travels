@@ -12,7 +12,7 @@
   @include vp-1200 {
     background-image: url("../img/form/background-tablet.webp");
     background-repeat: no-repeat;
-    background-size: 768px auto;
+    background-size: 100% auto;
     background-position: top center;
     background-color: #3c4132;
   }
@@ -20,7 +20,7 @@
   @include vp-768 {
     background-image: url("../img/form/background-mobile.webp");
     background-repeat: no-repeat;
-    background-size: 320px auto;
+    background-size: 100% auto;
     background-position: top center;
     background-color: #3c4132;
   }
