@@ -123,6 +123,14 @@
   justify-content: flex-start;
   gap: 7px;
 
+  @include vp-1440 {
+    width: 100%;
+    bottom: 10px;
+    left: 520px;
+    justify-content: center;
+    gap: 7px;
+  }
+
   @include vp-1200 {
     width: 100%;
     bottom: 70px;

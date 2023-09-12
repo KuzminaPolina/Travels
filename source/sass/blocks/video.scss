@@ -24,6 +24,10 @@
   width: 482px;
   margin-top: 120px;
 
+  @include vp-1440 {
+    margin-top: 90px;
+  }
+
   @include vp-1200 {
     width: 442px;
     height: 100%;
