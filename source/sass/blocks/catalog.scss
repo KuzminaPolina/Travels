@@ -117,17 +117,14 @@
   margin-bottom: 24px;
 
   @include vp-1440 {
-    margin-top: 160px;
     gap: 17px;
   }
 
   @include vp-1200 {
-    margin-top: 186px;
     gap: 17px;
   }
 
   @include vp-768 {
-    margin-top: 175px;
     margin-bottom: 15px;
     display: grid;
     grid-template-columns: 76px 82px 1fr;
@@ -236,7 +233,7 @@
   gap: 48px;
 
   @include vp-1440 {
-    gap: 35px;
+    gap: 34px;
   }
 
   @include vp-1200 {
@@ -388,12 +385,23 @@
 
 .catalog__image {
   width: 100%;
-  height: auto;
+  height: 100%;
+  object-fit: cover;
+  background-color: $color-navy-blue;
+  min-height: 412px;
+
+  @include vp-1440 {
+    min-height: 378px;
+  }
+
+  @include vp-1200 {
+    min-height: 412px;
+  }
 }
 
 .catalog__img {
   width: 100%;
-  height: auto;
+  height: 100%;
   object-fit: cover;
 }
 

@@ -26,6 +26,7 @@
   display: grid;
   grid-template-columns: 205px 1fr 142px;
   margin-bottom: 15px;
+  gap: 20px;
 
   @include vp-1200 {
     display: grid;
@@ -88,6 +89,7 @@
 .footer__list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 33px;
   margin: auto;
   padding: 0;
@@ -140,6 +142,7 @@
   margin: auto;
   margin-right: 0;
   font-size: 18px;
+  grid-column: 3 / 4;
 
   @include vp-1200 {
     display: none;

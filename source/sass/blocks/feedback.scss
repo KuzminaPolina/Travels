@@ -86,7 +86,7 @@
   box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
   max-width: 790px;
   width: 100%;
-  height: 100%;
+  height: auto;
   object-fit: cover;
 
   @include vp-1200 {
@@ -109,6 +109,7 @@
   display: grid;
   grid-template-columns: 258px 442px;
   column-gap: 30px;
+  height: 100%;
 
   @include vp-1440 {
     grid-template-columns: 258px 1fr;
@@ -136,8 +137,15 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+  min-height: 253px;
+  background-color: #115304;
+
+  @include vp-1200 {
+    min-height: 237px;
+  }
 
   @include vp-768 {
+    min-height: 169px;
     padding: 0 2px;
     margin-bottom: 17px;
   }
@@ -151,20 +159,18 @@
 
 .feedback__info {
   padding-top: 15px;
-  display: grid;
-  grid-template-rows: 164px 33px;
-  row-gap: 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   @include vp-1200 {
     padding-top: 2px;
-    display: grid;
-    grid-template-rows: 185px 31px;
-    row-gap: 15px;
   }
 
   @include vp-768 {
     display: flex;
     flex-direction: column;
+    gap: 15px;
   }
 }
 

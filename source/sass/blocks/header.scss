@@ -38,6 +38,7 @@
   margin: 0 auto;
   background-color: $color-transparent;
   color: $color-default-white;
+  gap: 20px;
 
   @include vp-1200 {
     display: grid;
@@ -79,39 +80,10 @@
   line-height: normal;
 }
 
-.header__logo-desktop {
-  @include vp-1200 {
-    display: none;
-  }
-
-  @include vp-768 {
-    display: none;
-  }
-}
-
-.header__logo-tablet {
-  display: none;
-
-  @include vp-1200 {
-    display: block;
-  }
-
-  @include vp-768 {
-    display: none;
-  }
-}
-
-.header__logo-mobile {
-  display: none;
-
-  @include vp-768 {
-    display: block;
-  }
-}
-
 .header__list {
   list-style: none;
   display: flex;
+  flex-wrap: wrap;
   gap: 32px;
   margin: auto;
   padding: 0;
@@ -173,6 +145,7 @@
   margin: auto;
   margin-right: 0;
   font-size: 18px;
+  grid-column: 3 / 4;
 
   @include vp-1200 {
     margin: auto;
