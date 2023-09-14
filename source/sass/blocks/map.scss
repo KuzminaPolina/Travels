@@ -1,7 +1,7 @@
 .map__id {
   height: 324px;
   width: 100%;
-  background-image: url("../../img/map/map-desktop.jpg");
+  background-image: url("../img/map/map-desktop.jpg");
   background-repeat: no-repeat;
   background-size: 585px auto;
   background-position: top center;
@@ -10,7 +10,7 @@
   @include vp-1200 {
     height: 340px;
     width: 100%;
-    background-image: url("../../img/map/map-tablet.jpg");
+    background-image: url("../img/map/map-tablet.jpg");
     background-repeat: no-repeat;
     background-size: 678px auto;
     background-position: top center;
@@ -20,7 +20,7 @@
   @include vp-768 {
     height: 320px;
     width: 100%;
-    background-image: url("../../img/map/map-mobile.jpg");
+    background-image: url("../img/map/map-mobile.jpg");
     background-repeat: no-repeat;
     background-size: 290px auto;
     background-position: top center;
