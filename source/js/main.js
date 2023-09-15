@@ -8,16 +8,17 @@ const headerSlider = document.querySelector('.slider');
 
 const focusSlider = function (t, e) {
   const links = t.querySelectorAll('.slider__more-button');
-  const next = function (evt) {
-    const slides = t.querySelectorAll('.slider__item');
+  const next = function () {
+  /* const slides = t.querySelectorAll('.slider__item');
     const o = evt.target.closest('.slider__item');
-    const s = Array.from(slides).indexOf(o);
-    e.slideTo(s + 1);
+    const s = Array.from(slides).indexOf(o); */
+    e.slideNext();
   };
-  links.forEach((function (y) {
-    y.addEventListener('blur', next);
+
+  const linksArray = Array.from(links);
+  for (let i = 1; i < linksArray.length - 1; i++) {
+    linksArray[i].addEventListener('focus', next);
   }
-  ));
 };
 
 const leaflet = () => {
