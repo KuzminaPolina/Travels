@@ -71,6 +71,7 @@
   color: inherit;
   font-size: 18px;
   padding-bottom: 4px;
+  color: $color-default-white;
 }
 
 .swiper-button-prev:hover::after,
@@ -164,4 +165,16 @@
 .swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet-active,
 .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet-active {
   background-color: $color-default-white;
+}
+
+.swiper-button-prev.swiper-button-disabled,
+.swiper-button-next.swiper-button-disabled {
+  background-color: rgba(2, 102, 193, 0.10);
+  border-color: rgba(2, 102, 193, 0.10);
+}
+
+.swiper-button-prev.swiper-button-disabled::after,
+.swiper-button-next.swiper-button-disabled::after {
+  opacity: 1;
+  color: $color-default-white;
 }

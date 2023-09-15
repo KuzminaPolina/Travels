@@ -46,7 +46,6 @@
   font-weight: 800;
   line-height: 35px;
   position: relative;
-  z-index: 10;
 
   @include vp-1200 {
     font-size: 25px;
@@ -101,7 +100,7 @@
   top: 0;
   left: 0;
   color: $color-default-white;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5) 61.9%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.60) 22.3%, rgba(0, 0, 0, 0.00) 60.32%);
   height: 100%;
   width: 100%;
   padding: 20px 20px 25px;
@@ -308,7 +307,7 @@
   justify-content: center;
   margin-top: 52px;
   position: relative;
-  z-index: 10;
+  z-index: 2;
 
   @include vp-1200 {
     margin-top: 28px;

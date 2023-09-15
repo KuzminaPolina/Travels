@@ -10,12 +10,12 @@
   position: relative;
 
   @include vp-1440 {
-    padding: 0 45px 32px;
+    padding: 0 0 0 45px;
     column-gap: 15px;
   }
 
   @include vp-1200 {
-    padding: 0 45px 32px;
+    padding: 0 45px 23px;
     border-bottom: none;
     grid-template-columns: 1.1fr 1fr;
     gap: 56px 0;
@@ -73,6 +73,14 @@
 
     &--last {
       order: 0;
+    }
+
+    &--last .process__icon {
+      margin-bottom: 30px;
+    }
+
+    &:nth-child(4n) {
+      padding-top: 20px;
     }
 
     &:first-child,
@@ -140,7 +148,7 @@
         bottom: 100%;
         left: 5px;
         width: 2px;
-        height: 90%;
+        height: 56px;
         background: rgba(2, 102, 193, 0.2);
       }
     }
@@ -156,6 +164,9 @@
       order: 1;
     }
 
+    &:nth-child(4n) {
+      padding-top: 0;
+    }
     &::after {
       top: 13px;
       left: 4px;
@@ -226,6 +237,7 @@
 
 .process__icon {
   margin: auto;
+  margin-bottom: 10px;
 
   @include vp-768 {
     width: 19px;

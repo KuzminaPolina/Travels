@@ -4,6 +4,22 @@ import {Form} from './modules/form-validate/form';
 import './modules/video';
 import './modules/menu';
 
+const headerSlider = document.querySelector('.slider');
+
+const focusSlider = function (t, e) {
+  const links = t.querySelectorAll('.slider__more-button');
+  const next = function (evt) {
+    const slides = t.querySelectorAll('.slider__item');
+    const o = evt.target.closest('.slider__item');
+    const s = Array.from(slides).indexOf(o);
+    e.slideTo(s + 1);
+  };
+  links.forEach((function (y) {
+    y.addEventListener('blur', next);
+  }
+  ));
+};
+
 const leaflet = () => {
   const L = window.L;
   const map = L.map('map').setView([55.81322, 37.63729], 12);
@@ -24,8 +40,8 @@ const leaflet = () => {
 
 // ---------------------------------
 const Swiper = window.Swiper;
-const initHeaderSlider = () =>
-  new Swiper('.slider__container', {
+const initHeaderSlider = () => {
+  const newHeaderSlider = new Swiper('.slider__container', {
     direction: 'horizontal',
     loop: true,
     pagination: {
@@ -34,7 +50,7 @@ const initHeaderSlider = () =>
     },
     keyboard: {
       enabled: true,
-      onlyInViewport: false,
+      onlyInViewport: true,
     },
     speed: 300,
     breakpoints: {
@@ -49,6 +65,9 @@ const initHeaderSlider = () =>
       },
     },
   });
+  focusSlider(headerSlider, newHeaderSlider);
+  return newHeaderSlider;
+};
 
 // ------------------------------------
 
@@ -168,7 +187,7 @@ const initGallerySlider = () =>
       1200: {
         slidesPerView: 2.5,
         slidesPerGroup: 2,
-        spaceBetween: 5,
+        spaceBetween: 7,
       },
     },
   });

@@ -9,7 +9,7 @@
   }
 
   @include vp-768 {
-    padding-top: 34px;
+    padding-top: 0;
     padding-bottom: 48px;
   }
 }
@@ -19,7 +19,6 @@
   font-weight: 800;
   line-height: 35px;
   position: relative;
-  z-index: 10;
   margin: 0 auto;
   width: fit-content;
 
@@ -98,6 +97,7 @@
 
   @include vp-768 {
     padding: 0 15px;
+    margin-top: -5px;
   }
 }
 

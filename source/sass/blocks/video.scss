@@ -6,6 +6,7 @@
     width: 442px;
     height: 300px;
     position: static;
+    margin-bottom: 128px;
   }
 
   @include vp-768 {
@@ -26,6 +27,7 @@
 
   @include vp-1440 {
     margin-top: 90px;
+    margin-left: -100px;
   }
 
   @include vp-1200 {

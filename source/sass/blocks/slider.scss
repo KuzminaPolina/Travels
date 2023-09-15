@@ -46,7 +46,6 @@
 }
 
 .slider__image-container {
-  //position: relative;
   position: absolute;
   top: 0;
   height: 100%;
@@ -59,17 +58,13 @@
   }
 
   @include vp-768 {
-    height: auto;
+    height: 100%;
   }
 }
 
 .slider__overlay {
-  //position: absolute;
   position: relative;
   min-height: 800px;
-  //top: 0;
-  //left: 0;
-  //height: 100%;
   width: 100%;
   max-width: 1440px;
   color: $color-default-white;
@@ -84,6 +79,7 @@
     width: 100%;
     max-width: none;
     padding: 174px 45px 90px;
+    min-height: 568px;
   }
 
   @include vp-768 {
@@ -122,6 +118,16 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
+  }
+
+  @include vp-768 {
+    &--second {
+      margin-top: 20px;
+    }
+
+    &--third {
+      margin-top: 20px;
+    }
   }
 }
 
@@ -331,6 +337,15 @@
 }
 
 .slider__media-img {
-  width: 442px;
+  width: 445px;
+  height: auto;
+  padding-left: 35px;
+
+  @include vp-1200 {
+    padding-left: 0;
+  }
+}
+
+.slider__item {
   height: auto;
 }

@@ -23,10 +23,14 @@
 }
 
 .footer__navbar {
-  display: grid;
-  grid-template-columns: 205px 1fr 142px;
+  //display: grid;
+  //grid-template-columns: 205px 1fr 142px;
   margin-bottom: 15px;
-  gap: 20px;
+  //gap: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 
   @include vp-1200 {
     display: grid;
@@ -136,6 +140,12 @@
   outline-offset: 2px;
 }
 
+.footer__phone-block {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .footer__phone {
   font-weight: 600;
   color: inherit;
@@ -143,6 +153,23 @@
   margin-right: 0;
   font-size: 18px;
   grid-column: 3 / 4;
+
+  &:hover {
+    color: $color-resolution-blue;
+  }
+
+  &:focus-visible {
+    color: $color-resolution-blue;
+    outline: none;
+  }
+
+  &:active {
+    color: $color-navy-blue;
+  }
+
+  &:disabled {
+    color: rgba(2, 102, 193, 0.10);
+  }
 
   @include vp-1200 {
     display: none;

@@ -34,7 +34,6 @@
   font-weight: 800;
   line-height: 35px;
   position: relative;
-  z-index: 10;
   margin: 0;
   margin-bottom: 30px;
   padding-left: 30px;
@@ -228,6 +227,10 @@
   min-height: 212px;
   width: 100%;
   background-color: #ddb393;
+
+  @include vp-1440 {
+    min-height: 191px;
+  }
 
   @include vp-768 {
     margin-bottom: 18px;

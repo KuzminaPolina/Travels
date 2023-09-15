@@ -2,10 +2,15 @@ const menuList = document.querySelector('.header__list');
 const navOpen = document.querySelector('.header__menu-button-open');
 const navClose = document.querySelector('.header__menu-button-close');
 const navbar = document.querySelector('.header__navbar');
+const overlay = document.querySelector('.header__overlay');
 
 function openMenu() {
   navOpen.classList.add('header__menu-button--hidden');
   navClose.classList.remove('header__menu-button--hidden');
+  if (overlay.classList.contains('header__overlay--hidden')) {
+    overlay.classList.remove('header__overlay--hidden');
+    overlay.classList.add('header__overlay--open');
+  }
   if (navbar.classList.contains('header__navbar--closed')) {
     navbar.classList.remove('header__navbar--closed');
     navbar.classList.add('header__navbar--open');
@@ -19,6 +24,10 @@ function closeMenu() {
   navClose.classList.add('header__menu-button--hidden');
   navOpen.classList.remove('header__menu-button--hidden');
   menuList.classList.add('header__list--hidden');
+  if (overlay.classList.contains('header__overlay--open')) {
+    overlay.classList.remove('header__overlay--open');
+    overlay.classList.add('header__overlay--hidden');
+  }
   if (navbar.classList.contains('header__navbar--open')) {
     navbar.classList.remove('header__navbar--open');
     navbar.classList.add('header__navbar--closed');
