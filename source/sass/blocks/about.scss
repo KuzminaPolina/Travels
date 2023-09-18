@@ -26,6 +26,7 @@
 
   @include vp-768 {
     position: static;
+    margin-top: 20px;
   }
 }
 
@@ -67,7 +68,7 @@
 
   @include vp-768 {
     width: 100%;
-    padding-top: 50px;
+    padding-top: 45px;
     padding-right: 15px;
   }
 }

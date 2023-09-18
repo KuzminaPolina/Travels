@@ -116,13 +116,16 @@
 .swiper-pagination-bullets .swiper-pagination-horizontal,
 .swiper-pagination-custom,
 .swiper-pagination-fraction {
+  position: absolute;
   bottom: 81px;
-  right: 0;
   width: 70px;
   left: 1257px;
   display: flex;
   justify-content: flex-start;
   gap: 7px;
+  margin: 0;
+  padding: 15px 0;
+  list-style: none;
 
   @include vp-1440 {
     width: 100%;
@@ -138,12 +141,14 @@
     left: 0;
     justify-content: center;
     gap: 7px;
+    padding: 0;
+    padding-bottom: 20px;
   }
 
   @include vp-768 {
-    padding-bottom: 0;
     bottom: 40px;
     gap: 4px;
+    padding-bottom: 0;
   }
 }
 

@@ -206,6 +206,10 @@
       }
     }
 
+    &--last .process__icon {
+      margin-bottom: 10px;
+    }
+
     &:last-child {
       &::after {
         top: 13px;

@@ -249,10 +249,14 @@
 
 .catalog__bottom-feature span {
   display: inline-block;
-  font-size: 14px;
+  font-size: 13px;
   font-weight: 700;
   padding-top: 8px;
   padding-left: 2px;
+
+  @include vp-768 {
+    font-size: 12px;
+  }
 }
 
 .catalog__slider-buttons {

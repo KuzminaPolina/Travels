@@ -180,20 +180,24 @@
 
 .gallery__item {
   display: grid;
-  grid-template-columns: 46% 53%;
+  grid-template-columns: 47.8% 1fr;
   column-gap: 6px;
   height: 100%;
   object-fit: cover;
+  margin-right: 6px;
 
   @include vp-1200 {
-    grid-template-columns: 46.6% 1fr;
+    grid-template-columns: 48% 1fr;
     column-gap: 6px;
     width: fit-content;
+    margin-right: 6px;
   }
 
   @include vp-768 {
     row-gap: 3px;
+    column-gap: 3px;
     grid-template-columns: 49.5% 50%;
+    margin-right: 0;
   }
 }
 

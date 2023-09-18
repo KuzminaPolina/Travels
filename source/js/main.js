@@ -1,25 +1,9 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
+import {initInstructorsSlider} from './modules/instructors';
 import './modules/video';
 import './modules/menu';
-
-const headerSlider = document.querySelector('.slider');
-
-const focusSlider = function (t, e) {
-  const links = t.querySelectorAll('.slider__more-button');
-  const next = function () {
-  /* const slides = t.querySelectorAll('.slider__item');
-    const o = evt.target.closest('.slider__item');
-    const s = Array.from(slides).indexOf(o); */
-    e.slideNext();
-  };
-
-  const linksArray = Array.from(links);
-  for (let i = 1; i < linksArray.length - 1; i++) {
-    linksArray[i].addEventListener('focus', next);
-  }
-};
 
 const leaflet = () => {
   const L = window.L;
@@ -66,7 +50,6 @@ const initHeaderSlider = () => {
       },
     },
   });
-  focusSlider(headerSlider, newHeaderSlider);
   return newHeaderSlider;
 };
 
@@ -82,7 +65,7 @@ const initCatalogSlider = () =>
     },
     keyboard: {
       enabled: true,
-      onlyInViewport: false,
+      onlyInViewport: true,
     },
     breakpoints: {
       320: {
@@ -97,36 +80,6 @@ const initCatalogSlider = () =>
       1200: {
         slidesPerView: 3,
         slidesPerGroup: 3,
-        spaceBetween: 30,
-      },
-    },
-  });
-
-const initInstructorsSlider = () =>
-  new Swiper('.education__content', {
-    direction: 'horizontal',
-    loop: false,
-    navigation: {
-      nextEl: '.education__button--next',
-      prevEl: '.education__button--prev',
-    },
-    keyboard: {
-      enabled: true,
-      onlyInViewport: false,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        slidesPerGroup: 1,
-      },
-      768: {
-        slidesPerView: 3,
-        slidesPerGroup: 3,
-        spaceBetween: 30,
-      },
-      1200: {
-        slidesPerView: 4,
-        slidesPerGroup: 4,
         spaceBetween: 30,
       },
     },
@@ -181,14 +134,12 @@ const initGallerySlider = () =>
         slidesPerGroup: 1,
       },
       768: {
-        slidesPerView: 1.3,
+        slidesPerView: 1.33,
         slidesPerGroup: 1,
-        spaceBetween: 5,
       },
       1200: {
         slidesPerView: 2.5,
         slidesPerGroup: 2,
-        spaceBetween: 7,
       },
     },
   });

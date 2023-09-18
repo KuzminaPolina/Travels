@@ -13,7 +13,7 @@
 }
 
 .education__container {
-  padding: 30px 90px 0;
+  padding: 30px 100px 0;
   position: relative;
 
   @include vp-1440 {
@@ -36,7 +36,7 @@
   position: relative;
   margin: 0;
   margin-bottom: 30px;
-  padding-left: 30px;
+  padding-left: 20px;
 
   @include vp-1200 {
     font-size: 25px;
@@ -85,7 +85,7 @@
   line-height: 21px;
   margin: 0;
   margin-bottom: 11px;
-  padding-left: 30px;
+  padding-left: 20px;
 
   @include vp-1200 {
     font-size: 18px;
@@ -105,7 +105,7 @@
 .education__slider-buttons {
   position: absolute;
   top: 14px;
-  right: 32px;
+  right: 22px;
   display: flex;
   gap: 4px;
 
@@ -153,7 +153,7 @@
   margin: 0;
   margin-bottom: 58px;
   width: 70%;
-  padding-left: 30px;
+  padding-left: 20px;
 
   @include vp-1200 {
     width: 80%;
@@ -182,7 +182,7 @@
 
 .education__content {
   margin-bottom: 21px;
-  padding: 30px 30px;
+  padding: 30px 20px;
 
   @include vp-1200 {
     margin-bottom: 14px;
@@ -203,7 +203,7 @@
   padding: 19px;
   border: 1px solid $color-default-white;
   background: $color-default-white;
-  box-shadow: 0 0 30px 0 rgba(28, 51, 116, 0.1);
+  box-shadow: 0 0 17px 0 rgba(28, 51, 116, 0.1);
 
   &:focus-visible {
     outline: solid 1px $color-resolution-blue;
