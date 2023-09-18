@@ -80,22 +80,28 @@
                   <use xlink:href="./img/sprite.svg#icon_close"></use>
                 </svg>
               </div>
-              <div class="header__logo">
-                <a class="header__logo-link" href="#">
-                  <svg class="header__logo" width="205" height="62" aria-hidden="true" focusable="false">
-                    <use xlink:href="./img/sprite.svg#logotype"></use>
-                  </svg>
-                </a>
+              <div class="header__another-useless-wrapper">
+                <div class="header__logo">
+                  <a class="header__logo-link" href="#">
+                    <svg class="header__logo-img" width="205" height="62" aria-hidden="true" focusable="false">
+                      <use xlink:href="./img/sprite.svg#logotype"></use>
+                    </svg>
+                  </a>
+                </div>
+                <div class="header__overlay header__overlay--hidden">
+                  <ul class="header__list header__list--hidden">
+                    <li class="header__item"><a class="header__link" href="#catalog">Туры</a></li>
+                    <li class="header__item"><a class="header__link" href="#education">Обучение</a></li>
+                    <li class="header__item"><a class="header__link" href="#about">О нас</a></li>
+                    <li class="header__item"><a class="header__link" href="#feedback">Отзывы</a></li>
+                    <li class="header__item"><a class="header__link" href="#gallery">Фотографии</a></li>
+                    <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
+                  </ul>
+                </div>
+                <div class="header__phone-block">
+                  <a class="header__phone" href="tel:+78007253232">8 800 725 32 32</a>
+                </div>
               </div>
-              <ul class="header__list header__list--hidden">
-                <li class="header__item"><a class="header__link" href="#catalog">Туры</a></li>
-                <li class="header__item"><a class="header__link" href="#education">Обучение</a></li>
-                <li class="header__item"><a class="header__link" href="#about">О нас</a></li>
-                <li class="header__item"><a class="header__link" href="#feedback">Отзывы</a></li>
-                <li class="header__item"><a class="header__link" href="#gallery">Фотографии</a></li>
-                <li class="header__item"><a class="header__link" href="#contacts">Контакты</a></li>
-              </ul>
-              <a class="header__phone" href="tel:+78007253232">8 800 725 32 32</a>
             </nav>
           </div>
         </div>
@@ -284,7 +290,7 @@
                             src="./img/header_slider/slider2-img.png"
                             srcset="./img/header_slider/slider2-img@x2.png 2x"
                             width="410"
-                            height="549"
+                            height="459"
                             alt="Туристические фото"
                           >
                         </picture>
@@ -363,7 +369,7 @@
                       <div class="slider__media-wrapper">
                         <div class="slider__podcast podcast">
                           <div class="podcast__iframe">
-                            <iframe style="border:none; width:340px; height:220px;" width="340" height="220" src="https://music.yandex.ru/iframe/#album/25474374" loading="lazy"></iframe>
+                            <iframe style="border:none; width:340px; height:220px;" tabindex="-1" width="340" height="220" src="https://music.yandex.ru/iframe/#album/25474374" loading="lazy"></iframe>
                           </div>
                           <div class="podcast__content">
                             <h3 class="podcast__header">Алтай</h3>
@@ -439,7 +445,6 @@
                 </div>
               </li>
             </ul>
-            <!-- pagination -->
             <ol class="slider__pagination swiper-pagination">
               <li class="slider__pagination-item slider__pagination-item-current">
                 <button class="slider__pagination-button slider__pagination-button--current" type="button">
@@ -2044,7 +2049,7 @@
                   class="form__input custom-input"
                   data-validate-type="text"
                   data-on-input-validate
-                  data-limitation="letters"
+                  minlength="1"
                   data-message-base=""
                   data-message-extra=""
                   data-required>
@@ -2137,7 +2142,9 @@
               <li class="footer__item"><a class="footer__link" href="#gallery">Фотографии</a></li>
               <li class="footer__item"><a class="footer__link" href="#contacts">Контакты</a></li>
             </ul>
-            <a class="footer__phone" href="tel:+78007253232">8 800 725 32 32</a>
+            <div class="footer__phone-block">
+              <a class="footer__phone" href="tel:+78007253232">8 800 725 32 32</a>
+            </div>
           </nav>
           <div class="footer__social">
             <ul class="footer__social-list">
