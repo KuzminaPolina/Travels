@@ -3,6 +3,7 @@ const navOpen = document.querySelector('.header__menu-button-open');
 const navClose = document.querySelector('.header__menu-button-close');
 const navbar = document.querySelector('.header__navbar');
 const overlay = document.querySelector('.header__overlay');
+const wrapper = document.querySelector('.header__another-useless-wrapper');
 
 function openMenu() {
   navOpen.classList.add('header__menu-button--hidden');
@@ -18,6 +19,8 @@ function openMenu() {
   if (menuList.classList.contains('header__list--hidden')) {
     menuList.classList.remove('header__list--hidden');
   }
+  wrapper.classList.add('header__another-useless-wrapper--open');
+  document.body.classList.add('disable-scrolling');
 }
 
 function closeMenu() {
@@ -32,9 +35,12 @@ function closeMenu() {
     navbar.classList.remove('header__navbar--open');
     navbar.classList.add('header__navbar--closed');
   }
+  wrapper.classList.remove('header__another-useless-wrapper--open');
+  document.body.classList.remove('disable-scrolling');
 }
 
 const toggleMenu = () => {
+  overlay.addEventListener('click', closeMenu);
   navOpen.addEventListener('click', openMenu);
   navClose.addEventListener('click', closeMenu);
 };

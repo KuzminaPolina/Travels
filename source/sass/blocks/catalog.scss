@@ -111,17 +111,8 @@
 
 .catalog__top-features {
   display: flex;
-  justify-content: flex-start;
-  gap: 37px;
+  justify-content: space-between;
   margin-bottom: 24px;
-
-  @include vp-1440 {
-    gap: 17px;
-  }
-
-  @include vp-1200 {
-    gap: 17px;
-  }
 
   @include vp-768 {
     margin-bottom: 15px;

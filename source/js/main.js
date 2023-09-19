@@ -4,6 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {initInstructorsSlider} from './modules/instructors';
 import './modules/video';
 import './modules/menu';
+// import './modules/videotwo';
 
 const leaflet = () => {
   const L = window.L;

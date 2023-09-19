@@ -118,17 +118,27 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 0;
+
+    &--second {
+      margin-bottom: 78px;
+    }
+
+    &--third {
+      margin-bottom: 189px;
+    }
   }
 
   @include vp-768 {
     height: 100%;
 
     &--second {
-      margin-top: 20px;
+      margin-top: 80px;
+      margin-bottom: 63px;
     }
 
     &--third {
-      margin-top: 20px;
+      margin-bottom: 63px;
+      margin-top: 80px;
     }
   }
 }

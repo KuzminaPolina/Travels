@@ -129,7 +129,7 @@
 
   @include vp-1440 {
     width: 100%;
-    bottom: 10px;
+    bottom: 81px;
     left: 520px;
     justify-content: center;
     gap: 7px;
@@ -182,4 +182,9 @@
 .swiper-button-next.swiper-button-disabled::after {
   opacity: 1;
   color: $color-default-white;
+}
+
+.disable-scrolling {
+  height: 100%;
+  overflow: hidden;
 }
