@@ -3855,12 +3855,12 @@ button,
   width: 482px;
   -ms-flex-negative: 0;
       flex-shrink: 0;
+  padding-top: 120px;
 }
 @media (max-width: 1199px) {
   .video {
     width: 442px;
     height: 300px;
-    position: static;
     margin-bottom: 128px;
   }
 }
@@ -3878,9 +3878,8 @@ button,
 }
 
 .video__preview {
-  position: relative;
   width: 482px;
-  margin-top: 120px;
+  margin: 0;
 }
 @media (max-width: 1439px) {
   .video__preview {
@@ -3897,11 +3896,8 @@ button,
 }
 
 .video__iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  width: 482px;
+  height: 317px;
 }
 
 .video__iframe--hidden {
@@ -3913,11 +3909,6 @@ button,
 }
 
 .video__overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3927,6 +3918,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .video__overlay--open {
@@ -3940,6 +3932,15 @@ button,
 }
 
 .video__button-group {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  left: 45%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4313,6 +4314,9 @@ button,
   }
 }
 
+.catalog__days {
+  white-space: nowrap;
+}
 @media (max-width: 765px) {
   .catalog__days {
     -ms-grid-column: 1;
@@ -5072,8 +5076,8 @@ picture img {
 .process__item {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 25px 235px;
-  grid-template-columns: 25px 235px;
+  -ms-grid-columns: 25px 1fr;
+  grid-template-columns: 25px 1fr;
   -webkit-column-gap: 15px;
      -moz-column-gap: 15px;
           column-gap: 15px;
@@ -6550,6 +6554,10 @@ form fieldset {
   border: solid 1px #0266c1;
   font-size: 16px;
   cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 @media (max-width: 1199px) {
   .form__submit {

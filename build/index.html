@@ -112,7 +112,7 @@
           <h1 class="visually-hidden">Незабываемые путешествия по России</h1>
           <div class="slider__container swiper">
             <ul class="slider__list swiper-wrapper">
-              <li class="slider__item swiper-slide">
+              <li class="slider__item swiper-slide" data-slide-one>
                 <div class="slider__image-container">
                   <picture>
                     <source
@@ -167,24 +167,24 @@
                     <div class="slider__video video">
                       <div class="video__preview">
                           <iframe class="video__iframe video__iframe--hidden" src="https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=0" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen loading="lazy"></iframe>
-                          <picture>
-                            <source
-                              type="image/webp"
-                              srcset="
-                              ./img/header_slider/video_thumbnail.webp 1x,
-                              ./img/header_slider/video_thumbnail@x2.webp 2x
-                              "
-                            >
-                            <img
-                              class="video__thumbnail"
-                              src="./img/header_slider/video_thumbnail.jpg"
-                              srcset="./img/header_slider/video_thumbnail@x2.jpg 2x"
-                              width="482"
-                              height="317"
-                              alt="Видео экскурсия по тренажёному залу"
-                            >
-                          </picture>
                           <div class="video__overlay video__overlay--open">
+                            <picture>
+                              <source
+                                type="image/webp"
+                                srcset="
+                                ./img/header_slider/video_thumbnail.webp 1x,
+                                ./img/header_slider/video_thumbnail@x2.webp 2x
+                                "
+                              >
+                              <img
+                                class="video__thumbnail"
+                                src="./img/header_slider/video_thumbnail.jpg"
+                                srcset="./img/header_slider/video_thumbnail@x2.jpg 2x"
+                                width="482"
+                                height="317"
+                                alt="Видео экскурсия по тренажёному залу"
+                              >
+                            </picture>
                             <div class="video__button-group">
                               <button class="video__button" type="button">
                                 <span class="visually-hidden">Кнопка воспроизведения</span>
@@ -447,17 +447,17 @@
             </ul>
             <ol class="slider__pagination swiper-pagination">
               <li class="slider__pagination-item slider__pagination-item-current">
-                <button class="slider__pagination-button slider__pagination-button--current" type="button">
+                <button class="slider__pagination-button slider__pagination-button--current" type="button" data-slide-one>
                   <span class="visually-hidden">1 фото</span>
                 </button>
               </li>
               <li class="slider__pagination-item">
-                <button class="slider__pagination-button" type="button">
+                <button class="slider__pagination-button" type="button" data-slide-two>
                   <span class="visually-hidden">2 фото</span>
                 </button>
               </li>
               <li class="slider__pagination-item">
-                <button class="slider__pagination-button" type="button">
+                <button class="slider__pagination-button" type="button" data-slide-three>
                   <span class="visually-hidden">3 фото</span>
                 </button>
               </li>

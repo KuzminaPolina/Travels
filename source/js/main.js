@@ -4,7 +4,8 @@ import {Form} from './modules/form-validate/form';
 import {initInstructorsSlider} from './modules/instructors';
 import './modules/video';
 import './modules/menu';
-// import './modules/videotwo';
+
+const video = document.querySelector('.video__iframe');
 
 const leaflet = () => {
   const L = window.L;
@@ -26,6 +27,7 @@ const leaflet = () => {
 
 // ---------------------------------
 const Swiper = window.Swiper;
+
 const initHeaderSlider = () => {
   const newHeaderSlider = new Swiper('.slider__container', {
     direction: 'horizontal',
@@ -50,6 +52,15 @@ const initHeaderSlider = () => {
         slidesPerView: 1,
       },
     },
+  });
+  newHeaderSlider.on('activeIndexChange', function (evt) {
+    if (evt.activeIndex === 1) {
+      video.src = 'https://www.youtube.com/embed/9TZXsZItgdw?&autoplay=1';
+    } else if (evt.activeIndex === 2) {
+      video.src = '';
+    } else if (evt.activeIndex === 3) {
+      video.src = '';
+    }
   });
   return newHeaderSlider;
 };

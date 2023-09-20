@@ -45,7 +45,7 @@
 
 .process__item {
   display: grid;
-  grid-template-columns: 25px 235px;
+  grid-template-columns: 25px 1fr;
   column-gap: 15px;
   padding-bottom: 33px;
   position: relative;
