@@ -1,17 +1,12 @@
-## Краткая инструкция по работе
-Для начала работы у вас должент быть установлен **Node.js**
+Сайт для турагентства.<br>
+Использованы технологии: HTML, CSS, SASS, Gulp, JavaScript. <br>
+Для просмотра проекта в браузере <a href="https://kuzminapolina.github.io/Travels/" target="blank">нажмите сюда</a>.
+Сайт полностью "резиновый", подстраивается под любую ширину экрана.
+Особенность этого проекта: большое количество разнообразных слайдеров, которые были выполнены при помощи библиотеки Swiper JS.
+<br><br>
+Website for a travel agency.<br>
+Made with HTML, CSS, SASS, Gulp, JavaScript.<br>
+To open the website in browser <a href="https://kuzminapolina.github.io/Travels/" target="blank">open this link</a>.
+This is a fully adaptive website, it will fit to any screen size.
+The biggest challenge of this project are its many sliders, which were made with the library Swiper JS.
 
-### Основные команды для работы
-- Установка - `npm i`
-- Запуск локального сервера без минификаций - `npm start`
-- Запуск локального сервера c минификациями, <br>
-данный вариант не используется в разработке, <br>
-он нужен только для тестов производительности <br>
-на локальном хосте  - `npm run dev`
-- Сборка проекта, минификация скриптов <br>
-и оптимизация изображений перед деплоем на прод - `npm run build`
-- Запуск тестирования на соответствия кодгайдам - `npm test`
-- Создание webp изображений в директории source - `npm run webp`
-
-### Вся разработка ведётся в директории `source`
-### Итоговый код попадает в директорию `build`
